@@ -1,0 +1,184 @@
+\documentclass[14pt]{extreport}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.17} 
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Calculus III Notes}
+\author{Jonathan Parlett}
+
+
+
+\begin{document}
+\paragraph{1.0}\textbf{Differential Equations}\\\\
+
+Differential equation: an equation containing one or more derivatives.\\
+Order of differential equation: the order of its highest derivative.\\\\
+
+\textbf{Eulars method}\\
+$y_1 = y_0 + f(x_0, y_0)*\Delta x$\\
+$y_2 = y_1 + f(x_1, y_1)*\Delta x$\\\\
+This process repeats for n approximations and can be described by the formula\\
+$y_{n+1} = y_n + \frac{dy}{dx}\Delta x$\\\\
+
+
+\textbf{Exponential Growth and Decay}\\\\
+growth $= \frac{dp}{dt} = kp$\\
+decay  $= \frac{dp}{dt} = -kp$\\
+where $t$ is time and $p$ is population.\\\\
+
+\textbf{Integrated Formulas}\\
+growth $= y = y_0 * e^{kt}$\\
+decay  $= y = y_0 * e^{-kt}$\\\\
+For decay problems if given $t_{1/2}$ then set $y=y_0*\frac{1}{2}$ and $t=t_{1/2}$ to solve for $k$\\
+
+Population growth $= \frac{dy}{dt} = k(1 - \frac{y}{L})y$\\
+Integrated Population growth $= y = \frac{y_0*L}{y_0 +(L-y_0)e^{-kt}}$\\\\
+
+\textbf{Newton Law of Cooling}\\\\
+$$T(t) = T_s + (T_0 -T_s)e^{-kt}$$
+The temp at time $t$ is equal to temp of surroundings + the initial temp - temp of surroundings
+time $e$ to the $-kt$ power.\\\\
+
+\textbf{Integrated Formula}\\\\
+$$\frac{dT}{dt} = k(T_s - T), k > 0$$\\\\
+
+\paragraph{1.1}\textbf{Integrating factors}\\\\
+
+a first order differential equation is said to linear if it is expresible in the form $\frac{dy}{dx} + p(x)y = q(x)$ if this is the case we can use the method of integrating factors to solve this problem.\\\\
+
+$$\mu = e^{\int p(x)dx}$$
+$$\frac{d}{dx}(\mu y)=\mu q(x)$$
+This gives us the result\\
+$$y = \frac{1}{\mu} * \int \mu*q(x)dx$$
+by rearranging a given equation into the linear format and calculating $\mu$ we can solve for $y$.
+
+\paragraph{1.2}\textbf{Increasing and Decreasing (Monotone) Sequences}\\\\
+\textbf{Theorem 9.2.3-4}\\
+if sequence ${a_n}$ is eventually increasing then either a or b is true.\\
+(a): There is a constant $M$, called an upper bound for the sequence, such that $a_n \leq M$
+for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \leq M$
+(b): No upper bound exists, in which case, $\lim_{n \to \infty} a_n = +\infty$.\\\\
+
+Likewise for decreasing sequences.\\
+(a): There is a constant $M$, called a lower bound for the sequence, such that $a_n \geq M$
+for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \geq  M$.
+(b): No lower bound exists, in which case, $\lim_{n \to \infty} a_n = -\infty$.\\\\
+
+\textbf{Monotone testing table}\\
+$a_{n+1} - a_{n} > 0$	$a_{n+1}/a_{n} > 1$	Strictly increasing\\
+$a_{n+1} - a_{n} < 0$	$a_{n+1}/a_{n} < 1$	Strictly decreasing\\
+$a_{n+1} - a_{n} \geq 0$	$a_{n+1}/a_{n} \geq 1$	increasing\\
+$a_{n+1} - a_{n} \leq 0$	$a_{n+1}/a_{n} \leq 1$	decreasing\\\\
+
+
+\paragraph{1.3}\textbf{Convergence Tests}\\\\
+
+$u_k$ is defined as the "general" term of a series. For example in the harmonic series. $\sum_{k=1}^{\infty} \frac{1}{k}$, $u_k=\frac{1}{k}$.\\\\
+
+\textbf{Theorem 1}\\
+if $u_k \ne 0$ as $k$ approaches infinity then the series diverges. Else the series may diverge or converge. $\lim_{k \to \infty} \ne 0$.\\\\
+
+\textbf{Theorem 2}\\
+if $\sum u_k$ and $\sum v_k$ are convergent series then thier sum and difference are also convergent series. $\sum u_k - v_k$ and $\sum u_k + v_k$.\\\\
+
+Thier sums and differences are also related.
+$\sum u_k - v_k$ = $\sum u_k - \sum v_k$\\
+
+$\sum u_k + v_k$ = $\sum u_k + \sum v_k$\\\\
+
+
+\textbf{The integral Test}\\\\
+if $u_k$ is a decreasing function on $[a, +\infty]$ then. $\sum_{k=1}^{\infty} u_k$ and $\int_{a}^{\infty} u_k$ both converge or diverge.\\\\
+
+
+\textbf{P-series}\\\\
+A p-series is a series of the form $\sum \frac{1}{k^p}$. The harmonic series is one such series where $p=1$.\\\\
+
+If $p > 1$ the series converges, otherwise it diverges. 
+
+\textbf{Comparison Test}\\\\
+given $\sum a_k$ and $\sum b_k$ all $a_k$ and $b_k$ positive. If all $b_k \ge a_k$ if $\sum b_k$ converges so does $\sum a_k$. Conversely if $\sum a_k$ diverges so does $\sum b_k$. in other words in the larger sum converges so does the smallerand if the smaller sum diverges so does the larger. 
+\\\\
+\textbf{Limit Comparison Test}\\\\
+given $p = \lim_{k \to \infty} \frac{a_k}{b_k}$ and $p > 0$ and finite. \\
+Then both series converge or diverge.
+\\\\
+\textbf{Ratio Test}\\\\
+given $p = \lim_{k \to \infty} \frac{a_{k+1}}{a_k}$.\\
+$p < 1$ Series converges\\
+$p > 1$ or $p = +\infty$  Series diverges\\
+$p = 1$ Nothing is certain\\
+\\\\
+\textbf{Root Test}\\\\
+given $p = \lim_{k \to \infty} (a_k)^{\frac{1}{k}}$.\\
+$p < 1$ Series converges\\
+$p > 1$ or $p = +\infty$  Series diverges\\
+$p = 1$ Nothing is certain\\
+\\\\
+
+\paragraph{1.4}\textbf{Alternating Series}\\\\
+
+An alternating series converges is these two conditions are satisfied.\\
+$$a_1 \ge a_2 \ge a_3 \ge \ldots \ge a_k \ge \ldots$$
+$$\lim_{k \to +\infty} a_k = 0$$
+
+if the above conditions are satisfied then the sum of ther series $S$ is between $s_n \le S \le s_{n+1}$ or  $s_{n+1} \le S \le s_n$ Which ever partial sum is greater.\\
+
+if $S$ is approximated as $s_n$ then absolute error $|S-s_n|$ $\le a_{n+1}$\\
+Also the sign of the error is the same as the sign of $a_{n+1}$\\
+
+to find $n$ to be accuarate to two decimals it suffices to find $n$ such that $0.005 \le a_{n+1}$ or the nth plus one term. in general solving the inequality $|error| \le a_{n+1}$ will give you target $n$ or target $|error|$ depending on the problem.
+
+\textbf{Absolute Convergence}\\
+a series $\sum u_k$ is said to diverge or converge absolutely if the absolute values of the series diverge or converge.\\ 
+
+If a series converges absolutely then it converges. If a series converges, but diverges absoluteley then it is said to be conditionally divergent.\\
+
+\textbf{Ratio test for absolute convergence}\\
+The ratio test can be applied to a series for absolute divergence or convergence.\\
+$ p = \lim_{k \to +\infty} \frac{|a_{n+1}|}{|a_n|}$\\
+$ p < 1$ Series converges absolutely therefor converges.\\
+$ p > 1$ or $p= +\infty$ then series diverges.\\
+$ p = 1$ inconclusive.\\\\
+
+
+\paragraph{1.5}\textbf{Taylor and Maclaurin polynomials}\\\\
+A function can be approximated by a polynomial at a point by finding a polynomial which has similar values around that point. To have similar values at a point the derivatives must match. To accomplish this you must approximate constants times an $n$th degree polynomial. The constants can be described as the $n$th deriviative of the func in questions.
+
+$c_0 = f(x)$\\
+$c_1 = f'(x)$\\
+$c_2 = \frac{f''(x)}{2!}$\\
+$c_3 = \frac{f'''(x)}{3!}$\\
+$c_n = \frac{f^n(x)}{n!}$\\
+
+A taylor polynomial is described as follows.\\
+$P_n(x) = c_0 + c_1(x-x_0) + c_2\frac{(x-x_0)^2}{2!} + c_3\frac{(x-x_0)^3}{3!} + \cdots + c_n\frac{(x-x_0)^n}{n!}$\\
+Recall that $c_n = f^n(x_0)$\\
+A Maclaurin polynomial is basically a Taylor poly nomial at $x_0 = 0$. In which case all $(x-x)_0$ can be replaced with simply $x$\\\\
+
+The nth remainder functions is equal to the error of the taylor polynomial and it is denoted by the difference between the function and its nth taylor polynomial. 
+
+$R_n(x) = f(x) - \sum_{k=0}^{n} \frac{f^k(x_0)}{k!}(x-x_0)^k$\\
+This can also be denoted by $f(x) = P_n(x) + R_n(x)$\\\\
+
+\textbf{Remainder estimation theorem}\\
+if a function can be differentiated on an interval containing $(x_0)$ n+1 times and $M$ is an upper bound on that interval  and $|f^{n+1}(x) \le M$ in said interval then
+$$|R_n(x)| \le \frac{M}{(n+1)!}|x-x_0|^{n+1}$$\\\\
+
+A more useful definition is $$R_n(x) = \frac{f^{(n+1)}(x)*|x-x_0|^{n+1}}{(n+1)!}$$\\
+it should be the abs of the nth+1 derivative.
+
+
+
+
+
+\end{document}
+

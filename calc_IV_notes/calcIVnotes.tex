@@ -1,0 +1,730 @@
+\documentclass[14pt]{extreport}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.17} 
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Calculus IV Notes}
+\author{Jonathan Parlett}
+
+
+
+\begin{document}
+
+\paragraph{1.1}\textbf{3 space coords}\\\\
+
+\textbf{3D distance formula}\\
+$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$\\\\
+
+\textbf{standard equation of a sphere}\\\\
+$r^2 = (x - x_0)^2 + (y-y_0)^2 + (z-z_0)^2$\\
+
+If in problem solving you encounter $r < 0$ then the equation has no solution and the shape
+cannot be graphed.\\\\
+
+\textbf{Cylindrical surfaces}\\\\
+
+When graphing equations of 2 variables such as $y = x^2$ in 3 space it is said that the equation is true for arbitrary values of the absent variable. In this case $z$. so to graph $y = x^2$ we draw the parabola than extending it into the $z$ plane.\\\\
+
+
+\paragraph{1.2}\textbf{Scalers and Vectors}\\
+
+a vector $\vec{p}$\\
+tail: initial point of vector\\
+tip: terminal point of vector\\
+real numbers are vector \textbf{scalers}.\\
+vectors are $\equiv$ if they have the same length and irection.\\\\
+
+If initial point of $\vec{p}$ is $A$ and terminal point is $B$ then we can write $\vec{p} = \vec{AB}$\\
+
+if $A = B$ then vector has length $0$ we call this vector the zero vector.\\\\
+
+\textbf{Vector Addition}\\\\
+If $v_i =$initial point of $\vec{v}$ and $w_t =$ terminal point of $\vec{w}$ then $\vec{v} + \vec{w} = \vec{v_i w_t}$\\
+
+The sum of vectors equals the vector from the initial point of one to the terminal point of the other.\\
+
+$v + w = (v_1 + w_1,  v_2 + w_2 ... v_n + w_n$\\\\
+
+
+\textbf{Scalers}\\\\
+
+Multiplying $\vec{v}$ by realnumber $k$ increases its length by $k$ times its current length, so if $k=2$ you double the length of the vector. Further more if $k < 0$(negative) then you reverse the direction of the vector. If $k = 0$ then $k\vec{v} = 0$.\\
+
+Subtracting vectors is the same as adding the negative of the subtraend. In other words reverse its direction and add it to the addend.\\\\
+
+\textbf{Vectors in coord systems}\\
+
+If a vectors inital point is the origin then it can be represented in component form as its terminal point $\vec{v} = (v_1, v_2)$ or $\vec{v} = (v_1, v_2, v_3)$ if working in 3-space.\\
+
+Two vectors are equal if they have the same components.\\\\
+
+\textbf{Component operations}\\\\
+$v + w = (v_1 + w_1, v_2 + w_2)$\\
+$v - w = (v_1 - w_1, v_2 - w_2)$\\
+$kv = (kv_1, kv_2)$\\
+these operations are the same for 3-space vecs just do the same ops for the 3rd coord.
+
+\textbf{Finding vectors with inital point not given (not starting from origin)}\\\\
+
+Given two points $P_1$ and $P_2$ an inital and a terminal, the vector $\vec{P_1 P_2} = P_1 - P_2 = (x_2 - X_1, y_2 - y_1)$ the operation is the same in 3-space just an extra coord. $\vec{P_1 P_2} = P_1 - P_2 = (x_2 - X_1, y_2 - y_1, z_1 - z_2)$\\\\
+
+\textbf{Norm of a vector}\\\\
+vector length: distance between terminal and inital points.\\
+norm/magnitude/length of $\vec{v} = ||v||$.\\
+
+norm does not change with translation (scaling or other ops) so for the purpose of calculation we assume initial point is origin. Recalling the pythagorean theorem it is evident that a norm can be found from a vectors components.\\
+
+$||v|| = \sqrt{v_1^{2} + v_2^{2}}$\\
+
+In three space.\\
+$||v|| = \sqrt{v_1^{2} + v_2^{2} +v_3^{2}}$\\
+
+\textbf{Unit vectors}\\\\
+Unit vectors are vectors of length one in a specific plane.\\\\
+
+\textbf{2-Space}\\
+$i = (1, 0)$\\
+$j = (0,1)$\\
+
+\textbf{3-Space}\\
+$i = (1, 0, 0)$\\
+$j = (0,1, 0)$\\
+$k = (0, 0, 1)$\\\\
+
+Every vector is expressible in terms of a multiple of the unit vectors.\\
+
+$v = v_1i, v_2j$ likewise in 3-Space.\\
+
+\textbf{Normalizing a vector}\\\\
+
+Multiplying a vector by the recipricol of its length $\frac{1}{||v||}$ is known as normalizing the vector.\\
+this gives us a unit vector with the same direction as the original.\\\\
+
+\textbf{Trig form}\\\\
+
+If $v$ is a non-zero vector with inital point at origin it can be expressed in trig form since $||v||cos\theta = x$compenent and $||v||sin\theta =y$ compoenent.\\
+
+$v = ||v||(cos\theta, sin\theta)$\\\\
+
+\textbf{Vector Multplication}\\\\
+
+$u * v = u_1 * v_1 + u_2 * v_2$ this is called the dot product of vectors $v$ and $u$. This can be used as a scaler.\\
+
+Similar properties of multiplication on natural numbers hold for vectors. such as distrubutive, etc.
+
+$u * v = v * u$\\
+
+An interesting interpretation of vector multiplication is that $v * v = ||v||^2$\\\\
+
+
+
+\textbf{Angle between vectors}\\\\
+
+$\theta =$ the smallest counter clockwise angle through which one of the vectors can be rotated until it aligns with the other. This is the angle between vectors.\\
+It can be calclulated with the below formula.
+
+$cos \theta = \frac{u * v}{||u||*||v||}$\\
+
+The sign of the dot product of the two vectors is the same as the sign of $cos \theta$.\\
+
+Orthogonal: perpendicular.
+
+Two vector vectors are orthogonal $\equiv$ if ther dot product is zero $u*v = 0$\\\\
+
+\textbf{Direction Angles}\\\\
+
+The angle between a non-zero vector and the unit vectors $i, j, k$ are called the direction angles of the vector.
+
+The cosines of those angles are direction cosines.
+
+given vector $u = u_1i + u_2j + u_3k$ its directions cosines are.\\
+$cos \alpha = \frac{u_1}{||u||}$\\
+
+$cos \beta = \frac{u_2}{||u||}$\\
+
+$cos \gamma = \frac{u_3}{||u||}$\\\\
+
+$cos^2 \alpha + cos^2 \beta + cos^2 \gamma = 1$\\\\
+
+\textbf{Decomposing Vectors int o orthogonal components}\\\\
+
+$v = (v * e_1)e_1 + (v * e_2)e_2$\\
+
+$(v * e_1)e_1, (v*e_2)e_2$ = vector components.\\
+
+$(v * e_1), (v*e_2)$ = scaler components.\\\\
+
+
+\textbf{Orthogonal Projections}\\\\
+
+the projection of vector $v$ onto $b = \frac{v * b}{||b||^2}*b$\\\\
+
+
+\paragraph{1.3}\textbf{Cross Products}\\\\
+
+\textbf{Determinints}\\\\
+
+Determinants are calculated as the cross product of their diagonol.\\
+
+$\begin{vmatrix}
+a_1 &  a_2\\
+b_1 &  b_2 \\
+\end{vmatrix} 
+=
+a_1 * b_2 - a_2 * b_1$\\\\
+
+A 3x3  determinant is defined as follows.\\
+
+$\begin{vmatrix}
+a_1 &  a_2 & a_3\\
+b_1 &  b_2 & b_3\\
+c_1 & c_2 & c_3\\
+\end{vmatrix} 
+= a_1 * 
+\begin{vmatrix}
+b_2 &  b_3\\
+c_2 &  c_3 \\
+\end{vmatrix} 
+- a_2 * 
+\begin{vmatrix}
+b_1 &  b_3\\
+c_1 &  c_3 \\
+\end{vmatrix}
++ a_3 
+\begin{vmatrix}
+b_1 &  b_2\\
+c_1 &  c_2 \\
+\end{vmatrix}$\\
+
+If two rows in a determinant are the same then its value is zero.\\
+Interchangeing to rows multiplies the determinant by $-1$.\\\\
+
+\textbf{Vector cross products}\\\\
+
+The cross product of a vector, denoted $u x v$ is equal to a Determinant made of the vector components with unit vectors in the first row.\\\\
+
+$u$ x $v =
+\begin{vmatrix}
+i & j & k\\
+u_1 & u_2 & u_3\\
+v_1 & v_2 & v_3\\
+\end{vmatrix}$
+\\
+
+Cross products are defined only for three space vectors.\\
+
+Remember because of the definition of determinants $u$ x $v = -(v $ x $ u)$ and $u$ x $u = 0$.\\\\
+
+Vector cross product are orthogonal to both composite vectors.\\
+
+If $b = u$ x $v$  then $b * u = b * v = 0$\\\\
+
+
+\textbf{Theorem 11.3.5}\\
+$||u$ x $v|| = ||u||*||v||sin\theta$\\
+$A = $ area of a parallelogram with adjacent sides $u$ and $v$\\
+$A = ||u $ x $ v||$\\
+If $u$ and $v$ are parallel vectors then $u$ x $ v = 0$\\\\
+
+\textbf{scaler triple product}\\
+
+The scaler triple product $u * ( v $ x $ w)$ can be calculated by
+$\begin{vmatrix}
+u_1 & u_2 & u_3\\
+v_1 & v_2 & v_3\\
+w_1 & w_2 & w_3\\
+\end{vmatrix}$
+\\\\
+
+The volume of a parallelepiped with adjacent edges (vectors with same origin point) $u v$ and $w$ is equal to the absolute value of the scaler triple product of the edges.\\
+
+$V = |u * (v $ x $ w)|$\\\\
+
+\paragraph{1.4}\textbf{Parametric Equations of Line}\\\\
+
+The line in 3-space that passes through point $P_0(x_0, y_0, z_0)$ and is parallel to non-zero vector $v = (a, b, c)$ has the parametric equations.\\
+$x = x_0 + at$\\
+$y = y_0 + bt$\\
+$z = z_0 + ct$\\
+likewise for 2-space just minus the $z$ coord.\\
+
+$v = (a, b, c)$ is also called the direction vector of the line.\\
+
+if $r = (x, y, z)$ and $r_0 = (x_0, y_0, z_0)$ and $v = (a, b, c)$ then
+	$r = r_0 + tv$\\\\
+
+
+\paragraph{1.5}\textbf{Planes... in ... SPAAAACE!}\\
+
+A vector perpendicualar/orthogonal to a plane is called a \textbf{normal} to the plane.\\
+
+Given a plane passing through point $r_0$ and orthogonal to vector $n$ it can be said that the plane consists of all points such that $n * (r - r_0) = 0$. In other words such that the vector produced by $(r - r_0)$ is orthogonal to $n$.\\
+
+From the above follows the \textbf{Point normal equation} of a plane.\\
+$\vec{n} = (a, b, c)$\\
+$a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$\\
+
+This can also be written in vector from the same way a parametric line equation can.\\
+
+\textbf{Angle Between Planes}\\
+
+The acute angle between planes is given by $cos \theta = \frac{|n_1 * n_2|}{||n_1||*||n_2||}$ where $n_1$ and $n_2$ are vector normals to plane 1 and 2.\\
+
+Subtracting the acute angle from 180 yield the obtuse angle.\\\\
+
+\textbf{Line of intersection}\\
+
+The cross product of the direction vectors of two intersecting lines gives the direction vector of the line of intersection.\\\\
+
+\textbf{Distance between plane and point}\\
+
+Distance $D$ from a point $(x_0, y_0, z_0)$ to a plane with vector normal $(a, b, c)$ if given by\\
+
+$D = \frac{|ax_0 + by_0 + cz_0 + d|}{\sqrt{a^2 b^2 +c^2}}$\\\\
+
+\paragraph{1.5}\textbf{Quadric Surfaces}\\
+
+\textbf{Ellipsoid}\\
+$\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$\\\\
+\textbf{Elliptic Cone}\\
+$\frac{x^2}{a^2} + \frac{y^2}{b^2} =z^2$\\\\
+\textbf{Hyperbolid one sheet}\\
+$\frac{x^2}{a^2} + \frac{y^2}{b^2} - \frac{z^2}{c^2} = 1$\\\\
+\textbf{Elliptic paraboloid}\\
+$\frac{x^2}{a^2} + \frac{y^2}{b^2}=z$\\\\
+\textbf{Hyperbolid two sheets}\\
+$\frac{z^2}{c^2} - \frac{y^2}{b^2} - \frac{x^2}{a^2} = 1$\\\\
+
+All of the above shapes can derived from tracing their equations. \\\\
+
+\paragraph{1.6}\textbf{Cylindrical and Sphereical Coordinates}\\\\
+
+Up until now we have dealt with rectangular coordinates as a way to show a point in 3-space the tratdition $(x, y, z)$ but we can also designate a point using the cylindrical and sphereical systems.\\
+
+As you might expect these systems are nalogous to the shapes they are named after. A point on a cylinder can be described by the radius $r$ of the cylinder, an angle $\theta$ and the height of the cylinder $z$. $(r, \theta, z)$.\\
+
+In Sphereical $p$ is distance from the origin, $\theta$ is the angle, and $\phi$ is the set of all points from which a line segment to the origin makes an angle of $\phi$ with the positive z-axis. $(p, \theta, \phi$.\\
+
+C to R $(r, \theta, z) \to (x,y ,z)$ $x = r cos\theta$, $y = r sin\theta$, $z=z$.\\
+
+R to C $(x, y, z) \to (r, \theta, z)$ $r = \sqrt{x^2 + y^2}$, $tan \theta = \frac{y}{x}$, $z=z$.\\
+
+S to C $(p, \theta, \phi) \to (r, \theta, z)$. $r = p sin\phi$, $\theta = \theta$, $z = p cos \phi$\\
+
+C to S $(r, \theta, z) \to (p, \theta, \phi$. $p = \sqrt{r^2 + z^2}$, $\theta=\theta$, $tan\phi = \frac{r}{z}$\\
+
+S to R $(p, \theta, \phi) \to (x, y, z)$. $x=p sin\phi * cos\theta$, $y=p sin\phi sin\theta$, $z = p cos\phi$\\
+
+R to S $(x, y, z) \to (p, \theta, \phi)$. $p = \sqrt{x^2 + y^2 + z^2}$, $tan\theta = \frac{y}{x}$, $cos\phi = z\sqrt{x^2 + y^2 + z^2}$\\\\
+
+\paragraph{1.7}\textbf{Vector Valued Functions}\\
+
+If $r(t) = (t,t^2,t^3)=(x(t), y(t),z(t)$ then $r$ can be called a vector valued function.\\
+
+The domain of a vector valued function is the set of allowable values of $t$. If the domain is not specified explicitly then the domain of the function is understood to be the intersection of the domain of the component functions.\\ This intersection description of the domain is also called the natural domain of $r(t)$.\\\\
+
+\textbf{Graphs of vector valued functions}\\
+
+The graph of a vector valued function $r(t)$ is defined as the graph of its component functions.\\
+
+If $r(t) = (1-t, 3t, 2t)$ then its graph is $x=1-t$, $y=3t$, $z=2t$\\\\
+
+\textbf{Vector Form of a Line Segment}\\
+
+If $r_0$ and $r_1$ are vectors in 2 or 3 space with initial points at origin then then line that passes through the terminal points of these vectors can be expressed in vector form as $r=r_0 + t(r_1 - r_0)$ this recognizeable as slope intercept form and if $0 \le t \le 1$ then the equation represents the line segment from $r_0$ to $r_1$.\\\\
+
+\paragraph{1.8}\textbf{Calculus of vector valued functions}\\
+
+\textbf{Limits}\\
+$r(t)$ is a vector valued function defined for all $t$ in some open interval containing (but possibly not defined at) $a$.\\
+
+$\lim_{t \to a} r(t)=L$\\
+if and only if\\
+$\lim_{t \to a} ||r(t) - L|| = 0$\\
+
+$r(t)$ approaches $L$ in length and direction if $\lim_{t \to a} r(t) = L$\\\\
+
+The following theorem states that the limit of a vector function is the limit of its component functions.\\
+
+$\lim_{t \to a} r(t) = (\lim_{t \to a} x(t), \lim_{t \to a} y(t))$\\
+
+The limit of $r$ exists if the limit of the component function exist and the limit of the component functions exist if $r$ approaches a limiting vector as $t$ approaches $a$.\\\\
+
+\textbf{Derivatives}\\
+
+$r'(t) = \lim_{h \to 0} \frac{r(t+h) - r(t)}{h}$\\
+
+The domain of $r'(t)$ consists of all values of $t$ in domain of $r(t)$ for which the limit exists.\\
+
+$r$ is differentiable at $t$ if the limit exists.\\\\
+
+\textbf{Therom 12.2.5}
+
+$r(t)$ is differentiable as $t$ only if its component functions are differentiable at $t$, in which case $r'(t)$ equals the deriveatives of the component functions of $r$.\\\\
+
+\textbf{Rules of differention}\\
+
+$c=$ constant vector, $k=$ scaler, $r_n(t)=$ differentiable vector.\\
+
+$\frac{d}{dt}[c]=0$\\
+
+$\frac{d}{dt}[kr(t)]=k\frac{d}{dt}[r(t)]$\\
+
+The sum of derivatives equals the derivative of the sum.\\
+
+$\frac{d}{dt}[f(t)r(t)]=f(t)\frac{d}{dt}[r(t)] + \frac{d}{dt}[f(t)]r(t)$\\\\
+
+\textbf{Tangent lines to graph of vector valued function}\\
+
+$P=$ point on graph of $r(t)$, $r(t_0)=$ radius vector from the origin to $P$ if $r'(t_0)$ exists and does not equal $0$ then it is a tangent vector. The line through $P$ that is parallel to the tangent vector is the tangent line to $r(t)$ at $r(t_0)$\\
+
+tangent $r = r(t_0) + tr'(t_0)$\\\\
+
+\textbf{Derivatives of dot and cross}\\
+
+$\frac{d}{dt}[r_1(t) \cdot r_2(t)] = r_1 \cdot \frac{dr_2}{dt} + \frac{dr_1}{dt} \cdot r_2(t)$
+
+$\frac{d}{dt}[r_1(t) \times r_2(t)] = r_1 \cdot \frac{dr_2}{dt} + \frac{dr_1}{dt} \times r_2(t)$
+
+
+The derivative of a vector is orthogonal to it. That is $r(t) \cdot r'(t) = 0$\\\\
+
+
+
+\textbf{Integrals of vector valued functions}\\
+
+The integral of a vector valued function is also the antiderivative of its component functions.\\
+
+$\int_{a}^{b} r(t)dt = (\int_{a}^{b} x(t)dt)i + (\int_{a}^{b} y(t)dt)j + (\int_{a}^{b} z(t)dt)k$\\\\
+
+\textbf{Rules of integration}\\
+
+1. the integral of a constant times a function is equal to the constant times the integral of the function.\\
+
+2. the sum of the integral is the integral of the sum.\\\\
+
+Dont forget the constant of integration when taking antiderivatives.\\
+
+$\int r(t)dt = R(t) + C$\\
+
+Integration and differentation with vector value functions are still inverse operations.\\
+
+The fundamental theorem of calculus still holds for $R(t) = r'(t)$ on interval containing $t=a,t=b$ then $\int_{a}^{b} r(t)dt = R(t)|_{a}^{b} = R(b) - R(a)$\\\\
+
+
+
+\paragraph{1.9}\textbf{Functions of two or more variables}\\
+
+A functions of two variables $x, y$ is a rule that assigns a unique real number $f(x,y)$ to each point $(x,y)$ in some set $D$ in the $xy$-plane.\\
+
+This definition is identicle for functions of more variables such as $x, y, z$.\\\\
+
+\textbf{Level Curves}\\\\
+
+Given a function in two variables $z=f(x, y)$ if the plane of the function is cut by $z=k$ then the points on intersections equal $f(x,y)=k$ drawing multiple of these graphs gives you the contour map of the function.\\
+
+consider $z=x^2 + y$ set $z=k = -2\cdots 2$
+
+then solve solve.\\
+
+$-2 = x^2 +y$\\
+$-1 = x^2 +y$\\
+$0 = x^2 +y$\\
+$1 = x^2 +y$\\
+$2 = x^2 +y$\\
+
+Solving for $y$ and graphing the equations gives you the contour map of a parabolic shape starting at $-2$ and moving up to $2$.\\\\
+
+\paragraph{2.0}\textbf{Partial Derivatives}\\
+
+The partial deriveative of a function $z = f(x,y)$ with respect $x$ is the derivative of the function when $y$ is held as a constant.\\
+
+$f_x(x_0,y_0) = \frac{d}{dx}[f(x, y_0)]$\\
+
+
+The same is true when $x$ is held constant to $y$.\\
+
+$f_y(x_0,y_0) = \frac{d}{dx}[f(x_0, y)]$\\
+
+\textbf{Theorem:} if $f$ is a function of two variables and $f_{xy}$ and $f_{yx}$ are continious on some open dist then $f_{xy}=f_{yx}$ on that disk.\\
+
+\paragraph{2.1}\textbf{Differentialbility}
+
+A function $f$ of two variables is differentiable at $(x_0, y_0)$ provided $f_x(x_0, y_0)$ and $f_y(x_0, y_0)$ both exist and \\
+
+$\lim_{( \Delta x, \Delta y) \to (0, 0)} \frac{\delta f - f_x(x_0, y_0)\Delta x - f_y(x_0, y_0)\Delta y}{\sqrt{(\Delta x)^2 + (\Delta y)^2}} = 0$\\\\
+
+\textbf{Theorem: } if a function is differentiable at a point it is continuous at that point.\\
+
+\textbf{Theorem: } if all first order patial derivatives of $f$ exist and are continuous at a point, then $f$ is differentiable at that point.\\\\
+
+
+
+\textbf{Total differential of $z$}\\
+$dz = f_x(x_0, y_0)dx + f_y(x_0, y_0)dy$\\
+
+The three coord version is as expected.\\
+
+\textbf{Local linear approximation}\\
+$L(x, y) = f(x_0, y_0) + f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)$\\
+
+
+\textbf{Approximating Error With Differentials}\\
+If $A_1=\frac{1}{2}absin \theta$ and the error in $a=\Delta a$ in $b= \Delta b$ in $\theta = \Delta \theta$
+Then if $A_2 = \frac{1}{2}(a + \Delta a)(b + \Delta b)sin(\theta + \Delta \theta)$ Then the error in $A_1 = \Delta A_1 = A_1 - A_2$.\\\\
+\paragraph{2.2}\textbf{Chain Rule}\\
+
+\textbf{Chain Rule Theorem}\\
+
+If $x$ and $y$ are differentiable functions at$t$ and if $z = f(x,y)$ is differentiable at $(x, y)$; then $z$ is differentiable at $t$.\\
+
+$\frac{dz}{dt}= \frac{dz}{dx}\frac{dx}{dt}+\frac{dz}{dy}\frac{dy}{dt}$\\
+
+Similarly for three variable functions.\\
+
+$\frac{dw}{dt}= \frac{dw}{dx}\frac{dx}{dt}+\frac{dw}{dy}\frac{dy}{dt}+\frac{dw}{dz}\frac{dz}{dt}$\\
+
+\textbf{Implicit Differentition}\\
+
+if $f(x,y)=c$ is defined implicity as a differentiable function of $x$ then.\\
+$\frac{dy}{dx} = -\frac{df}{dy}\frac{\partial y}{\partial x}$\\
+
+if the equation $f(x,y,z) = c$ is define $z$ implicitly as a differentiable frunction of $x,y$ and if $\partial z \ne 0$ then,\\
+
+$\frac{\partial z}{\partial x} = -\frac{\partial f/ \partial x}{\partial f / \partial z}$ and $\frac{\partial z}{\partial y} = -\frac{\partial f/ \partial y}{\partial f / \partial z}$.\\
+
+
+
+\paragraph{2.3}\textbf{Direction Vectors}\\
+
+if $f(x,y)$ is a function of $x$ and $y$ and $u$ is a unit vector, then the directional derivative of $f$ in the direction fo $u$ at $(x_0, y_0)$ is denoted by $D_uf(x_0, y_0)$.\\
+
+it is defined by $$D_uf(x_0,y_0) = \frac{d}{ds}[f(x_0 + su_1, y_0+su_2)]_{s=0}$$
+
+The definition of the directional derivative in 3 variables is similar.\\
+ $$D_uf(x_0,y_0) = \frac{d}{ds}[f(x_0 + su_1, y_0+su_2, z_0 + su_3)]_{s=0}$$
+
+
+if a function $f(x,y)$ is dirrentiables at a point and $u$ is a unit vector then the directional derivative exists and is given by.\\
+$$ D_uf(x_0,y_0)=f_x(x_0,y_0)u_1 + f_y(x_0, y_0)u_2$$
+
+The definition for the 3 variables is similar just add $z$
+
+The directional derivative can also be expressed in the form of a dot product. Tahat is the vector composed $(f_x(x,y), f_y(x,y)) \dot u$ $u$ being the unit vector.\\
+
+the gradient of $f$ is defined as a function that yields the component vector above.\\
+
+$\nabla f(x,y) = f_x(x, y)i + f_y(x,y)j$ \\
+
+Identicle for 3 vars just add $z$\\
+
+Thus another definition of the direction vector is.\\
+$D_u f(x_0,y_0) = \nabla f(x_0,y_0) \dot u$\\
+
+The gradient is super important to finding maximum slopes of surfaces and I am sure will come up later in find the maxima and minima of multivariable functions.\\
+
+At $(x, y)$ the surface $z=f(x,y)$ has its maximum slope in the direction of the gradient. This max is $||\nabla f(x,y)||$.\\
+
+
+At $(x, y)$ the surface $z=f(x,y)$ has its minimum slope in the direction of the gradient. This min is $-||\nabla f(x,y)||$.\\
+
+If $\nabla f = 0$ at $P$ then the value of all directional derivatives at $P$ are zero.\\
+
+
+Important! Gradients are normal to level curves.\\
+
+\textbf{Theorem:} Assume that $f(x,y)$ has continuous first order partials in an open disk centered at $(x_0, y_0)$ and that $\nabla f(x_0, y_0) \ne 0$ then $\nabla f$ is normal to the level curve of $f$ through $(x_0, y_0)$.\\
+
+\paragraph{2.4}\textbf{Tangent Planes and Normal Vectors}\\
+
+Assume $F(x,y,z)$ has a continious first-order partial $P_0(x_0,y_0,z_0)$ is a point on a level surface $S: F(x,y,z) = c$. If $\nabla F(x_0,y_0,z_0) \ne 0$ , then $n=\nabla F(x_0,y_),z_0)$ is a normal vector to $S$ at $P_0$ and the tangent plane to $S$ at $P_0$ is the plane with equation.\\
+
+$$F_x(x_0,y_0,z_0)(x - x_0) + F_y(x_0,y_0,z_0)(y-y_0) + F_z(x_0,y_0,z_0)(z-z_0)=0$$.\\ 
+
+In other words the normal vector of the plane is the gradient vector.\\
+
+Paragraph{2.5}\textbf{Maxima and Minima}\\
+
+\textbf{Extreme Value Theorem:} if $f(x,y)$ is continious on a closed and bounded $R$ then $f$ has both an absol.ute maximum and an absolute minimum on $R$.\\
+
+\textbf{Theorem: }The Second partials test. Let $f$ be a function of two variables with continious second-order derivatives in some disk centered at a critical point $(x_0,y_0)$, and let.\\
+
+$D = f_{xx}(x_0, y_0)f_{yy}(x_0,y_0) - f^2_{xy}(x_0,y_0)$\\
+
+(a) $D > 0$ and $f_{xx}(x_0,y_0) > 0$ then $f$ has a relative minimum at $(x_0,y_0)$\\
+
+(b) if $D > 0$ and $f_{xx}(x_0,y_0) < 0$, then $f$ has a relative maximum at ($x_0, y_0)$.\\
+
+(c) if $D < 0$, then $f$ has a saddle point at $(x_0, y_0)$.\\
+
+(c) if $D = 0$, then $f$ has no conclusion.\\
+
+A point $(x_0, y_0)$ in the domain of a function $f(x,y)$ is called a critical point of the function if $f_x(x_0, y_0) = 0$ and $f_y(x_0, y_0) = 0$ or if one or both of the partials are undefined at $(x_0, y_0)$.\\\\
+
+\paragraph{2.5} \textbf{Double Integrals}\\
+
+
+If $f$ is a function of two variables that is continuous and nonnegative on a region $R$ in the $xy$ plane then the volume of the solid enclosed between the surface $z = f(x,y)$ and the region $R$ is defined by\\
+
+$V = \lim_{n \to + \infty} \sum^n_{k=1}f(x^*_k, y^*_k) \Delta A_k$.\\
+
+$n \to \infty$ indicates the process of increasing number of sub rectangles of the rectangel enclosing $R$ in such a way that both the lengths and the widths of the subrectangles approach zero.\\
+
+The ideas of net signed volume still hold for functions with positive and negative values on a closed interval.\\
+
+
+The double integral can defined as the formula above and the volume on that interval can be defined as the result of a double integral.\\
+
+$V = \int\int_R f(x,y) dA$\\
+
+We can evalulate a double integral by evaluating two partial integrals.\\
+
+$\int_a^b\int_c^d f(x,y)dy dx = \int_a^b[\int_c^d f(x,y)dy] dx$\\
+
+Reverse order is possible and equivalent. Choose whichever is most convientent.\\
+
+if $R$ is rectangle defined by $a \le x \le b, c \le y \le d$\\
+
+if $f(x,y)$ is continuous on this rectangle then the area can be computer evaluating the double integral with the given ranges of $x$ and $y$.\\
+
+\paragraph{2.6} \textbf{Double Integrals Over non-rectangular Areas}\\
+
+There are two types of regions we will evaluate double integrals over.\\
+
+A type I region is bounded on the left and the right by vertical lines $x=a$ and $x=b$ and is bounded below and above by continuous curves $y=g_1(x)$ 
+and $y=g_2(x)$, where $g_1(x) \le g_2(x)$ for $a \le x \le b$.\\\\
+
+A type II region is bounded below and above by horizontal lines $y=c$ and $y=d$ and is bounded on the left
+and right by continuous curves $x=h_1(y)$ and $x=h_2(y)$ such that $h_1(y) \le h_2(y)$ for $c \le y \le d$.\\\\
+
+
+For both types the multivariable function must be continuous on the interval.\\
+
+\textbf{Type I Double Ints}\\
+$\int \int_R f(x,y)dA = \int_a^b\int_{g_1(x)}^{g_2(x)}f(x,y)dydx$\\
+
+\textbf{Type II Double Ints}\\
+$\int\int_R f(x,y)dA = \int_c^d\int_{h_1(y)}^{h_2(y)}f(x,y)dxdy$\\
+
+\textbf{TLDR: } If your dealing with a type I you integrate with respect $y$ then $x$. If dealing with a type II its the oppposite order.\\
+
+ you are integrating with respect to $x$ then$ y$ think about going from left curve to right curve.\\
+ If you are integrating with respect to $y$ then $x$ think about going from lower curve to higher curve.\\
+
+
+\paragraph{2.7} Double Integrals in Polar Coordinates\\\\
+
+If $R$ is a simple polar region boundedby the rays $\theta = \alpha$ and $\theta = \beta$ and the curves
+$r = r_1(\theta)$ and $r = r_2(\theta)$ and if $f(r, \theta)$ is continious on $R$ then $\int\int_R f(r, \theta)dA = \int_{\alpha}^{\beta} \int_{r_1(\theta)^{r_2(\theta)} } f(r, \theta)rdrd\theta$\\\\
+
+The area formula for polar curves using double integrals is similar to the rectantangular one.\\\\
+
+Area $= \int\int_R dA$\\
+
+
+To convert rectangular to polar coordinates recall that.\\
+
+$x = rcos(\theta)$ and $y = rsin(\theta)$\\
+
+Dont Forget $dxdy = rdrd\theta$ not $drd\theta$.\\
+
+
+\paragraph{2.8} Triple Integrals\\\\
+
+\textbf{Fubini's Theorem : let $G$ be the rectangular box defined by}\\
+
+$a \le x \le b, c \le y \le d, k \le z \le l$\\
+
+If $f$ is continuous on the region $G$, then
+
+$\int\int\int_G f(x, y, z)dV = \int_a^b\int_c^d\int_k^l f(x, y, z)dzdydx$\\
+
+Moreover, the iterated integral on the right can be replaced with any of the five other
+iterated integrals that result by altering the order of integration.\\
+
+\textbf{Evalulation of Triple Ints Over Non Rectuangular Regions}: Let $G$ be a simple $xy$-solid with upper surface $z=g_2(x, y)$ and lower surface
+$z = g_1(x ,y)$, and let $R$ be the projection of $G$ on the $xy$-plane. If $f(x, y, z)$ is continuous on $G$, then
+
+$\int\int\int_G f(x, y, z)dV = \int\int[\int_{g_1(x,y)}^{g_2(x,y)} f(x, y, z)dz] dA$\\\\
+
+
+\paragraph{3.0} \textbf{Triple Integrals in Cylindrical and Sphereical}\\
+
+\textbf{Cylindrical}: $\int\int_G\int f(r, \theta, z)dV = \int\int\int f(r, \theta, z)rdzdrd\theta$\\
+
+Let $G$ be a solid region whose upper surface has the equation $z = g_2(r, \theta)$ and whose lower surface has the equation $z = g_1(r, \theta)$ In
+Cylindrical coordinates. If the projection of the solid on the $xy$-plane is a simple polar region $R$ and if 
+$f(r, \theta, z)$ is continous on $G$ then
+\textbf{Cylindrical}: $\int\int_G\int f(r, \theta, z)dV = \int_{\theta}^{\theta}\int_{r_1(\theta)}^{r_2(\theta)}\int_{g_1(r, \theta)}^{g_2(r, \theta)} f(r, \theta, z)rdzdrd\theta$\\
+This formula is meant for the figure 14.6.4 in the book but is general enough to be worth remembering.
+The order can be changed however you like.
+
+
+\textbf{Sphereical}\\
+
+Recall spherical equations are of the form $\rho, \theta, \phi$ 
+
+You can imagine a volume described by spherical coordinates as the area cut by a few surfaces.
+
+$\rho$ describes the sphere (particulary its radius). When $\rho$ ranges on the interval $[\rho_1, \rho_2]$ you can imagine a hollow sphere with a thickness of $\rho_2 - \rho_1$\\\\
+
+$\theta$ describes a plane hinging on the $z$ axis. When $\theta$ ranges in the interval $[\theta_1, \theta_2]$ it is cutting a wedge in the $xy$-plane. Thus it is cutting a wedge from the hollow sphere described by our $\rho$.\\\\
+
+$\phi$ is often described as a cone, but it can also be described as a plane sitting at a certain angle $\phi$ from the $z$-plane to the $xy$-plane. If you remeber that when $\phi = \frac{\pi}{2}$ it is in the $xy$-plane then the orientation should popout to you.
+So when $\phi$ ranges on the interval $[\phi_1, \phi_2]$ it cuts a slice from the shape we have from our previous angles. The analogy here is weird, but basically
+imagine you lay our shape flat on the $xy$-plane with $z$-axis being replaced by the $y$. Then cut the hollow slice sphere from $[\phi_1, \phi_2]$ that would be the final shape given by our sphereical coordinates
+and its volume would be calclulated you by a spherical triple int.\\\\
+
+\textbf{Sphereical Integral Def:} $\int\int_G\int f(\rho, \theta, \phi)dV = \int\int\int f(\rho, \theta, \phi)\rho^2sin\phi d\rho d\phi d\theta$\\\\
+
+Rectuangular Triple Integrals can be converted to sphereical by recalling the following equations.\\
+$x = \rho sin\phi cos \theta$\\
+$y = \rho sin \phi sin \theta$\\
+$z = \rho cos\phi$\\
+
+${\int\int\int}_G f(x, y, z)dV = \int\int\int f(\rho sin \phi, \rho sin \theta, \rho cos \phi)\rho^2 sin\phi d\rho d\phi d\theta$\\
+
+\paragraph{3.1} \textbf{The Jacobian}\\
+
+The Jacobian is a way to extend variable substituition into multivariable integrals. It does this by defining a transformation $u = u(x,y)$ and $v = v(x,y)$ that maps coordinates in the $xy$-plane
+to the $uv$ plane. This transformation is invertible so $(u,v)$ coordinates can be taken back to $(x,y)$ coordinates.\\\\
+
+\textbf{Definition of the Jacobian}\\
+
+if $T$ is the transformation from the $uv$-plane to the $xy$-plane defined by $x=x(u, v)$ and $y = y(u, v)$, then the Jacobian of $T$ is denoted by $J(u, v)$ or $frac{\partial(x,y)}{\partial(u, v)}$ and is defined by\\
+
+$J(u, v) = \frac{\partial(x,y)}{\partial(u, v)} = \begin{vmatrix} \frac{\partial x}{\partial u} &&  \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} &&  \frac{\partial y}{\partial v}\\ \end{vmatrix} = \frac{\partial x}{\partial u}\frac{\partial y}{\partial v} -  \frac{\partial y}{\partial u}\frac{\partial x}{\partial v}$\\\\
+
+
+\textbf{Change of Variables for Double Integrals formula}\\\\ $\int\int_R f(x,y)dA_{xy} = \int\int_S f(x(u,v), y(u,v)) |\frac{\partial(x,y)}{\partial(u,v)}|dA_{uv}$\\\\
+
+
+\textbf{Change of Variables for Triple Integrals formula}\\\\ $\int\int_R f(x,y, z)dA_{xyz} = \int\int_S f(x(u,v, w), y(u,v, w), z(u, v, w)) |\frac{\partial(x,y, z)}{\partial(u,v, w)}|dA_{uvw}$\\\\
+
+Triple integral formula uses the triple determinant. Taking the partial of each $x, y, z$ with respect to each $u, v, w$ for $9$ entries in the determinant.\\\\
+
+The Jacobian with respect to $x$ and $y$ is in the recipricol of the Jacobian with respect to $u$ and $v$\\
+
+$J(x,y) = \begin{vmatrix}
+	u_x && u_y \\
+	v_x && v_y \\
+\end{vmatrix}\\$
+
+$J(u, v) = \frac{1}{J(x,y)}$
+
+
+
+
+
+
+\end{document}
+
+

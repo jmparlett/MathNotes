@@ -1,0 +1,38 @@
+\documentclass[14pt]{extreport}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.17} 
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Elementary Number Theory Notes}
+\author{Jonathan Parlett}
+
+
+
+\begin{document}
+
+\paragraph{1.0} \textbf{Introduction}\\\\
+
+\textbf{Well Ordering Principle}: Every nonempty set $S$ of non-negative integers contains a least element; that is there is osme integer $a$ in $S$ such that $a \le b$ for all $b$'s belonging to $S$\\\\
+
+\textbf{Theorem 1.1:} Archimedian property. If $a$ and $b$ are any positive integers, then there exists a positive integer $n$ such that $na \ge b$.\\\\
+
+\textbf{Theorem 1.2} First Principle of Finite Induction. Let $S$ be the set of positive integers.\\
+    (a) The integer 1 belongs to $S$\\
+    (b) Whenever the integer $k$ is in $S$, the next integer $k+1$ must also be in $S$\\\\
+
+\textbf{Theorem 1.2} Second Principle of Finite Induction. Let $S$ be the set of positive integers.\\
+    (a) The integer 1 belongs to $S$\\
+    (b') If $k$ is a positive integer such that $1, 2, \cdots ,k$ for $k \in S$, then $k+1$ must also be in $S$.\\\\
+
+
+    Thus $S$ is the set of all positive integers.\\
+
+\end{document}

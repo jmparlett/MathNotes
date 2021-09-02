@@ -1,0 +1,299 @@
+\documentclass[14pt]{extreport}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.17} 
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Calculus II Notes}
+\author{Jonathan Parlett}
+
+
+
+\begin{document}
+
+
+\paragraph{1.0}
+	\textit{Area as Limit/ Sigma}
+\\\\
+Consider doing all even numbered problems on
+optional home work. 100% completion isnt that important
+\\\\
+Final exam is cumalative, midterms are not. Exams will be multiple choice or shortanswer.
+\\\\
+Midterms calculator is allowed.
+\\\\\\
+\textbf{Sigma Notation}\\\\
+$\sum$ denotes summation. $1 + \frac{1}{2}+\frac{1}{3}$ etc.
+\\\\
+$\sum_{k=1}^{4} 2k=2+4+6+8$
+\\\\
+$\sum_{k}^{n} f(k)$ Denotes some function operating on the range of values ranging from
+$k \to n$ and summing the results.
+\\\\
+\textbf{Closed Formulas}
+\\\\
+$\sum_{k}^{n} c= n*c$ for constant $c$\\\\
+$\sum_{k}^{n} k= \frac{(n(n+1)}{2}$\\\\
+$\sum_{k}^{n} k^2= \frac{(n(n+1)(2n+1)}{6}$\\\\
+$\sum_{k}^{n} k^3= [\frac{(n(n+1)}{2}]^2$\\\\
+\\\\
+\textbf{Addition and Subtraction}
+\\\\
+$\sum_{k}^{n} a_k+b_k=\sum_{k}^{n} a_k + \sum_{k}^{n} b_k$\\\\
+$\sum_{k}^{n} a_k-b_k=\sum_{k}^{n} a_k - \sum_{k}^{n} b_k$\\\\
+
+\textbf{limits of closed forms}\\\\
+$\lim n \to \infty \frac{1}{n} \sum_{k=1}^{n} c = c$\\\\
+$\lim n \to \infty \frac{1}{n^2} \sum_{k=1}^{n} k = \frac{1}{2}$\\\\
+$\lim n \to \infty \frac{1}{n^3} \sum_{k=1}^{n} k^2 = \frac{1}{3}$\\\\
+$\lim n \to \infty \frac{1}{n^4} \sum_{k=1}^{n} k^3 = \frac{1}{4}$\\\\
+
+\textbf{Reimann Sum Standard Form}\\\\
+$\sum_{k=1}^{n}f(a+\Delta x)\Delta x$\\\\
+$\Delta x = \frac{b-a}{n}$ on interval $[a, b]$\\\\
+The limit of a Reimann Sum as $n$ approaches infinity is equal to the area under the graph on a given interval $[a, b]$.\\
+These problems will usally deal with rewriting the sum using the given rulse for addition subtraction and factor to transition to
+a closed form and take the. Use all tools available just because the solution isnt clean doesnt mean its wrong.\\\\
+
+\paragraph{1.1} \textbf{Definite integral}\\\\
+
+The definition of the integral is the limit of reimann sum.\\
+$$\lim max \Delta x_k \to 0 \sum_{k}^{n} f(x_{k}^* \Delta x_k = \int_{a}^{b} f(x)dx$$\\
+
+An integral can also be interpreted as the net signed area under a graph. \textbf{Note:} if the area under the graph is below the $x$ axis it is negative.\\
+
+Net signed area = $\int_{a}^{b} f(x)dx$\\\\
+
+There are specific instances where you can solve an integral looking at the geometric relation.\\
+
+$\int_{0}^{1} \sqrt{x-x^2}dx$ can be interpreted as $y^2+x^2=1$ this is a unit circle with area $\pi$.  The function in the derivitive tells us to account for only the non-negative square roots on the interal$[0,1]$ this is of course a quarter of the unit circle of area $\pi$ or $\frac{\pi}{4}$\\\\
+
+The rules for constants, addition, and subtraction that apply to summations also apply to definite integrals.\\\\
+
+\textbf{Additional Properties}\\\\
+
+If the interval is $[a,a]$ then the integral is equal to $0$.\\
+$$\int_{a}^{a} f(x)dx = 0$$\\
+
+The reverse of an integral is equal to its negation.\\
+$$\int_{b}^{a} f(x)dx = -\int_{a}^{b} f(x)dx$$\\
+
+You can insert a constant $c$ such that $a\leq c \leq b$ to seperate an integral in multiple parts.\\
+
+$$\int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx$$\\
+
+A few of these properties can be demonstrated by the following.\\
+
+Given that $\int_{-2}^{1} f(x)dx = 2$ and $\int_{1}^{3} f(x)dx = -6$.\\\\
+
+Then $\int_{3}^{-2} f(x)dx = \int_{1}^{-2} f(x)dx + \int_{3}^{1} f(x)dx = 4$\\\\
+
+\paragraph{1.2} \textbf{Indefinite Integral}\\\\
+
+
+\paragraph{1.3} \textbf{Fundamental Theorem of Calculus}\\\\
+
+If $f(x)$ is cont on $[a,b]$ then the Fundamental Theorem of Calculus may be applied.\\\\
+$$\int_{a}^{b} f(x)dx = F(x) |_{a}^{b} = F(b) - F(a) $$\\
+
+\textbf{FTC II}\\\\
+If $a$ is fixed and $b=x$ then the derivative of the indefinite integral is $f(x)$.\\
+$\frac{d}{dx}[\int_{a}^{x} f(t)dt] = f(x)$\\\\
+
+\textbf{Chain Rule}\\
+$\frac{d}{dx}[\int_{a}^{g(x)} f(t)dt] = f(g(x))g'(x)$\\\\
+
+\textbf{Reverse product rule U Substitution}\\
+You must choose a $u$ for $u=g(x)$ substutute $u$ into the function and replace $dx$ with $du=g'(x)*dx$\\$\int f'(g(x))g'(x)dx = \frac{f(g(x)}{g'(x)}$\\\\
+$u = g(x)$ and $\frac{du}{dx}=g'(x)$ therefore $du = g'(x)dx$\\\\
+$\int f'(u)du = f(u)+C$ then sub out $u$ result = $f(g(x)) + C$\\\\
+
+
+\paragraph{1.4} \textbf{Area between to curves}\\\\
+
+$\lim_{\Delta x \to 0} \sum [f(x_{k}^{*} - g(x_{k}^{*}] \Delta X_k=$ area between two curves.\\
+This limit is equal to: $$  \int_{a}^{b} (f(x) - g(x))dx$$\\\\
+
+Step 1: set equations equal to each other and find the intercepts\\
+Step 2: sketch the graph\\
+Step 3: classify curve as either 'Upper, Lower'(integrate with respect to x) type or 'Right, Left'(integrate with respect to y) type.\\\\
+
+For a solid rotated the x axis.\\\\
+$\pi \int_{a}^{b} f(x)^2dx$\\
+
+$\pi \int_{a}^{b} f(y)^2dy$\\\\
+
+For a hallow solid roated about the x or y axis.
+
+$\pi \int_{a}^{b} f(x)^2 -g(x)^2dx$\\\\
+
+$\pi \int_{a}^{b} f(y)^2 -g(y)^2dy$\\\\
+
+For hallow shapes find area formula for inner and subtract it from outer.\\
+If we are using slicing the shape will either be a donut (a hallow shape) or a circle (solid shape)\\\\
+
+\paragraph{1.5} \textbf{Arc length, Work problems, Spring Problems}\\\\
+$L$ = the length of a curve on a given continious interval.
+
+$L = \int_{a}^{b} \sqrt{1+f(x)^2}dx$\\\\
+
+\textbf{Work problems}
+Work = Force * Distance; $W = F * D$\\\\
+Work integral $W = \int_{a}^{b} f(x)dx$ Where f(x) is force at a given distance and dx is distance.\\
+force = weight. For raising problems force = density of line at given x + weight of object.\\\\
+
+\textbf{spring problems}
+Hooks law states: $F(x) = k * x$ where $k$ is some spring constant and $x$ is some distance.\\\\
+
+\textbf{Pumping problems}\\
+volume = area of shape at x\\
+Force = volume * density\\
+Distance = (height - x)\\\\
+
+\textbf{Exponetial function for derivatives}\\\\
+$\int a^x dx = \frac{a^x}{ln a} + C$\\\\
+
+\textbf{Integration By Parts (Reverse Product Rule)}\\\\
+$\frac{d}{dx}[ f(x)g(x) ] = f'(x)g(x) + g'(x)f(x)$ so $\int f(x)g'(x)$ is equal to $f(x)g(x) - \int f'(x)g(x)$.\\
+setting $u=f(x)$, $dv=g'(x)$, $v=g(x)$, $du=f'(x)$ gives us the complete theroem for Integration by Parts.\\
+$$\int udv = uv - \int vdu$$\\
+
+\textbf{Partial Fraction Decomposition}
+for integrals of rational functions $R(x) = \frac{P(x)}{Q(x)}$ where degree $P(x)$ < degree $Q(x)$.\\
+decompose the denominator in polynomials and set new fraction equivelent to $\frac{A}{Q(x)_1}+\frac{B}{Q(x)_2}$\\
+$$\frac{P(x)}{Q(x)_1 * Q(x)_2} = \frac{A}{Q(x)_1}+\frac{B}{Q(x)_2}$$\\
+Then solve for each term by plugging in the zeroes of each coffecient polynomial term.\\\\
+
+When $Q(x)^n$ and $n$ greater then one set up terms A-Z for $[n,1]$. For example.\\
+$$\frac{P(x)}{Q(x)^3} = \frac{A}{Q(x)} + \frac{B}{Q(x)^2} + \frac{C}{Q(x)^3}$$\\
+Then solve using the method above.\\\\
+
+When degree of $P(x) >$ degree of $Q(x)$ we must perform polynomial division.\\
+Divide $P(x)$ by $Q(x)$ using polynomial division from algebra.\\\\
+
+\textbf{Improper Integrals}\\
+Given an integral where $a$ or $b$ = $\infty$ and there is no discontinuity substitute $t$ for infinity and take the limit of the integral as $t$ approaches infinity.\\\\
+
+$\int_{a}^{\infty} f(x)dx = \lim_{t \to \infty} [\int_{a}^{t} f(x)dx]$\\\\
+
+Given a discontinuity at either end of the interval (and $a$ or $b$!= $\infty$) use the same procedure as above, but take the limit as t approaches the discontinuity.\\
+$\int_{a}^{0} \frac{1}{x^2}dx = \lim_{t \to 0} [\int_{a}^{t} \frac{1}{x^2}dx]$\\\\
+
+given a discontinuity in the middle of the interval such as $\frac{1}{1-x}$ split the interval on the discontinuity evaluate then take the interval.\\\\
+
+$\int_{a}^{b} \frac{1}{1-x^2}dx = \lim_{t \to 1} [\int_{a}^{t} \frac{1}{1-x^2}dx] ; \lim_{t \to 1} [\int_{a}^{t} \frac{1}{1-x^2}dx]$\\\\
+
+If the limit of an integral approaches a finite value it is said to converge or to be convergent if it does not approach a finite value (such as any infinity) it is said to be divergent or to diverge. In the case where you must split an integral if either of the split inegrals diverge the entire integral is divergent.
+
+when an integral involves both discontinuity and infinity you must use a combination of the above techniques.\\\\\\
+
+\paragraph{1.6}\textbf{Integration of Trig functions}\\\\
+
+The proof for the identities below is using integration by by parts to differentiate the expressions it is long and complicated.\\\\
+
+$$\int sin^n(x)dx = -\frac{sin^{n-1}(x)cos(x)}{n} + \frac{n-1}{n} \int sin^{n-2}(x)dx$$\\
+To find derivitives of any power of sin apply the above formula as many times as needed.\\\\
+
+$$\int cos^n(x)dx = \frac{cos^{n-1}(x)sin(x)}{n} + \frac{n-1}{n} \int cos^{n-2}(x)dx$$\\
+To find derivitives of any power of cos apply the above formula as many times as needed.\\\\
+
+\textbf{Useful trig identities} (not in calc I notes)\\\\
+
+\textbf{negative identities (because I keep confusing them)}\\\\
+$sin(-x) = -sin(x)$\\
+$cos(-x) = cos(x)$\\
+$tan(-x) = -tan(x)$\\
+$csc(-x) = -csc(x)$\\
+$sec(-x) = sec(x)$\\
+$cot(-x) = -cot(x)$\\\\
+
+\textbf{Sum to Product identities}\\
+$$sin(a)sin(b) = \frac{1}{2}[cos(a-b) - cos(a+b)]$$\\
+
+$$cos(a)cos(b) = \frac{1}{2}[cos(a-b) + cos(a+b)]$$\\
+
+$$sin(a)cos(b) = \frac{1}{2}[sin(a-b) + sin(a+b)]$$\\
+
+\textbf{Double Angle identities}\\
+
+$$sin^2(A) \frac{1-cos(2A)}{2}$$\\
+
+$$cos^2(A) \frac{1+cos(2A)}{2}$$\\
+
+$$tan^2(A) \frac{1-cos(2A)}{1+cos(2A)}$$\\
+
+$$sin(\frac{A}{2}) +/- \sqrt{\frac{1-cos(A)}{2}}$$\\
+
+$$cos(\frac{A}{2}) +/- \sqrt{\frac{1+cos(A)}{2}}$$\\
+
+$$tan(\frac{A}{2}) +/- \sqrt{\frac{1-cos(A)}{1+cos(A)}}$$\\
+
+\paragraph{1.7}\textbf{Parametric equations}\\\\
+
+Parametric equations are used to plot trajectory of graphs or real world objects such as particles.\\
+in paramentric equations $x$ and $y$ are related by $t$ such that $x = x(t)$ and $y=y(t)$. $t$ determines trajectory such as counterclockwise, clockwise, forward or backward.
+
+Derivative of a parametric equation is given by $\frac{y'(t)}{x'(t)}$\\
+The second derivative is given by the derivative if the first derivative divided by $x'(t)$\\
+$$ \frac{\frac{d\frac{y'(t)}{x'(t)}}{dt}}{x'(t)}\\$$
+Graph and find tracjectory by determining behavior as $t$ increases and decreases.\\\\
+ 
+Arc length of parametric curve is given by:\\
+$$ \int \sqrt{y'(t)^2 + x'(t)^2} dt$$ \\\\
+
+\paragraph{1.8}\textbf{Polar Coordinates}\\\\
+
+Polar coordinates are defined as $(r, \theta)$ where $r$ and $\theta$ are real numbers.\\\\
+$(r, \theta) = (r, \theta + 2\pi * k)$ where $k$ is a real number possibly 0$\\\\
+
+\textbf{Polar and x,y plane relationships}\\
+$r^2 = x^2 + y^2$\\
+$tan\theta = \frac{y}{x}$ when $x\neq 0$ or $rsin(\theta) = y$ and $rcos(\theta) = x$\\
+
+
+If polar equation is a line or ray then the above relation ships alone can be used to determine the line.\\\\
+
+\textbf{Circle Phams}\\
+
+1. $r=a$ 2. $r=2acos(\theta)$ 3. $r=2asin(\theta)$\\\\
+
+1. $r=a$ describes a circle with radius $|a|$ centered about the origin. Dependent on angle and sin of $x$ this can be a half circle in any 2 of the available quadrants.\\
+
+2. $r=2acos(\theta)$ radius$=|a|$ center$=(a,0)$\\
+
+3. $r=2asin(\theta)$ radius$=|a|$ center$=(0,a)$\\
+
+Proof for these relationships can be found by multiplying both sides by $r$ are and making substituition into $r^2 = x^2 + y^2$ and completing the square.\\\\
+
+\textbf{Tangent lines to polar curves}\\\\
+$r = f(\theta)$ $r$ is a function of $\theta$\\
+$x = rcos(\theta) = f(\theta)cos(\theta)$\\
+$y = rsin(\theta) = f(\theta)sin(\theta)$\\\\
+
+This is a parametric equation related by $\theta$ thus the same rules of slopes and differentiaion apply to polar curves.\\\\
+
+\textbf{Cardioids}\\\\
+
+General form:
+	$a +/- acos(\theta)$ Horizontal Cardioid.\\
+	$a +/- asin(\theta)$ Vertical Cardioid.\\
+
+
+To sketch the graph of a cardioid consider these points.\\\\
+$\theta = 0$\\
+$\theta = \frac{\pi}{2}$\\
+$\theta = \pi$\\
+$\theta = \frac{3\pi}{2}$\\\\
+
+\textbf{Area / arc length polar curves}\\\\
+
+Area$= \int \frac{1}{2} r^2 d\theta$\\\\
+Arc length$= \int \sqrt{r^2 + (\frac{dr}{d\theta})^2} d\theta$\\\\
+\end{document}

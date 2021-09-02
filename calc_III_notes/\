@@ -1,0 +1,115 @@
+\documentclass[14pt]{extreport}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.17} 
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Calculus III Notes}
+\author{Jonathan Parlett}
+
+
+
+\begin{document}
+\paragraph{1.0}\textbf{Differential Equations}\\\\
+
+Differential equation: an equation containing one or more derivatives.\\
+Order of differential equation: the order of its highest derivative.\\\\
+
+\textbf{Eulars method}\\
+$y_1 = y_0 + f(x_0, y_0)*\Delta x$\\
+$y_2 = y_1 + f(x_1, y_1)*\Delta x$\\\\
+This process repeats for n approximations and can be described by the formula\\
+$y_{n+1} = y_n + \frac{dy}{dx}\Delta x$\\\\
+
+
+\textbf{Exponential Growth and Decay}\\\\
+growth $= \frac{dp}{dt} = kp$\\
+decay  $= \frac{dp}{dt} = -kp$\\
+where $t$ is time and $p$ is population.\\\\
+
+\textbf{Integrated Formulas}\\
+growth $= y = y_0 * e^{kt}$\\
+decay  $= y = y_0 * e^{-kt}$\\\\
+For decay problems if given $t_{1/2}$ then set $y=y_0*\frac{1}{2}$ and $t=t_{1/2}$ to solve for $k$\\
+
+Population growth $= \frac{dy}{dt} = k(1 - \frac{y}{L})y$\\
+Integrated Population growth $= y = \frac{y_0*L}{y_0 +(L-y_0)e^{-kt}}$\\\\
+
+\textbf{Newton Law of Cooling}\\\\
+$$T(t) = T_s + (T_0 -T_s)e^{-kt}$$
+The temp at time $t$ is equal to temp of surroundings + the initial temp - temp of surroundings
+time $e$ to the $-kt$ power.\\\\
+
+\textbf{Integrated Formula}\\\\
+$$\frac{dT}{dt} = k(T_s - T), k > 0$$\\\\
+
+\paragraph{1.1}\textbf{Integrating factors}\\\\
+
+a first order differential equation is said to linear if it is expresible in the form $\frac{dy}{dx} + p(x)y = q(x)$ if this is the case we can use the method of integrating factors to solve this problem.\\\\
+
+$$\mu = e^{\int p(x)dx}$$
+$$\frac{d}{dx}(\mu y)=\mu q(x)$$
+This gives us the result\\
+$$y = \frac{1}{\mu} * \int \mu*q(x)dx$$
+by rearranging a given equation into the linear format and calculating $\mu$ we can solve for $y$.
+
+\paragraph{1.2}\textbf{Increasing and Decreasing (Monotone) Sequences}\\\\
+\textbf{Theorem 9.2.3-4}\\
+if sequence ${a_n}$ is eventually increasing then either a or b is true.\\
+(a): There is a constant $M$, called an upper bound for the sequence, such that $a_n \leq M$
+for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \leq M$
+(b): No upper bound exists, in which case, $\lim_{n \to \infty} a_n = +\infty$.\\\\
+
+Likewise for decreasing sequences.\\
+(a): There is a constant $M$, called a lower bound for the sequence, such that $a_n \geq M$
+for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \geq  M$.
+(b): No lower bound exists, in which case, $\lim_{n \to \infty} a_n = -\infty$.\\\\
+
+\textbf{Monotone testing table}\\
+$a_{n+1} - a_{n} > 0$	$a_{n+1}/a_{n} > 1$	Strictly increasing\\
+$a_{n+1} - a_{n} < 0$	$a_{n+1}/a_{n} < 1$	Strictly decreasing\\
+$a_{n+1} - a_{n} \geq 0$	$a_{n+1}/a_{n} \geq 1$	increasing\\
+$a_{n+1} - a_{n} \leq 0$	$a_{n+1}/a_{n} \leq 1$	decreasing\\\\
+
+
+\paragraph{1.3}\textbf{Convergence Tests}\\\\
+
+$u_k$ is defined as the "general" term of a series. For example in the harmonic series. $\sum_{k=1}^{\infty} \frac{1}{k}$, $u_k=\frac{1}{k}$.\\\\
+
+\textbf{Theorem 1}\\
+if $u_k \ne 0$ as $k$ approaches infinity then the series diverges. Else the series may diverge or converge. $\lim_{k \to \infty} \ne 0$.\\\\
+
+\textbf{Theorem 2}\\
+if $\sum u_k$ and $\sum v_k$ are convergent series then thier sum and difference are also convergent series. $\sum u_k - v_k$ and $\sum u_k + v_k$.\\\\
+
+Thier sums and differences are also related.
+$\sum u_k - v_k$ = $\sum u_k - \sum v_k$\\
+
+$\sum u_k + v_k$ = $\sum u_k + \sum v_k$\\\\
+
+
+\textbf{The integral Test}\\\\
+if $u_k$ is a decreasing function on $[a, +\infty]$ then. $\sum_{k=1}^{\infty} u_k$ and $\int_{a}^{\infty} u_k$ both converge or diverge.\\\\
+
+
+\textbf{P-series}\\\\
+A p-series is a series of the form $\sum \frac{1}{k^p}$. The harmonic series is one such series where $p=1$.\\\\
+
+If $p > 1$ the series converges, otherwise it diverges. 
+
+
+
+
+
+
+
+
+
+\end{document}

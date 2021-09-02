@@ -1,0 +1,35 @@
+\documentclass[14pt]{extreport}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.17} 
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Mafs tings}
+\author{Jonathan Parlett}
+
+
+
+\begin{document}
+\textbf{Multiples in an Interval}\\
+Given an interval $[l, h]$ and a whole number $a$ such that $a > 1$ and given that $r = a - (l\%a)$
+there exist a multiple of $a$ on the interval if $l + r \le h$.\\\\
+
+\textbf{If $a < l$}\\
+then $r = a - l\%a$ which is the distance from $l$ to next multiple of $a$ then we can simply check if this is within the interval.
+
+\textbf{If $a > l$}\\
+then it suffices to check if $a < h$ and $l + r = l + a - l$ since $l\%a = l$ thus $l + r \le h$ simplifies to $a < h$.
+
+This does not account for endpoints of the interval however so this formula only works for open intervals.
+
+\textbf{If $a = l$}\\
+
+\textbf{If $a = h$}\\
+\end{document}

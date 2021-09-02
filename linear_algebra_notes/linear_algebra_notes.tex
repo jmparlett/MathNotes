@@ -1,0 +1,724 @@
+\documentclass[14pt]{extreport}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.17} 
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+% See the ``Article customise'' template for come common customisations
+
+\title{Linear Algebra Notes}
+\author{Jonathan Parlett}
+
+
+
+\begin{document}
+
+\paragraph{1.1}\textbf{Systems of Linear equations}\\\\
+
+A linear equation is an equation that follows the form $a_1x_1 + a_2x_2 + a_3x_3 ... a_nx_n$ where $a_n$ is a constant and $x_n$ is a variable.\\
+
+multiple linear equations in a system can be represent by a matrix.
+
+$
+x_1 + 2x_2 -5x_3\\
+2x_1 + 3x_2 x_3\\
+-x_1 + 0x_2 x_3\\
+= 
+\begin{matrix}
+ 1 & 2 & -5\\
+ 2 & 3 & 1\\
+ -1 & 0 & 1\\
+ \end{matrix}
+$
+\\
+
+There is a row for each each equation and a column for each variable. If $m =$ number of equations and $n=$ number of variables then is matrix is of size $m* n$.
+
+A system is has either\\
+1. no solution (inconsistent)\\
+2. one solution (consistent)\\
+3. infinite solutions (consistent)\\
+
+
+the coefficient matrix is the matrix that contains only the coefficients. The augmented matrix contains coefficients and solutions.
+
+\textbf{Row Operations}\\
+1. Replacement: replace a row by the sum of itself and the multiple of another row.\\
+2. Interchange: swap two rows\\
+3. Scaling: multiple all entries of a row by a nonzero constant.\\
+
+Uniqueness of a solution: if a variable has only one possible value ( the equation has one solution) then there is a unique solution. If there is a row of all zeros in a matrix it means theres is a solution for all x thus there are infinite solutions.
+
+
+\paragraph{1.1}\textbf{Echelon Forms}\\
+
+\textbf{Properties of echelon form}\\
+1. All nonzero rows are above any rows of all zeros.\\
+2. Each leading entry of a row is in a column to the right of the leading entry of the row above it.\\
+3. All entries in a column below entry are zeros.\\
+A matrix is in reduced echelon form if the it has properties 4 and 5.\\
+4. leading entry in each non-zero row is one.\\
+5. leading 1 is the only non-zero entry.\\
+
+There are many echelons forms of a matrix, but there is only one reduced echelon form. The reduced form is obtained from elementary row operations.\\\\
+
+\textbf{Pivot Positions}\\
+
+A pivot position in a matrix is a location that corresponds to a leading one in the reduced echelon form.\\
+
+Pivot columns are comlumns that contain a pivot position.\\\\
+
+\textbf{Row reduction algorithm}\\
+1. Write the augmented matrix of the system.\\
+2. Use the row reduction algorithm to obtain an equivalent augmented matrix in\\
+echelon form. Decide whether the system is consistent. If there is no solution,
+stop; otherwise, go to the next step.\\
+3. Continue row reduction to obtain the reduced echelon form.\\
+4. Write the system of equations corresponding to the matrix obtained in step 3.\\
+5. Rewrite each nonzero equation from step 4 so that its one basic variable is expressed in terms of any free variables appearing in the equation.\\
+
+\paragraph{1.3}\textbf{Vector equations}\\
+
+Vectors can be notatated by
+$\begin{bmatrix}
+	w_1 \\
+	w_2 \\
+  \end{bmatrix}$.\\
+
+$\mathbb{R}^2$ denotes all vectors of real numbers with two entries.\\
+
+Vectors are added by adding corresponding entries.\\
+$\begin{bmatrix}
+	w_1 \\
+	w_2 \\
+  \end{bmatrix}
++
+\begin{bmatrix}
+	u_1 \\
+	u_2 \\
+  \end{bmatrix}
+  =
+\begin{bmatrix}
+	w_1+u_1 \\
+	w_2+u_2 \\
+  \end{bmatrix}
+  $.\\
+
+Multiplying a vector a realnumber "scaler" means multiplying each entry by that real number.\\
+
+
+\textbf{Vectors in $\mathbb{R}^n$}\\
+
+$\mathbb{R}^n$ denotes the collections of all ordered n real numbers.\\
+
+$u = 
+\begin{bmatrix}
+	u_1 \\
+	u_2 \\
+	\vdots\\
+	u_n
+\end{bmatrix}\\
+$
+
+
+for vector addition multiplication etc just reference the calc 4 notes.\\
+
+\paragraph{1.2}\textbf{Linear Combinations}\\
+
+A linear combination $y$ is defined as follows.\\
+
+$y = c_1v_1 + c_2v_2 + \cdots + c_pv_p$\\
+
+$x_1a_1+x_2a_2+...+x_na_n = b$\\
+
+Has the same solution set of the matrix of its coefficients with a solution $b$.\\
+
+$b$ can be generated from a linear combination of $a_1 \cdots a_n$ only if there exists a solution to the matrix.\\
+
+The \textbf{weights} denoted by $c_p$ can be any real numbers.\\
+
+A linear combination can be viewed as the result of a vector equation (the sum of 2 vectors possibly scaled by some factors).\\
+
+Span ${v_1, \cdots v_p}$ is the collection of all vectors that can be written as $c_1v1 + \cdots + c_pv_p$.\\
+
+The zero vector must be present in the set of values so all spans contain a line through the origin.
+
+
+
+A vector $b$ is in span $v$ if there is a solution to $x_1v_1 + \cdots x_pv_b = b$\\
+
+
+\paragraph{1.3}\textbf{Matrix Equation}\\
+
+$Ax = \begin{bmatrix}
+	c_1\\
+	c_2\\
+	c_3\\
+\end{bmatrix} 
+[v_1 v_2 v_3] = c_1v_1 + c_2v_2 + c_3v_3$
+
+$Ax$ is a matrix equation $v_n$ is a vector and $c_n$ are weights. This is yet another way to visualize linear combinations.\\
+
+The equation $Ax = b$ has a solution if any only if $b$ is a linear combination of the columns of $A$.\\\\
+
+\textbf{theorem 4}\\
+For each $b$ in $\mathbb{R}^m$ the equation $Ax=b$ has a solution.\\
+
+Each $b$ in $\mathbb{R}^m$ is a linear combination of the columns of $A$.\\
+
+The columns of $A$ span $\mathbb{R}^m$.\\
+
+$A$ has a pivot position in every row.\\\\
+
+
+\paragraph{1.4}\textbf{Solution Sets of Linear Equations}\\\\
+
+\textbf{Definition:} a linear system is called homogenous if it can be written in the form $Ax =0$.\\
+
+The system always has the trivial solution $x = 0$\\
+
+
+\textbf{Theorem 6}\\
+Suppose the equation $Ax = b$ is consistent for some given $b$, and let $p$ be a solution. Then the set of $Ax=b$ is the set of all vectors of the form $w = p + v_h$, where $v_h$ is any solution of the homogenous equation $Ax = 0$.\\\\
+
+\textbf{Writing a vector in parametric form}\\
+If 
+$x = \begin{bmatrix}
+	-1\\
+	2\\
+	0\\
+	\end{bmatrix}
+	+ x_3 *
+	\begin{bmatrix}
+	\frac{4}{3}\\
+	0\\
+	1\\
+	\end{bmatrix}$
+	
+	is a solution to $Ax = 0$ then solutions can be expressed as the sum of the constant vector called $p$ and the variable times the second vector denoted as $tv$ then the expression $x=p+tv$ is called the parametric vector form.\\\\
+
+\paragraph{1.5}\textbf{Linear Independence}\\\\
+
+if $\begin{bmatrix} 0\\ 0\\ 0\\ \end{bmatrix}$ is a unique solution to $Ax=0$ then the constituent vectors $u_1, u_2, \cdots u_n$ are said to be independent. They are irrevalent to the result of the equation.\\ 
+
+
+If $x_1 \cdots x_n$ are not all zero then $u_1 \cdots u_n$ is a linear dependence relation. This is because $u_n$ must equal $\vec{0}$ in order for the solution to exist.\\
+
+
+A set of two vectors ${v_1, v_2}$ is called linearly dependent if $v_1$ is a multiple of $v_2$.\\\\
+
+\textbf{Theorem 7:} A set of two or more vectors ${v_1 \cdots v_n}$ is linearly dependent if at least one of the vectors in the set is a linear combination of others in the set.\\
+
+For example set ${w, v, u}$ with independent $w ,v$ will be dependent only if $u$ is a linear combination of $w$ and $v$.\\\\
+
+
+\textbf{Theorem 8:} If a set contains more vectors then entries in each vector then the set is linearly dependent.\\\\
+
+\textbf{Theorem 9:} If a set of vectors contains the zero vector then the set is linearly dependent.\\\\
+
+
+\paragraph{1.6}\textbf{Linear Transformations}\\
+
+A matrix $A$ can be though of as an object that acts on vector $x$ to produce a vector $Ax$. From this we can say the $A$ transforms $x$ into $b$.\\
+
+This is useful to think about transformations of 4d vectors to 2d vectors by multiplying a 4d by a 2d.\\
+
+A transformation is a function or mapping of $T$ from $\mathbb{R}^n \to \mathbb{R}^m$. The domain of $T$ is $\mathbb{R}^n$ and the codomain is $\mathbb{R}^m$\\
+
+for $x$ in $\mathbb{R}^n$ $T(x)$ in $\mathbb{R}^m$ is called the image of $x$.\\
+
+
+$T(x) = Ax$\\
+$x$ transformed by $A=x\mapsto Ax$\\
+
+asking what the image of $u$ under transformation $T$ is the same as evaluating $T(u)$\\
+
+asking weather an image of $u$ exists in the domain of $T$ and if $u$ is in the range of $T$ is the same as evaluating $Ax=u$ to see if it has a solution.\\\\
+
+Transformations can and should be viewed as somthing that transforms a vector into another vector.\\
+
+if $\begin{bmatrix} x_1\\ x_2\\ x_3\\ \end{bmatrix} \mapsto \begin{bmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 0\\ 
+\end{bmatrix}$
+
+Then the resulting transformation removes or $x_3$ producing a 2d vector from a 3d one.\\\\
+
+\textbf{Linear Transformation Properties}\\
+
+$A(u+v) = Au + Av$\\
+$A(cu) = cAu$\\
+
+This suggests the following.\\
+
+$T(u+v) = T(u) + T(v)$\\
+$T(cu) = cT(u)$\\
+
+These propeties are true for all $u, v$ in the domain of $T$.\\\\
+
+
+\paragraph{1.7}\textbf{Matrix of a linear transform}\\
+
+Every linear transform is a matrix transform but not all matrix transforms are linear transforms.\\
+
+If $T: \mathbb{R}^n \to \mathbb{R}^m$ is a linear transform. Then there exists a unique matrix $A$ such that $T(x) = Ax$ for all $x$ in $\mathbb{R}^n$\\
+
+Then $A$ is the $m$x$n$ matrix whose $j$th column is the vector $T(e_j)$, where $e_j$ is the $j$th column of the identity matrix in $\mathbb{R}^n$\\
+
+$A = [ T(e_1) \cdots T(e_n) ]$\\\\
+
+\textbf{Theorom 11}\\
+A linear transformation $T$ is one to one if and only if the equation $T(x)=0$ has only the trivial solution.\\\\
+
+
+\textbf{Theorem 12}\\
+Let $T$ be a linear transformation and $A$ be its standard matrix.\\
+\textbf{a.} $T$ maps $\mathbb{R}^n$ onto $\mathbb{R}^m$ if and only if the columns of $A$ span $\mathbb{R}^m$\\
+
+\textbf{b.} $T$ is one-to-one if and only if the columns of $A$ are linearly independent.\\
+
+
+\textbf{Onto Mapping}\\
+
+In order for a mapping to be onto the matrix $A$ must have at least $m$ columns. That is it must be all to accept all components of the vector it is transforming as parameters. Obviously it must also be a valid matrix equation.\\
+
+In other words in order to be onto it must have at least as many columns as rows $m \le n$\\\\
+
+\textbf{One-to-One mapping}\\
+
+For a mapping to one to one it must have a unique solution for all inputs. However its range does not have to be the span of $\mathbb{R^m}$ thus the columns can be less than $m$.\\
+
+In other words in order for it to be one to one it must have at least as many rows as columns $n \le m$\\\\
+
+\textbf{One-to-one and Onto}\\
+
+A in order for mapping to be one-to-one and onto $m=n$\\\\
+
+
+\paragraph{2.2}\textbf{Matrix Algebra}\\
+
+Two matrixs can be multiplied if the number of columns in matrix $A$ matches the number of rows in $B$ thats if $A: m$ x $p$ and $B: P$ x $n$.\\
+
+Example: $A*B = \begin{bmatrix}
+	4 & 3 & 6\\
+	1 & -2 & 3\\
+	\end{bmatrix} *
+	\begin{bmatrix}
+	2 & 3\\
+	1 & -5\\
+	\end{bmatrix}$ 
+
+$Ab_1 = \begin{bmatrix}
+	2 & 3\\
+	1 & -5\\
+	\end{bmatrix}
+	\begin{bmatrix}
+	4\\
+	1\\
+	\end{bmatrix}
+$
+
+$Ab_2 = \begin{bmatrix}
+	2 & 3\\
+	1 & -5\\
+	\end{bmatrix}
+	\begin{bmatrix}
+	3\\
+	-2\\
+	\end{bmatrix}
+$
+
+$Ab_3 = \begin{bmatrix}
+	2 & 3\\
+	1 & -5\\
+	\end{bmatrix}
+	\begin{bmatrix}
+	6\\
+	3\\
+	\end{bmatrix}
+$
+
+The associative and distributive laws hold for matrix multiplication however beware order matters $AB \ne BA$ neither do cancelation laws if $AB = AC$ it does not mean that $B = C$. Finally just because $AB=0$ does not mean the either $A$ or $B$ is the zero vector.\\\\
+
+\textbf{Powers of a matrix}\\
+
+$A^k = A \cdots A$ that is if $ \ne 0$ then $A^k$ denotes the product of $k$ copies of $A$.\\
+
+Contrary to integers $A^0 = A$ not $1$.\\
+
+The trans pose of a matrix $A$ is the $n$ x $m$ matrix whos columns are the rows of $A$. It is denoted as $A^T$.\\
+
+if $A = \begin{bmatrix} a & b\\ c & d \end{bmatrix}$ 
+
+then $A^T = \begin{bmatrix} a & c\\ b & d \end{bmatrix}$\\
+
+$(A^T)^T = A$\\
+$(A + B)^T = A^T + B^T$\\
+$rA^T = (rA)^T$\\
+$(AB)^T = B^TA^T$\\
+
+The transposes of a product of matrices equals the product of thier transposes on reverse order.\\
+
+
+\paragraph{2.3}\textbf{Inverse Matrix}\\
+
+The inverse of a matrix $A$ is denoted as $A^{-1}$ and if it exists it has the following properties.\\
+
+$A^{-1}A = I$ and $AA{-1} = I$ where $I$ is the $n$ x $n$ identity matrix.\\
+
+$(A^{-1})^{-1} = A$\\
+$(AB)^{-1} = B^{-1}A^{-1}$\\
+$(A^T+)^{-1} = (A^{-1})^T$\\
+
+Only square matrices are invertable.\\
+
+A matrix that is not invertible is called a singular matrix and an invertible matrix is called a nonsingular matrix.\\
+
+if $d(A)$ is the determinate of a square matrix $A$ then a formula for the inverse is as follows.\\
+
+$A = \begin{bmatrix} a & b \\ c & d\\ \end{bmatrix}$
+
+
+
+$A^{-1} = \frac{1}{d(A)}\begin{bmatrix} d & -b\\ 
+-c & a\\
+\end{bmatrix}$
+
+A $2$ x $2$ matrix $A$ is invertible only if its determinate does not equal zero.\\
+
+\textbf{Theorem 5:} If $A$ is an invertible $n$ x $n$ matrix then for each $b$ in $\mathbb{R}^n$ the equation $Ax = b$ has the unique solution $x = A^{-1}b$.\\\\
+
+
+\textbf{Theorem 7:} An $n$ x $n$ matrix $A$ is invertible if and only if $A$ is row equivalent to $I_n$, and in this case, any sequence of elementary row operations that reduces $A$ to $I_n$ also transforms $I_n$ into $A^{-1}$.\\
+
+\textbf{Find $A^{-1}$ algorithm}\\
+
+Row reduce the augmented matrix $[A I]$. If $A$ is row equivalent to $[A I]$ id row equivalent to $[I A^{-1}]$. Otherwise, $A$ does not have an inverse.\\
+
+\textbf{Invertible Matrix Theorem}\\
+
+The following statemnts are all equivalent.
+
+$A$ is a square $n$ by $n$ matrix.\\
+
+$A$ is Invertible\\
+
+$A$ is rowequivalent to its $n$ by $n$ identity Matrix.\\
+
+$A$ has $n$ pivot positions\\
+
+The equation $Ax=0$ has only the trivial solution.\\
+
+The columns of $A$ are linearly independent.\\
+
+The transfrom $x \mapsto Ax$ is one-to-one.\\
+
+The equation $Ax=b$ has at least one solution for each $b$ in $\mathbb{R}^n$.\\
+
+The columns of $A$ span $\mathbb{R}^n$.\\
+
+The linear transformations $x \mapsto Ax$ maps $\mathbb{R}^n$ onto $\mathbb{R}^n$.\\
+
+There is an $n$ by $n$ matrix $C$ such that $CA=I$.\\
+
+There is an $n$ by $n$ matrix $D$ such that $DA=I$.\\
+
+$A^T$ is invertible.\\
+
+\textbf{Theorem 9:} If the standard matrix of a linear transformation is invertible then the transformation is invertibles and the matrix of the inverse transform is the inverse of the standard matrix.\\
+
+$S(T(x))=x$ if $S$ is the inverser transform of $T$.\\
+
+
+\paragraph{2.4}\text{Partitioned Matrices}\\
+
+A matrix can be cut into paritioned blocks to form a matrix of these blocks.\\
+How exactly thats done would be a pain to type so just reference section 2.4 examples.\\
+
+if two matrices $A, B$ are partitioned in the same way then their $A+B$ can be obtained from adding the equivalent blocks in each matrix.\\
+That is if $A=[a_1 a_2]$ and $B = [b_1 b_2]$ then $A+B = [a_1+b_1, a_2 + b_2]$.\\
+
+Two partitioned matrices $A,B$ can be multiplied $AB$ so long as the column partition of $A$ matches the row partition of $B$.
+That is to say they must be conformable for block multiplication.\\
+
+\paragraph{2.5}\text{Matrix Factorization}\\
+
+A Factorization of a matrix $A$ is a equation that expresses  $A$ as the product of two or more matrices.\\
+
+Assume $A$ is a n $m$ by $n$ matrix that can be row reduced to echelon form. Then $A=LU$ where $L$ is an $m$ by $m$ lower triangular matrix with 1s on the diagonal
+and $U$ is an $m$ by $n$ echelon form of $A$. This factorization is called the $LU$ factorization.\\
+
+This leads the to the expression $Ax=L(Ux)=b$.\\
+
+and further.\\
+$Ly=b$\\
+$Ux=y$\\
+
+\textbf{LU Factorization Algorithm}\\
+
+1. Reduce $A$ to an echelon form $U$ by a sequence of row operations.\\
+2. Place entries in $L$ such that the same sequences of row operations reduces $L$ to $I$.\\
+
+This basically means the columns in $L$ will the reduced forms of the columns in $U$ before you zero the column to create your echelon form.\\
+
+So to create $L$ you first fill $1$s on its diagonal zero everything above the diagonal, then insert the reduced first column of $A$, then repeat with columns of $A$ as you reduce $A$ to echelon form.\\
+
+\paragraph{2.6}\textbf{Vector Space and Row/Col Space}\\
+
+1. The sum of $u$ and $v$, denoted by $u+v$, is in $V$.\\
+
+2. $u+v = v+u$.\\
+
+3. $(u+v) + w = u + (w+v)$.\\
+
+4. There is a zero vector in $V$ such that $u+0 = u$.\\
+
+5. For each $u$ in $V$, there is a vector $-u$ in $V$ such that $u + (-u)= 0$.\\
+
+6. The multiple of $u$ by $c$ is in $V$.\\
+
+7. $c(u + v) = cu + cv$.\\
+
+8. $(c + d)u = cu + du$.\\
+
+9. $c(du) = (cd)u$.\\
+
+10. $1u = u$.\\
+
+If the above axioms are satisfied by a non-empty set $V$ then that set can be called a vector space.\\
+
+
+\textbf{Properties of a vector subspace}.\\
+
+$H$ is a subspace of $V$ if\\
+
+1. The zero vector of $V$ is in $H^2$\\
+2. $H$ is closed under vector addition.\\
+3. $H$ is closed under scaler multiplication.\\
+
+if $v_1 \cdots v_p$ are in vector space $V$ then Span${v_1, \cdots ,v_p}$ is a subspace of $V$.\\\\
+
+\textbf{Null space}\\
+
+The null space of an $m$ by $n$ matrix $A$, written as Nul $A$, is the set of all solutions of the homogeneous equation $Ax = 0$. In set notation,\\
+
+$Null A = {x: x in \mathbb{R}^n, Ax = 0}$\\
+
+Also theorem that states same thing just cause.\\
+
+The null space of an $m$ x $n$ matrix $A$ is a subsapce of $R^n$. Equivalently, the set of all solution to a system $Ax = 0$ of $m$ homogeneous linear equations in $n$ unknowns is subspace of $\mathbb{R}^n$.\\
+
+\textbf{Column Space}\\
+
+The column space of an $m$ x $n$ matrix $A$, written as col $A$, is the set of all linear combinations of the columns of $A$. If $A = [a_1 \cdots a_n]$, then\\
+
+Col $A = Span{a_1,\cdots , a_n}$ \\
+
+\textbf{Theorem: } The column space of an $m$ x $n$ matrix $A$ is a subspace of $\mathbb{R}^m$.\\
+
+\paragraph{2.7} \textbf{ linearly independent Sets, and Bases}\\
+
+Recall the theorem of linear dependence. An indexed set ${ v_1, \cdots, v_p}$ of two or more vectors, with $v_1 \ne 0$, is linearly dependent iff some $v_j$ for $(j > 1)$ is linear combination of the preceding vectors, $v_1, \cdots ,v_{j-1}$.\\
+
+\textbf{Basis Vectors}\\
+
+Let $H$ be a subspace of $V$. An indexed set of vectors $\mathcal{B} = {b_1, \cdots , b_p}$ in $V$ is a basis for $H$ if\\
+
+1. $\mathcal{B}$ is linearly independent.\\
+2. The subspace spanned by $\mathcal{B}$ conicides with $H$; that is,
+    $H = span{b_1, \cdots, b_p}$\\
+
+    The standard basis for $\mathbb{R}^n$ can be described by ${e_1, \cdots, e_n}$ where $e$ is a unit vector in the identity matrix of $\mathbb{R}^n$\\\\
+
+A fundemental theorem in algebra states that the only polynomial with more that $n$ zeros is the zero polynomial.\\
+
+\textbf{Spanning Set Theorem: } $S = {v_1, \cdots, v_p}$ a set in $V$, and let $H =$ span{$v_1, \cdots, v_p$}\\
+
+1. If one of the vectors in $S$ such as $v_k$ is a linear combination of the remaining vectors, then the set formed by removing $v_k$ still spans $H$.\\
+
+2. If $H \ne {0}$ (null set), some subset of $S$ is a basis for $H$.\\\\
+
+This implies the following. given a matrix $B = [b_1 b_2 \cdots b_5]$ we can find the basis of $B$ by discarding all non-pivot columns as they are linear combinations of the remaining.\\
+so if $b_2, b_4$ do not contain a pivot position the the set ${b_1, b_3, b_5}$ still spans column space of $B$.\\
+
+\textbf{Theorem: } The pivot columns of matrix $A$ form a basis for Col$(A)$.\\
+
+\paragraph{2.8} \textbf{Coordinate Systems}\\
+
+Suppose $\mathcal{B} = {b_1, \cdots b_n}$ is a basis for $V$ and $x$ is in $V$. The coordinates of $x$ relative to basis $\mathcal{B}$ or the$ \mathcal{B}$ coordinates of $x$ are the weights $c_1, \cdots, c_n$ such that $x= c_1b_1 + \cdots + c_nb_n$.\\
+
+$[X]_{\mathcal{B}} = \begin{bmatrix} c_1 \\ \vdots\\ c_n \end{bmatrix}$.\\
+
+Let $P_{\mathcal{B}}$ = the standard matrix of a basis $\mathcal{B}$.\\
+If the coordinates of a vector $x$ in $\mathcal{B}$ is multiplied by $P_{\mathcal{B}}$ then we get the original $x$ in $\mathbb{R}^n$.\\
+
+$x = P_\mathcal{B} [x]_{\mathcal{B}}$.\\
+
+\textbf{Theorem 8: }let $\mathcal{B} = {b_1, \cdots , b_n}$ be a basis for vector space $V$. Then the coordinate $x \mapsto [x]_{\mathcal{B}}$ is a one to one linear transform from $V$ onto $\mathbb{R}^n$.\\\\
+
+Reducing the columns of transform $\mathcal{C}$ to the left of the columns of transform $\mathcal{B}$ yields the change of bases tranformations from
+$\mathcal{B} \to \mathcal{C}$\\
+$[c_1 c_2 : b_1 b_2] \to [ I : P_{\mathcal{C} \leftarrow \mathcal{B}}]$\\\\
+
+\paragraph{2.9} \textbf{Dimensions of Vector Space}\\
+
+\textbf{Theorem 9: } If a vector space $V$ has a basis $\mathcal{B} = {b_1, \cdots, b_n}$ Then any set in $V$ containing more than $n$ vectors must be linearly dependent.\\\\
+
+\textbf{Theorem 10: } If a vector space $V$ has a basis of $n$ vectors, then every basis of $V$ must consist of exactly $n$ vectors.\\
+
+If $V$ is spanned by a finite set it is said to be finite-dimensional and the dimension of $V$, written as dim $V$ is the number of vectors in a basos for $V$. The dimension of the zero vector space {0} is defined to be zero. if $V$ is not spanned by a finite set then $V$ is infinite-dimensional.\\\\
+
+A few definitions.\\
+0-dimensional subspace: only the zero subspace\\
+1-dimensional: any space spanned by a single nonzero vector. A line through the origin.\\
+2-dimensional: any subspace spanned by two linearly independent vectors. A plane through the origin.\\
+3-dimensional: only $\mathbb{R}^3$. Any 3 independent vectors in $\mathbb{B}^3$ span all of the space by the invertible matrix theorem.\\
+
+\textbf{Theorem 11: } Let $H$ be a subspace of a finite-dimensional vector space $V$. Any linearly independent set in $H$ can be expanded, if necessary, to a basis for $H$. Also, $H$ is finite-dimensional and\\
+dim $H \le$ dim $V$\\\\
+
+\textbf{Theorem 12: }Let $V$ be a $p$-dimensional vector space, $p \ge 1$. Any linearly independent set of exactly $p$ elements in $V$ is automatically a basis for $V$. Any set of exactly $p$ elements that spans $V$ is automatically a basis for $V$.\\
+
+\paragraph{3.0} \textbf{Rank}\\
+
+\textbf{Theorem 13: } If two matrices $A$ and$ B$ are row equavalent, then thier row spaces are the same.\\
+If $B$ is in echelon form, the nonzero rows of $B$ form a basis for the row space of $A$ as well as for that of $B$.\\
+
+The rank of $A$ is the dimension of the column space of $A$
+
+\textbf{Theorem 14: } The dimensions of the column and row space of an $m$ x $n$ matrix $A$ are equal.\\
+This common dimension, the \textbf{rank} of $A$, also equals the number of pivot positions in $A$ and satifies the below equation.\\
+
+rank $A$ + dim Nul $A$ $= n$\\\\
+
+\textbf{IVT Continued}\\
+
+let $A$ be a $n$ x $n$ matrix. Then the following statements are equivalent to the statement that
+$A$ is invertible\\
+
+1. The columns of $A$ form a basis of $\mathbb{R}^n$\\
+2. Col $A$ = $\mathbb{R}^n$\\
+3. Dim Col $A = n$\\
+4. rank $A = n$\\
+5. Nul $A = {0}$
+6. dim Nul $A = 0$\\
+
+\paragraph{3.1} \textbf{Determinates}\\
+
+A 3x3 by determinate can be found by multiplying $A_1i$ by the the determinate formed by deleteing the $i$th row and the
+$j$th column.\\
+
+$
+\begin{vmatrix}
+	a_{11} && a_{12} && a_{13} \\
+	a_{21} && a_{22} && a_{23} \\
+	a_{31} && a_{32} && a_{33} \\
+\end{vmatrix}
+$
+
+$= a_{11} \begin{vmatrix}
+	a_{22} && a_{23} \\
+	a_{32} && a_{33} \\
+\end{vmatrix}
+$ ... etc\\
+
+For determinates higher than 3 the determinate can be recursively defined as the sum of determinates formed by deleteing the $ith$ row and $jth$ column of a matrix $A$.\\
+
+\textbf{Definition of the determinate}\\
+For $n \ge 2$ the determinant of an $n$ x $n$ matrix $A [aij]$ is the sum of the $n$ terms of the form $+/- a1j$ det $A_{1j}$ with + and minus signs alternating, with the entries $a_11, a_12, \cdots, a_1n$ as the first row of $A$.\\
+
+$det A = a_11 det A_11 - a_12detA_12 + \cdots + (-1)^{1+n}a_1ndet{A_1n} = \sum_{j=1}^{n} (-1)^{1+j}a_1jdetA_1j$\\
+
+\textbf{Cofactor Expansion}\\
+
+The determinate of a $n$ x $n$ matrix $A$ can be computed by a cofactor expansion across any row or down any column.
+The column ith row is\\\\
+
+$det A = a_i1C_i1 + \cdots + a_inC_in$\\\\
+
+Expansion down the jth comlumn is\\
+$det A = a_1jC_1j + \cdots + a_inC_in$\\\\
+
+\textbf{Theorem 2}: If $A$ is a triangular matrix (a matrix with all zeros below its diagonal), then det $A$ is the product of the entries on the main diagonal.\\\\
+
+\textbf{Theorem 3:}\\
+Let $A$ be a $n$ x $n$ matrix\\
+a. if a multiple of one of $A$ is added to another row to prouce a matrix $B$, then $det B = det A$\\
+b. If two rows of $A$ are interchanged to produce $B$, then $det B = -det A$\\
+c. If one row of a $A$ is multiplied by $k$ to produce $B$ then det $B = k * det A$\\
+
+\textbf{Theorem 4:} Any square matrix is invertible iff $det A \ne 0$\\\\
+
+\textbf{Theorem 5:} If $A$ is an $n$ x $n$ matrix then det $A^T = det A$\\\\
+
+\textbf{Theorem 6:} If $A$ and $B$ are $n$ x $n$ matrices, then det $AB = (det A)(det B)$\\\\
+
+
+\textbf{Theorem 7: Cramers Rule} Let $A$ be an invertible $n$ x $n$ matrix. For any $b$ in $\mathbb{R}^n$, the unique solution $x$ of $Ax = b$ has entires given by\\
+$x_i = \frac{det(A_i)(b)}{det A}, i = 1, 2, \cdots, n$\\\\
+
+
+\textbf{Theorem 8: A formula for Inverse of a matrix} let $A$ be an invertible $n$ x $n$ matrix. Then\\
+
+$A^{-1} = \frac{1}{det A}*adj A$\\\\
+
+\textbf{Determinates as Area} If $A$ is a $2$ x $2$ matrix, the area of the parallelogram determined by the columns of $A$ is |$det A$|. If $A$ is a 3x3 matrix, the volume
+of the parallelpiped determined by the columns of $A$ is |$det A$|.
+
+\textbf{Theorem 10: } Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be the linear transform determined by the 2x2 matrix $A$.
+If $S$ is a parallelogram in $\mathbb{R}^2, then$\\
+	${area T(S)} = |det A| * {area of S}$ \\\\
+If $T$ is determined by a 3x3 matrix $A$ and if $S$ is a parallelpiped in $\mathbb{R}^3$, then\\
+	${volume T(S)} = |det A| * {volume S}$\\\\
+
+\paragraph{3.2} \textbf{Eigenvalues and Eigenvectors}\\\\
+
+An eigenvector of an n x n matrix $A$ is a non-zero vector $x$ such that $Ax = \lambda x$ for some scaler $\lambda$. A scaler $\lambda$ is called an eigenvalue of $A$ if there is a nontrivial
+solution $x$ of $Ax = \lambda x$; such an $x$ is called an eigenvector corresponding to $\lambda$.\\\\
+
+An eigenvector must be non-zero but an eigenvalue may be zero.\\\\
+
+$\lambda$ is an eigenvalue of matrix $A$ iff $(A -\lambda I)x = 0$ has a non-trivial solution.\\
+$NUll(A -\lambda I)$ is called the eigen space of $A$.\\
+
+
+\textbf{Theorem 1: } The Eigenvalues of a triangular matrix are the entries on its main diagonal.\\
+
+\textbf{Theorem 2: } If $v_1, \cdots ,v_r$ are eigenvectors that correspond to distint eigenvalues $\lambda_1, \cdots. \lambda_r$ of an n x n matrix $A$, then the set {$v_1, \cdots, v_1$} is linearly.
+
+\textbf{Note: } 0 is an eigen value of $A$ iff $A$ is not invertible.\\
+
+\textbf{The Characteristic Equation}\\\\
+Finding all the eigenvalues of a matrix can be defined as finding all cases where the matrix $(A-\lambda I)$ has a zero determinant.\\
+
+\textbf{IVT Extended:}\\
+Let $A$ be an n x n matrix. Then $A$ is invertible iff:\\
+s. The number 0 is not an eigenvalue of $A$.\\
+t. The deteminant of $A$ is not zero.\\\\
+
+det$(A - \lambda I) =0$ is called the characteristic equation. $\lambda$ is an eigenvalue of a n x n matrix $A$ iff $\lambda$ satifies the characteristic equation.\\
+This implies that the solution set of characteristic equation is the roots of the polynomial formed from the product of the diagonal of a triangular matrix formed from $(A - \lambda I)$.\\
+The multiplicity of a eigenvalue is its multiplicity as a root of the characteristic equation (the number of times it occurs as a factor).\\\\
+
+\textbf{Similarity}\\
+If $A$ and $B$ are n x n matrices, then $A$ is similar to $B$ if there is an invertible matrix $P$ such that $P^{-1}AP = B$ equivalently $A = PBP^{-1}$. Writing $Q$ for $P^{-1}$, we have $Q^{-1}BQ = A$.\\
+So $B$ is also similar to $A$ and thus $A$ and $B$ are similar.\\
+
+\textbf{Theorem 4: }If n x n matrices $A$ and $B$ are similar, then they have the same characteristic polynomial and hence the same eigenvalues.\\
+
+\textbf{Theorem 5:} Diagonalization Theorem\\
+An n x n matrix $A$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors. In fact $A = PDP^{-1}$, with $D$ a diagonal matrix iff the columns of $P$ are $n$ linearly independent
+eigenvectors of $A$. In this case, the diagonal entries of $D$ are eigenvalues of $A$ that correspond, respectively, to the eigenvectors in $P$.\\
+
+\textbf{Theorem 6: } An n x n matrix with n distinct eigenvalues is diagonalizable.\\\\
+
+
+
+
+\end{document}

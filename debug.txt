@@ -1,0 +1,4374 @@
+
+--------1---------
+J.cx, J.cy 0,1
+cline idx: 1
+cline len: 82
+cline contents: \usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------2---------
+J.cx, J.cy 20,2
+cline idx: 2
+cline len: 20
+cline contents: \usepackage{amsmath}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------3---------
+J.cx, J.cy 20,3
+cline idx: 3
+cline len: 20
+cline contents: \usepackage{amssymb}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------4---------
+J.cx, J.cy 20,4
+cline idx: 4
+cline len: 21
+cline contents: \usepackage{fancyhdr}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------5---------
+J.cx, J.cy 20,5
+cline idx: 5
+cline len: 21
+cline contents: \usepackage{pgfplots}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------6---------
+J.cx, J.cy 20,6
+cline idx: 6
+cline len: 21
+cline contents: \usepackage{setspace}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------7---------
+J.cx, J.cy 20,7
+cline idx: 7
+cline len: 26
+cline contents: \pgfplotsset{compat=1.17} 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------8---------
+J.cx, J.cy 20,8
+cline idx: 8
+cline len: 52
+cline contents: \geometry{a4paper} % or letter or a5paper or ... etc
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------9---------
+J.cx, J.cy 46,9
+cline idx: 9
+cline len: 46
+cline contents: % \geometry{landscape} % rotated page geometry
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------10---------
+J.cx, J.cy 0,10
+cline idx: 10
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------11---------
+J.cx, J.cy 0,11
+cline idx: 11
+cline len: 71
+cline contents: % See the ``Article customise'' template for come common customisations
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------12---------
+J.cx, J.cy 0,12
+cline idx: 12
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------13---------
+J.cx, J.cy 0,13
+cline idx: 13
+cline len: 26
+cline contents: \title{Calculus III Notes}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------14---------
+J.cx, J.cy 25,14
+cline idx: 14
+cline len: 25
+cline contents: \author{Jonathan Parlett}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------15---------
+J.cx, J.cy 0,15
+cline idx: 15
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------16---------
+J.cx, J.cy 0,16
+cline idx: 16
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------17---------
+J.cx, J.cy 0,17
+cline idx: 17
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------18---------
+J.cx, J.cy 0,18
+cline idx: 18
+cline len: 16
+cline contents: \begin{document}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------19---------
+J.cx, J.cy 0,19
+cline idx: 19
+cline len: 50
+cline contents: \paragraph{1.0}\textbf{Differential Equations}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------20---------
+J.cx, J.cy 0,20
+cline idx: 20
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 0
+
+--------21---------
+J.cx, J.cy 0,20
+cline idx: 21
+cline len: 72
+cline contents: Differential equation: an equation containing one or more derivatives.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 1
+
+--------22---------
+J.cx, J.cy 0,20
+cline idx: 22
+cline len: 72
+cline contents: Order of differential equation: the order of its highest derivative.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 2
+
+--------23---------
+J.cx, J.cy 0,20
+cline idx: 23
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 3
+
+--------24---------
+J.cx, J.cy 0,20
+cline idx: 24
+cline len: 24
+cline contents: \textbf{Eulars method}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 4
+
+--------25---------
+J.cx, J.cy 0,20
+cline idx: 25
+cline len: 36
+cline contents: $y_1 = y_0 + f(x_0, y_0)*\Delta x$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 5
+
+--------26---------
+J.cx, J.cy 0,20
+cline idx: 26
+cline len: 38
+cline contents: $y_2 = y_1 + f(x_1, y_1)*\Delta x$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 6
+
+--------27---------
+J.cx, J.cy 0,20
+cline idx: 27
+cline len: 79
+cline contents: This process repeats for n approximations and can be described by the formula\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------28---------
+J.cx, J.cy 43,20
+cline idx: 28
+cline len: 43
+cline contents: $y_{n+1} = y_n + \frac{dy}{dx}\Delta x$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 8
+
+--------29---------
+J.cx, J.cy 0,20
+cline idx: 29
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 9
+
+--------30---------
+J.cx, J.cy 0,20
+cline idx: 30
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 10
+
+--------31---------
+J.cx, J.cy 0,20
+cline idx: 31
+cline len: 41
+cline contents: \textbf{Exponential Growth and Decay}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 11
+
+--------32---------
+J.cx, J.cy 31,20
+cline idx: 32
+cline len: 31
+cline contents: growth $= \frac{dp}{dt} = kp$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 12
+
+--------33---------
+J.cx, J.cy 31,20
+cline idx: 33
+cline len: 32
+cline contents: decay  $= \frac{dp}{dt} = -kp$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 13
+
+--------34---------
+J.cx, J.cy 31,20
+cline idx: 34
+cline len: 44
+cline contents: where $t$ is time and $p$ is population.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 14
+
+--------35---------
+J.cx, J.cy 0,20
+cline idx: 35
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 15
+
+--------36---------
+J.cx, J.cy 0,20
+cline idx: 36
+cline len: 30
+cline contents: \textbf{Integrated Formulas}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 16
+
+--------37---------
+J.cx, J.cy 29,20
+cline idx: 37
+cline len: 29
+cline contents: growth $= y = y_0 * e^{kt}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 17
+
+--------38---------
+J.cx, J.cy 29,20
+cline idx: 38
+cline len: 32
+cline contents: decay  $= y = y_0 * e^{-kt}$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 18
+
+--------39---------
+J.cx, J.cy 29,20
+cline idx: 39
+cline len: 101
+cline contents: For decay problems if given $t_{1/2}$ then set $y=y_0*\frac{1}{2}$ and $t=t_{1/2}$ to solve for $k$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 19
+
+--------40---------
+J.cx, J.cy 0,20
+cline idx: 40
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 20
+
+--------41---------
+J.cx, J.cy 0,20
+cline idx: 41
+cline len: 59
+cline contents: Population growth $= \frac{dy}{dt} = k(1 - \frac{y}{L})y$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 21
+
+--------42---------
+J.cx, J.cy 0,20
+cline idx: 42
+cline len: 74
+cline contents: Integrated Population growth $= y = \frac{y_0*L}{y_0 +(L-y_0)e^{-kt}}$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 22
+
+--------43---------
+J.cx, J.cy 0,20
+cline idx: 43
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 23
+
+--------44---------
+J.cx, J.cy 0,20
+cline idx: 44
+cline len: 34
+cline contents: \textbf{Newton Law of Cooling}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 24
+
+--------45---------
+J.cx, J.cy 0,20
+cline idx: 45
+cline len: 34
+cline contents: $$T(t) = T_s + (T_0 -T_s)e^{-kt}$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 25
+
+--------46---------
+J.cx, J.cy 0,20
+cline idx: 46
+cline len: 95
+cline contents: The temp at time $t$ is equal to temp of surroundings + the initial temp - temp of surroundings
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 26
+
+--------47---------
+J.cx, J.cy 32,20
+cline idx: 47
+cline len: 32
+cline contents: time $e$ to the $-kt$ power.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 27
+
+--------48---------
+J.cx, J.cy 0,20
+cline idx: 48
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 28
+
+--------49---------
+J.cx, J.cy 0,20
+cline idx: 49
+cline len: 31
+cline contents: \textbf{Integrated Formula}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 29
+
+--------50---------
+J.cx, J.cy 0,20
+cline idx: 50
+cline len: 41
+cline contents: $$\frac{dT}{dt} = k(T_s - T), k > 0$$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 30
+
+--------51---------
+J.cx, J.cy 0,20
+cline idx: 51
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 31
+
+--------52---------
+J.cx, J.cy 0,20
+cline idx: 52
+cline len: 47
+cline contents: \paragraph{1.1}\textbf{Integrating factors}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 32
+
+--------53---------
+J.cx, J.cy 0,20
+cline idx: 53
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 33
+
+--------54---------
+J.cx, J.cy 0,20
+cline idx: 54
+cline len: 208
+cline contents: a first order differential equation is said to linear if it is expresible in the form $\frac{dy}{dx} + p(x)y = q(x)$ if this is the case we can use the method of integrating factors to solve this problem.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 34
+
+--------55---------
+J.cx, J.cy 0,20
+cline idx: 55
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 35
+
+--------56---------
+J.cx, J.cy 0,20
+cline idx: 56
+cline len: 25
+cline contents: $$\mu = e^{\int p(x)dx}$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 36
+
+--------57---------
+J.cx, J.cy 0,20
+cline idx: 57
+cline len: 32
+cline contents: $$\frac{d}{dx}(\mu y)=\mu q(x)$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 37
+
+--------58---------
+J.cx, J.cy 26,20
+cline idx: 58
+cline len: 26
+cline contents: This gives us the result\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 38
+
+--------59---------
+J.cx, J.cy 26,20
+cline idx: 59
+cline len: 39
+cline contents: $$y = \frac{1}{\mu} * \int \mu*q(x)dx$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 39
+
+--------60---------
+J.cx, J.cy 26,20
+cline idx: 60
+cline len: 98
+cline contents: by rearranging a given equation into the linear format and calculating $\mu$ we can solve for $y$.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 40
+
+--------61---------
+J.cx, J.cy 0,20
+cline idx: 61
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 41
+
+--------62---------
+J.cx, J.cy 0,20
+cline idx: 62
+cline len: 74
+cline contents: \paragraph{1.2}\textbf{Increasing and Decreasing (Monotone) Sequences}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 42
+
+--------63---------
+J.cx, J.cy 26,20
+cline idx: 63
+cline len: 26
+cline contents: \textbf{Theorem 9.2.3-4}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 43
+
+--------64---------
+J.cx, J.cy 26,20
+cline idx: 64
+cline len: 74
+cline contents: if sequence ${a_n}$ is eventually increasing then either a or b is true.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 44
+
+--------65---------
+J.cx, J.cy 26,20
+cline idx: 65
+cline len: 92
+cline contents: (a): There is a constant $M$, called an upper bound for the sequence, such that $a_n \leq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 45
+
+--------66---------
+J.cx, J.cy 86,20
+cline idx: 66
+cline len: 86
+cline contents: for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \leq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 46
+
+--------67---------
+J.cx, J.cy 83,20
+cline idx: 67
+cline len: 83
+cline contents: (b): No upper bound exists, in which case, $\lim_{n \to \infty} a_n = +\infty$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 47
+
+--------68---------
+J.cx, J.cy 0,20
+cline idx: 68
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 48
+
+--------69---------
+J.cx, J.cy 0,20
+cline idx: 69
+cline len: 36
+cline contents: Likewise for decreasing sequences.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 49
+
+--------70---------
+J.cx, J.cy 0,20
+cline idx: 70
+cline len: 91
+cline contents: (a): There is a constant $M$, called a lower bound for the sequence, such that $a_n \geq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 50
+
+--------71---------
+J.cx, J.cy 88,20
+cline idx: 71
+cline len: 88
+cline contents: for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \geq  M$.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 51
+
+--------72---------
+J.cx, J.cy 83,20
+cline idx: 72
+cline len: 83
+cline contents: (b): No lower bound exists, in which case, $\lim_{n \to \infty} a_n = -\infty$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 52
+
+--------73---------
+J.cx, J.cy 0,20
+cline idx: 73
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 53
+
+--------74---------
+J.cx, J.cy 0,20
+cline idx: 74
+cline len: 33
+cline contents: \textbf{Monotone testing table}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 54
+
+--------75---------
+J.cx, J.cy 0,20
+cline idx: 75
+cline len: 63
+cline contents: $a_{n+1} - a_{n} > 0$	$a_{n+1}/a_{n} > 1$	Strictly increasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 55
+
+--------76---------
+J.cx, J.cy 0,20
+cline idx: 76
+cline len: 63
+cline contents: $a_{n+1} - a_{n} < 0$	$a_{n+1}/a_{n} < 1$	Strictly decreasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 56
+
+--------77---------
+J.cx, J.cy 60,20
+cline idx: 77
+cline len: 60
+cline contents: $a_{n+1} - a_{n} \geq 0$	$a_{n+1}/a_{n} \geq 1$	increasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 57
+
+--------78---------
+J.cx, J.cy 60,20
+cline idx: 78
+cline len: 62
+cline contents: $a_{n+1} - a_{n} \leq 0$	$a_{n+1}/a_{n} \leq 1$	decreasing\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 58
+
+--------79---------
+J.cx, J.cy 0,20
+cline idx: 79
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 59
+
+--------80---------
+J.cx, J.cy 0,20
+cline idx: 80
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 60
+
+--------81---------
+J.cx, J.cy 0,20
+cline idx: 81
+cline len: 45
+cline contents: \paragraph{1.3}\textbf{Convergence Tests}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 61
+
+--------82---------
+J.cx, J.cy 0,20
+cline idx: 82
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 62
+
+--------83---------
+J.cx, J.cy 0,20
+cline idx: 83
+cline len: 145
+cline contents: $u_k$ is defined as the "general" term of a series. For example in the harmonic series. $\sum_{k=1}^{\infty} \frac{1}{k}$, $u_k=\frac{1}{k}$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 63
+
+--------84---------
+J.cx, J.cy 0,20
+cline idx: 84
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 64
+
+--------85---------
+J.cx, J.cy 0,20
+cline idx: 85
+cline len: 20
+cline contents: \textbf{Theorem 1}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 65
+
+--------86---------
+J.cx, J.cy 0,20
+cline idx: 86
+cline len: 141
+cline contents: if $u_k \ne 0$ as $k$ approaches infinity then the series diverges. Else the series may diverge or converge. $\lim_{k \to \infty} \ne 0$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 66
+
+--------87---------
+J.cx, J.cy 0,20
+cline idx: 87
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 67
+
+--------88---------
+J.cx, J.cy 0,20
+cline idx: 88
+cline len: 20
+cline contents: \textbf{Theorem 2}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 68
+
+--------89---------
+J.cx, J.cy 0,20
+cline idx: 89
+cline len: 151
+cline contents: if $\sum u_k$ and $\sum v_k$ are convergent series then thier sum and difference are also convergent series. $\sum u_k - v_k$ and $\sum u_k + v_k$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 69
+
+--------90---------
+J.cx, J.cy 0,20
+cline idx: 90
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 70
+
+--------91---------
+J.cx, J.cy 0,20
+cline idx: 91
+cline len: 44
+cline contents: Thier sums and differences are also related.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 71
+
+--------92---------
+J.cx, J.cy 42,20
+cline idx: 92
+cline len: 42
+cline contents: $\sum u_k - v_k$ = $\sum u_k - \sum v_k$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 72
+
+--------93---------
+J.cx, J.cy 0,20
+cline idx: 93
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 73
+
+--------94---------
+J.cx, J.cy 0,20
+cline idx: 94
+cline len: 44
+cline contents: $\sum u_k + v_k$ = $\sum u_k + \sum v_k$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 74
+
+--------95---------
+J.cx, J.cy 0,20
+cline idx: 95
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 75
+
+--------96---------
+J.cx, J.cy 0,20
+cline idx: 96
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 76
+
+--------97---------
+J.cx, J.cy 0,20
+cline idx: 97
+cline len: 30
+cline contents: \textbf{The integral Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 77
+
+--------98---------
+J.cx, J.cy 0,20
+cline idx: 98
+cline len: 141
+cline contents: if $u_k$ is a decreasing function on $[a, +\infty]$ then. $\sum_{k=1}^{\infty} u_k$ and $\int_{a}^{\infty} u_k$ both converge or diverge.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 78
+
+--------99---------
+J.cx, J.cy 0,20
+cline idx: 99
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 79
+
+--------100---------
+J.cx, J.cy 0,20
+cline idx: 100
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 80
+
+--------101---------
+J.cx, J.cy 0,20
+cline idx: 101
+cline len: 21
+cline contents: \textbf{P-series}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 81
+
+--------102---------
+J.cx, J.cy 0,20
+cline idx: 102
+cline len: 112
+cline contents: A p-series is a series of the form $\sum \frac{1}{k^p}$. The harmonic series is one such series where $p=1$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 82
+
+--------103---------
+J.cx, J.cy 0,20
+cline idx: 103
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 83
+
+--------104---------
+J.cx, J.cy 0,20
+cline idx: 104
+cline len: 56
+cline contents: If $p > 1$ the series converges, otherwise it diverges. 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 84
+
+--------105---------
+J.cx, J.cy 0,20
+cline idx: 105
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 85
+
+--------106---------
+J.cx, J.cy 0,20
+cline idx: 106
+cline len: 28
+cline contents: \textbf{Comparison Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 86
+
+--------107---------
+J.cx, J.cy 0,20
+cline idx: 107
+cline len: 295
+cline contents: given $\sum a_k$ and $\sum b_k$ all $a_k$ and $b_k$ positive. If all $b_k \ge a_k$ if $\sum b_k$ converges so does $\sum a_k$. Conversely if $\sum a_k$ diverges so does $\sum b_k$. in other words in the larger sum converges so does the smallerand if the smaller sum diverges so does the larger. 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 87
+
+--------108---------
+J.cx, J.cy 4,20
+cline idx: 108
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 88
+
+--------109---------
+J.cx, J.cy 4,20
+cline idx: 109
+cline len: 34
+cline contents: \textbf{Limit Comparison Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 89
+
+--------110---------
+J.cx, J.cy 4,20
+cline idx: 110
+cline len: 74
+cline contents: given $p = \lim_{k \to \infty} \frac{a_k}{b_k}$ and $p > 0$ and finite. \\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 90
+
+--------111---------
+J.cx, J.cy 37,20
+cline idx: 111
+cline len: 37
+cline contents: Then both series converge or diverge.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 91
+
+--------112---------
+J.cx, J.cy 4,20
+cline idx: 112
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 92
+
+--------113---------
+J.cx, J.cy 4,20
+cline idx: 113
+cline len: 23
+cline contents: \textbf{Ratio Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 93
+
+--------114---------
+J.cx, J.cy 4,20
+cline idx: 114
+cline len: 54
+cline contents: given $p = \lim_{k \to \infty} \frac{a_{k+1}}{a_k}$.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 94
+
+--------115---------
+J.cx, J.cy 26,20
+cline idx: 115
+cline len: 26
+cline contents: $p < 1$ Series converges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 95
+
+--------116---------
+J.cx, J.cy 26,20
+cline idx: 116
+cline len: 43
+cline contents: $p > 1$ or $p = +\infty$  Series diverges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 96
+
+--------117---------
+J.cx, J.cy 28,20
+cline idx: 117
+cline len: 28
+cline contents: $p = 1$ Nothing is certain\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 97
+
+--------118---------
+J.cx, J.cy 4,20
+cline idx: 118
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 98
+
+--------119---------
+J.cx, J.cy 4,20
+cline idx: 119
+cline len: 22
+cline contents: \textbf{Root Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 99
+
+--------120---------
+J.cx, J.cy 4,20
+cline idx: 120
+cline len: 54
+cline contents: given $p = \lim_{k \to \infty} (a_k)^{\frac{1}{k}}$.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 100
+
+--------121---------
+J.cx, J.cy 26,20
+cline idx: 121
+cline len: 26
+cline contents: $p < 1$ Series converges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 101
+
+--------122---------
+J.cx, J.cy 26,20
+cline idx: 122
+cline len: 43
+cline contents: $p > 1$ or $p = +\infty$  Series diverges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 102
+
+--------123---------
+J.cx, J.cy 28,20
+cline idx: 123
+cline len: 28
+cline contents: $p = 1$ Nothing is certain\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 103
+
+--------124---------
+J.cx, J.cy 4,20
+cline idx: 124
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 104
+
+--------125---------
+J.cx, J.cy 0,20
+cline idx: 125
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 105
+
+--------126---------
+J.cx, J.cy 0,20
+cline idx: 126
+cline len: 46
+cline contents: \paragraph{1.4}\textbf{Alternating Series}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 106
+
+--------127---------
+J.cx, J.cy 0,20
+cline idx: 127
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 107
+
+--------128---------
+J.cx, J.cy 0,20
+cline idx: 128
+cline len: 72
+cline contents: An alternating series converges is these two conditions are satisfied.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 108
+
+--------129---------
+J.cx, J.cy 53,20
+cline idx: 129
+cline len: 53
+cline contents: $$a_1 \ge a_2 \ge a_3 \ge \ldots \ge a_k \ge \ldots$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 109
+
+--------130---------
+J.cx, J.cy 32,20
+cline idx: 130
+cline len: 32
+cline contents: $$\lim_{k \to +\infty} a_k = 0$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 110
+
+--------131---------
+J.cx, J.cy 0,20
+cline idx: 131
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 111
+
+--------132---------
+J.cx, J.cy 0,20
+cline idx: 132
+cline len: 169
+cline contents: if the above conditions are satisfied then the sum of ther series $S$ is between $s_n \le S \le s_{n+1}$ or  $s_{n+1} \le S \le s_n$ Which ever partial sum is greater.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 112
+
+--------133---------
+J.cx, J.cy 0,20
+cline idx: 133
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 113
+
+--------134---------
+J.cx, J.cy 0,20
+cline idx: 134
+cline len: 77
+cline contents: if $S$ is approximated as $s_n$ then absolute error $|S-s_n|$ $\le a_{n+1}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 114
+
+--------135---------
+J.cx, J.cy 65,20
+cline idx: 135
+cline len: 65
+cline contents: Also the sign of the error is the same as the sign of $a_{n+1}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 115
+
+--------136---------
+J.cx, J.cy 0,20
+cline idx: 136
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 116
+
+--------137---------
+J.cx, J.cy 0,20
+cline idx: 137
+cline len: 250
+cline contents: to find $n$ to be accuarate to two decimals it suffices to find $n$ such that $0.005 \le a_{n+1}$ or the nth plus one term. in general solving the inequality $|error| \le a_{n+1}$ will give you target $n$ or target $|error|$ depending on the problem.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 117
+
+--------138---------
+J.cx, J.cy 0,20
+cline idx: 138
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 118
+
+--------139---------
+J.cx, J.cy 0,20
+cline idx: 139
+cline len: 31
+cline contents: \textbf{Absolute Convergence}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 119
+
+--------140---------
+J.cx, J.cy 0,20
+cline idx: 140
+cline len: 122
+cline contents: a series $\sum u_k$ is said to diverge or converge absolutely if the absolute values of the series diverge or converge.\\ 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 120
+
+--------141---------
+J.cx, J.cy 0,20
+cline idx: 141
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 121
+
+--------142---------
+J.cx, J.cy 0,20
+cline idx: 142
+cline len: 148
+cline contents: If a series converges absolutely then it converges. If a series converges, but diverges absoluteley then it is said to be conditionally divergent.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 122
+
+--------143---------
+J.cx, J.cy 0,20
+cline idx: 143
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 123
+
+--------144---------
+J.cx, J.cy 0,20
+cline idx: 144
+cline len: 46
+cline contents: \textbf{Ratio test for absolute convergence}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 124
+
+--------145---------
+J.cx, J.cy 0,20
+cline idx: 145
+cline len: 83
+cline contents: The ratio test can be applied to a series for absolute divergence or convergence.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 125
+
+--------146---------
+J.cx, J.cy 53,20
+cline idx: 146
+cline len: 53
+cline contents: $ p = \lim_{k \to +\infty} \frac{|a_{n+1}|}{|a_n|}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 126
+
+--------147---------
+J.cx, J.cy 53,20
+cline idx: 147
+cline len: 58
+cline contents: $ p < 1$ Series converges absolutely therefor converges.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 127
+
+--------148---------
+J.cx, J.cy 48,20
+cline idx: 148
+cline len: 48
+cline contents: $ p > 1$ or $p= +\infty$ then series diverges.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 128
+
+--------149---------
+J.cx, J.cy 26,20
+cline idx: 149
+cline len: 26
+cline contents: $ p = 1$ inconclusive.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 129
+
+--------150---------
+J.cx, J.cy 0,20
+cline idx: 150
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 130
+
+--------151---------
+J.cx, J.cy 0,20
+cline idx: 151
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 131
+
+--------152---------
+J.cx, J.cy 0,20
+cline idx: 152
+cline len: 60
+cline contents: \paragraph{1.5}\textbf{Taylor and Maclaurin polynomials}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 132
+
+--------153---------
+J.cx, J.cy 0,20
+cline idx: 153
+cline len: 353
+cline contents: A function can be approximated by a polynomial at a point by finding a polynomial which has similar values around that point. To have similar values at a point the derivatives must match. To accomplish this you must approximate constants times an $n$th degree polynomial. The constants can be described as the $n$th deriviative of the func in questions.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 133
+
+--------154---------
+J.cx, J.cy 0,20
+cline idx: 154
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 134
+
+--------155---------
+J.cx, J.cy 0,20
+cline idx: 155
+cline len: 14
+cline contents: $c_0 = f(x)$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 135
+
+--------156---------
+J.cx, J.cy 0,20
+cline idx: 156
+cline len: 15
+cline contents: $c_1 = f'(x)$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 136
+
+--------157---------
+J.cx, J.cy 0,20
+cline idx: 157
+cline len: 27
+cline contents: $c_2 = \frac{f''(x)}{2!}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 137
+
+--------158---------
+J.cx, J.cy 0,20
+cline idx: 158
+cline len: 28
+cline contents: $c_3 = \frac{f'''(x)}{3!}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 138
+
+--------159---------
+J.cx, J.cy 27,20
+cline idx: 159
+cline len: 27
+cline contents: $c_n = \frac{f^n(x)}{n!}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 139
+
+--------160---------
+J.cx, J.cy 0,20
+cline idx: 160
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 140
+
+--------161---------
+J.cx, J.cy 0,20
+cline idx: 161
+cline len: 46
+cline contents: A taylor polynomial is described as follows.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 141
+
+--------162---------
+J.cx, J.cy 0,20
+cline idx: 162
+cline len: 116
+cline contents: $P_n(x) = c_0 + c_1(x-x_0) + c_2\frac{(x-x_0)^2}{2!} + c_3\frac{(x-x_0)^3}{3!} + \cdots + c_n\frac{(x-x_0)^n}{n!}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 142
+
+--------163---------
+J.cx, J.cy 30,20
+cline idx: 163
+cline len: 30
+cline contents: Recall that $c_n = f^n(x_0)$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 143
+
+--------164---------
+J.cx, J.cy 30,20
+cline idx: 164
+cline len: 134
+cline contents: A Maclaurin polynomial is basically a Taylor poly nomial at $x_0 = 0$. In which case all $(x-x)_0$ can be replaced with simply $x$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 144
+
+--------165---------
+J.cx, J.cy 0,20
+cline idx: 165
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 145
+
+--------166---------
+J.cx, J.cy 0,20
+cline idx: 166
+cline len: 163
+cline contents: The nth remainder functions is equal to the error of the taylor polynomial and it is denoted by the difference between the function and its nth taylor polynomial. 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 146
+
+--------167---------
+J.cx, J.cy 0,20
+cline idx: 167
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 147
+
+--------168---------
+J.cx, J.cy 0,20
+cline idx: 168
+cline len: 63
+cline contents: $R_n(x) = f(x) - \sum_{k=0}^{n} \frac{f^k(x_0)}{k!}(x-x_0)^k$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 148
+
+--------169---------
+J.cx, J.cy 56,20
+cline idx: 169
+cline len: 56
+cline contents: This can also be denoted by $f(x) = P_n(x) + R_n(x)$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 149
+
+--------170---------
+J.cx, J.cy 0,20
+cline idx: 170
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 150
+
+--------171---------
+J.cx, J.cy 0,20
+cline idx: 171
+cline len: 39
+cline contents: \textbf{Remainder estimation theorem}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 151
+
+--------172---------
+J.cx, J.cy 0,20
+cline idx: 172
+cline len: 169
+cline contents: if a function can be differentiated on an interval containing $(x_0)$ n+1 times and $M$ is an upper bound on that interval  and $|f^{n+1}(x) \le M$ in said interval then
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 152
+
+--------173---------
+J.cx, J.cy 50,20
+cline idx: 173
+cline len: 50
+cline contents: $$|R_n(x)| \le \frac{M}{(n+1)!}|x-x_0|^{n+1}$$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 153
+
+--------174---------
+J.cx, J.cy 0,20
+cline idx: 174
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 154
+
+--------175---------
+J.cx, J.cy 0,20
+cline idx: 175
+cline len: 84
+cline contents: A more useful definition is $$R_n(x) = \frac{f^{(n+1)}(x)*|x-x_0|^{n+1}}{(n+1)!}$$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 155
+
+--------176---------
+J.cx, J.cy 45,20
+cline idx: 176
+cline len: 45
+cline contents: it should be the abs of the nth+1 derivative.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 156
+
+--------177---------
+J.cx, J.cy 0,20
+cline idx: 177
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 157
+
+--------178---------
+J.cx, J.cy 0,20
+cline idx: 178
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 158
+
+--------179---------
+J.cx, J.cy 0,20
+cline idx: 179
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 159
+
+--------180---------
+J.cx, J.cy 0,20
+cline idx: 180
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 160
+
+--------181---------
+J.cx, J.cy 0,20
+cline idx: 181
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 161
+
+--------182---------
+J.cx, J.cy 0,20
+cline idx: 182
+cline len: 14
+cline contents: \end{document}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 162
+
+--------183---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------184---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------185---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------186---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------187---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------188---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------189---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------190---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------191---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------192---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------193---------
+J.cx, J.cy 0,20
+cline idx: 183
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 1
+tsl is idx: 163
+
+--------194---------
+J.cx, J.cy 0,19
+cline idx: 182
+cline len: 14
+cline contents: \end{document}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------195---------
+J.cx, J.cy 0,18
+cline idx: 181
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------196---------
+J.cx, J.cy 0,17
+cline idx: 180
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------197---------
+J.cx, J.cy 0,16
+cline idx: 179
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------198---------
+J.cx, J.cy 0,15
+cline idx: 178
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------199---------
+J.cx, J.cy 0,14
+cline idx: 177
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------200---------
+J.cx, J.cy 0,13
+cline idx: 176
+cline len: 45
+cline contents: it should be the abs of the nth+1 derivative.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------201---------
+J.cx, J.cy 0,12
+cline idx: 175
+cline len: 84
+cline contents: A more useful definition is $$R_n(x) = \frac{f^{(n+1)}(x)*|x-x_0|^{n+1}}{(n+1)!}$$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------202---------
+J.cx, J.cy 0,11
+cline idx: 174
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------203---------
+J.cx, J.cy 0,10
+cline idx: 173
+cline len: 50
+cline contents: $$|R_n(x)| \le \frac{M}{(n+1)!}|x-x_0|^{n+1}$$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------204---------
+J.cx, J.cy 0,9
+cline idx: 172
+cline len: 169
+cline contents: if a function can be differentiated on an interval containing $(x_0)$ n+1 times and $M$ is an upper bound on that interval  and $|f^{n+1}(x) \le M$ in said interval then
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------205---------
+J.cx, J.cy 39,8
+cline idx: 171
+cline len: 39
+cline contents: \textbf{Remainder estimation theorem}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------206---------
+J.cx, J.cy 0,7
+cline idx: 170
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------207---------
+J.cx, J.cy 0,6
+cline idx: 169
+cline len: 56
+cline contents: This can also be denoted by $f(x) = P_n(x) + R_n(x)$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------208---------
+J.cx, J.cy 0,5
+cline idx: 168
+cline len: 63
+cline contents: $R_n(x) = f(x) - \sum_{k=0}^{n} \frac{f^k(x_0)}{k!}(x-x_0)^k$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------209---------
+J.cx, J.cy 0,4
+cline idx: 167
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------210---------
+J.cx, J.cy 0,3
+cline idx: 166
+cline len: 163
+cline contents: The nth remainder functions is equal to the error of the taylor polynomial and it is denoted by the difference between the function and its nth taylor polynomial. 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------211---------
+J.cx, J.cy 0,2
+cline idx: 165
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------212---------
+J.cx, J.cy 0,1
+cline idx: 164
+cline len: 134
+cline contents: A Maclaurin polynomial is basically a Taylor poly nomial at $x_0 = 0$. In which case all $(x-x)_0$ can be replaced with simply $x$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------213---------
+J.cx, J.cy 30,0
+cline idx: 163
+cline len: 30
+cline contents: Recall that $c_n = f^n(x_0)$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 163
+
+--------214---------
+J.cx, J.cy 30,0
+cline idx: 162
+cline len: 116
+cline contents: $P_n(x) = c_0 + c_1(x-x_0) + c_2\frac{(x-x_0)^2}{2!} + c_3\frac{(x-x_0)^3}{3!} + \cdots + c_n\frac{(x-x_0)^n}{n!}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 162
+
+--------215---------
+J.cx, J.cy 46,0
+cline idx: 161
+cline len: 46
+cline contents: A taylor polynomial is described as follows.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 161
+
+--------216---------
+J.cx, J.cy 0,0
+cline idx: 160
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 160
+
+--------217---------
+J.cx, J.cy 0,0
+cline idx: 159
+cline len: 27
+cline contents: $c_n = \frac{f^n(x)}{n!}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 159
+
+--------218---------
+J.cx, J.cy 0,0
+cline idx: 158
+cline len: 28
+cline contents: $c_3 = \frac{f'''(x)}{3!}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 158
+
+--------219---------
+J.cx, J.cy 27,0
+cline idx: 157
+cline len: 27
+cline contents: $c_2 = \frac{f''(x)}{2!}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 157
+
+--------220---------
+J.cx, J.cy 15,0
+cline idx: 156
+cline len: 15
+cline contents: $c_1 = f'(x)$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 156
+
+--------221---------
+J.cx, J.cy 14,0
+cline idx: 155
+cline len: 14
+cline contents: $c_0 = f(x)$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 155
+
+--------222---------
+J.cx, J.cy 0,0
+cline idx: 154
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 154
+
+--------223---------
+J.cx, J.cy 0,0
+cline idx: 153
+cline len: 353
+cline contents: A function can be approximated by a polynomial at a point by finding a polynomial which has similar values around that point. To have similar values at a point the derivatives must match. To accomplish this you must approximate constants times an $n$th degree polynomial. The constants can be described as the $n$th deriviative of the func in questions.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 153
+
+--------224---------
+J.cx, J.cy 60,0
+cline idx: 152
+cline len: 60
+cline contents: \paragraph{1.5}\textbf{Taylor and Maclaurin polynomials}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 152
+
+--------225---------
+J.cx, J.cy 0,0
+cline idx: 151
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 151
+
+--------226---------
+J.cx, J.cy 0,0
+cline idx: 150
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 150
+
+--------227---------
+J.cx, J.cy 0,0
+cline idx: 149
+cline len: 26
+cline contents: $ p = 1$ inconclusive.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 149
+
+--------228---------
+J.cx, J.cy 0,0
+cline idx: 148
+cline len: 48
+cline contents: $ p > 1$ or $p= +\infty$ then series diverges.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 148
+
+--------229---------
+J.cx, J.cy 0,0
+cline idx: 147
+cline len: 58
+cline contents: $ p < 1$ Series converges absolutely therefor converges.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 147
+
+--------230---------
+J.cx, J.cy 53,0
+cline idx: 146
+cline len: 53
+cline contents: $ p = \lim_{k \to +\infty} \frac{|a_{n+1}|}{|a_n|}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 146
+
+--------231---------
+J.cx, J.cy 53,0
+cline idx: 145
+cline len: 83
+cline contents: The ratio test can be applied to a series for absolute divergence or convergence.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 145
+
+--------232---------
+J.cx, J.cy 46,0
+cline idx: 144
+cline len: 46
+cline contents: \textbf{Ratio test for absolute convergence}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 144
+
+--------233---------
+J.cx, J.cy 0,0
+cline idx: 143
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 143
+
+--------234---------
+J.cx, J.cy 0,0
+cline idx: 142
+cline len: 148
+cline contents: If a series converges absolutely then it converges. If a series converges, but diverges absoluteley then it is said to be conditionally divergent.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 142
+
+--------235---------
+J.cx, J.cy 0,0
+cline idx: 141
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 141
+
+--------236---------
+J.cx, J.cy 0,0
+cline idx: 140
+cline len: 122
+cline contents: a series $\sum u_k$ is said to diverge or converge absolutely if the absolute values of the series diverge or converge.\\ 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 140
+
+--------237---------
+J.cx, J.cy 31,0
+cline idx: 139
+cline len: 31
+cline contents: \textbf{Absolute Convergence}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 139
+
+--------238---------
+J.cx, J.cy 0,0
+cline idx: 138
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 138
+
+--------239---------
+J.cx, J.cy 0,0
+cline idx: 137
+cline len: 250
+cline contents: to find $n$ to be accuarate to two decimals it suffices to find $n$ such that $0.005 \le a_{n+1}$ or the nth plus one term. in general solving the inequality $|error| \le a_{n+1}$ will give you target $n$ or target $|error|$ depending on the problem.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 137
+
+--------240---------
+J.cx, J.cy 0,0
+cline idx: 136
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 136
+
+--------241---------
+J.cx, J.cy 0,0
+cline idx: 135
+cline len: 65
+cline contents: Also the sign of the error is the same as the sign of $a_{n+1}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 135
+
+--------242---------
+J.cx, J.cy 0,0
+cline idx: 134
+cline len: 77
+cline contents: if $S$ is approximated as $s_n$ then absolute error $|S-s_n|$ $\le a_{n+1}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 134
+
+--------243---------
+J.cx, J.cy 0,0
+cline idx: 133
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 133
+
+--------244---------
+J.cx, J.cy 0,0
+cline idx: 132
+cline len: 169
+cline contents: if the above conditions are satisfied then the sum of ther series $S$ is between $s_n \le S \le s_{n+1}$ or  $s_{n+1} \le S \le s_n$ Which ever partial sum is greater.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 132
+
+--------245---------
+J.cx, J.cy 0,0
+cline idx: 131
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 131
+
+--------246---------
+J.cx, J.cy 0,0
+cline idx: 130
+cline len: 32
+cline contents: $$\lim_{k \to +\infty} a_k = 0$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 130
+
+--------247---------
+J.cx, J.cy 0,0
+cline idx: 129
+cline len: 53
+cline contents: $$a_1 \ge a_2 \ge a_3 \ge \ldots \ge a_k \ge \ldots$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 129
+
+--------248---------
+J.cx, J.cy 0,0
+cline idx: 128
+cline len: 72
+cline contents: An alternating series converges is these two conditions are satisfied.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 128
+
+--------249---------
+J.cx, J.cy 0,0
+cline idx: 127
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 127
+
+--------250---------
+J.cx, J.cy 0,0
+cline idx: 126
+cline len: 46
+cline contents: \paragraph{1.4}\textbf{Alternating Series}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 126
+
+--------251---------
+J.cx, J.cy 0,0
+cline idx: 125
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 125
+
+--------252---------
+J.cx, J.cy 0,0
+cline idx: 124
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 124
+
+--------253---------
+J.cx, J.cy 0,0
+cline idx: 123
+cline len: 28
+cline contents: $p = 1$ Nothing is certain\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 123
+
+--------254---------
+J.cx, J.cy 0,0
+cline idx: 122
+cline len: 43
+cline contents: $p > 1$ or $p = +\infty$  Series diverges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 122
+
+--------255---------
+J.cx, J.cy 26,0
+cline idx: 121
+cline len: 26
+cline contents: $p < 1$ Series converges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 121
+
+--------256---------
+J.cx, J.cy 26,0
+cline idx: 120
+cline len: 54
+cline contents: given $p = \lim_{k \to \infty} (a_k)^{\frac{1}{k}}$.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 120
+
+--------257---------
+J.cx, J.cy 22,0
+cline idx: 119
+cline len: 22
+cline contents: \textbf{Root Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 119
+
+--------258---------
+J.cx, J.cy 4,0
+cline idx: 118
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 118
+
+--------259---------
+J.cx, J.cy 4,0
+cline idx: 117
+cline len: 28
+cline contents: $p = 1$ Nothing is certain\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 117
+
+--------260---------
+J.cx, J.cy 4,0
+cline idx: 116
+cline len: 43
+cline contents: $p > 1$ or $p = +\infty$  Series diverges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 116
+
+--------261---------
+J.cx, J.cy 26,0
+cline idx: 115
+cline len: 26
+cline contents: $p < 1$ Series converges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 115
+
+--------262---------
+J.cx, J.cy 26,0
+cline idx: 114
+cline len: 54
+cline contents: given $p = \lim_{k \to \infty} \frac{a_{k+1}}{a_k}$.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 114
+
+--------263---------
+J.cx, J.cy 23,0
+cline idx: 113
+cline len: 23
+cline contents: \textbf{Ratio Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 113
+
+--------264---------
+J.cx, J.cy 4,0
+cline idx: 112
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 112
+
+--------265---------
+J.cx, J.cy 4,0
+cline idx: 111
+cline len: 37
+cline contents: Then both series converge or diverge.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 111
+
+--------266---------
+J.cx, J.cy 4,0
+cline idx: 110
+cline len: 74
+cline contents: given $p = \lim_{k \to \infty} \frac{a_k}{b_k}$ and $p > 0$ and finite. \\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 110
+
+--------267---------
+J.cx, J.cy 34,0
+cline idx: 109
+cline len: 34
+cline contents: \textbf{Limit Comparison Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 109
+
+--------268---------
+J.cx, J.cy 4,0
+cline idx: 108
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 108
+
+--------269---------
+J.cx, J.cy 4,0
+cline idx: 107
+cline len: 295
+cline contents: given $\sum a_k$ and $\sum b_k$ all $a_k$ and $b_k$ positive. If all $b_k \ge a_k$ if $\sum b_k$ converges so does $\sum a_k$. Conversely if $\sum a_k$ diverges so does $\sum b_k$. in other words in the larger sum converges so does the smallerand if the smaller sum diverges so does the larger. 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 107
+
+--------270---------
+J.cx, J.cy 28,0
+cline idx: 106
+cline len: 28
+cline contents: \textbf{Comparison Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 106
+
+--------271---------
+J.cx, J.cy 0,0
+cline idx: 105
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 105
+
+--------272---------
+J.cx, J.cy 0,0
+cline idx: 104
+cline len: 56
+cline contents: If $p > 1$ the series converges, otherwise it diverges. 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 104
+
+--------273---------
+J.cx, J.cy 0,0
+cline idx: 103
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 103
+
+--------274---------
+J.cx, J.cy 0,0
+cline idx: 102
+cline len: 112
+cline contents: A p-series is a series of the form $\sum \frac{1}{k^p}$. The harmonic series is one such series where $p=1$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 102
+
+--------275---------
+J.cx, J.cy 21,0
+cline idx: 101
+cline len: 21
+cline contents: \textbf{P-series}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 101
+
+--------276---------
+J.cx, J.cy 0,0
+cline idx: 100
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 100
+
+--------277---------
+J.cx, J.cy 0,0
+cline idx: 99
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 99
+
+--------278---------
+J.cx, J.cy 0,0
+cline idx: 98
+cline len: 141
+cline contents: if $u_k$ is a decreasing function on $[a, +\infty]$ then. $\sum_{k=1}^{\infty} u_k$ and $\int_{a}^{\infty} u_k$ both converge or diverge.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 98
+
+--------279---------
+J.cx, J.cy 30,0
+cline idx: 97
+cline len: 30
+cline contents: \textbf{The integral Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 97
+
+--------280---------
+J.cx, J.cy 0,0
+cline idx: 96
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 96
+
+--------281---------
+J.cx, J.cy 0,0
+cline idx: 95
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 95
+
+--------282---------
+J.cx, J.cy 0,0
+cline idx: 94
+cline len: 44
+cline contents: $\sum u_k + v_k$ = $\sum u_k + \sum v_k$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 94
+
+--------283---------
+J.cx, J.cy 0,0
+cline idx: 93
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 93
+
+--------284---------
+J.cx, J.cy 0,0
+cline idx: 92
+cline len: 42
+cline contents: $\sum u_k - v_k$ = $\sum u_k - \sum v_k$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 92
+
+--------285---------
+J.cx, J.cy 0,0
+cline idx: 91
+cline len: 44
+cline contents: Thier sums and differences are also related.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 91
+
+--------286---------
+J.cx, J.cy 0,0
+cline idx: 90
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 90
+
+--------287---------
+J.cx, J.cy 0,0
+cline idx: 89
+cline len: 151
+cline contents: if $\sum u_k$ and $\sum v_k$ are convergent series then thier sum and difference are also convergent series. $\sum u_k - v_k$ and $\sum u_k + v_k$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 89
+
+--------288---------
+J.cx, J.cy 20,0
+cline idx: 88
+cline len: 20
+cline contents: \textbf{Theorem 2}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 88
+
+--------289---------
+J.cx, J.cy 0,0
+cline idx: 87
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 87
+
+--------290---------
+J.cx, J.cy 0,0
+cline idx: 86
+cline len: 141
+cline contents: if $u_k \ne 0$ as $k$ approaches infinity then the series diverges. Else the series may diverge or converge. $\lim_{k \to \infty} \ne 0$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 86
+
+--------291---------
+J.cx, J.cy 20,0
+cline idx: 85
+cline len: 20
+cline contents: \textbf{Theorem 1}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 85
+
+--------292---------
+J.cx, J.cy 0,0
+cline idx: 84
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 84
+
+--------293---------
+J.cx, J.cy 0,0
+cline idx: 83
+cline len: 145
+cline contents: $u_k$ is defined as the "general" term of a series. For example in the harmonic series. $\sum_{k=1}^{\infty} \frac{1}{k}$, $u_k=\frac{1}{k}$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 83
+
+--------294---------
+J.cx, J.cy 0,0
+cline idx: 82
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 82
+
+--------295---------
+J.cx, J.cy 0,0
+cline idx: 81
+cline len: 45
+cline contents: \paragraph{1.3}\textbf{Convergence Tests}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 81
+
+--------296---------
+J.cx, J.cy 0,0
+cline idx: 80
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 80
+
+--------297---------
+J.cx, J.cy 0,0
+cline idx: 79
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 79
+
+--------298---------
+J.cx, J.cy 0,0
+cline idx: 78
+cline len: 62
+cline contents: $a_{n+1} - a_{n} \leq 0$	$a_{n+1}/a_{n} \leq 1$	decreasing\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 78
+
+--------299---------
+J.cx, J.cy 60,0
+cline idx: 77
+cline len: 60
+cline contents: $a_{n+1} - a_{n} \geq 0$	$a_{n+1}/a_{n} \geq 1$	increasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 77
+
+--------300---------
+J.cx, J.cy 60,0
+cline idx: 76
+cline len: 63
+cline contents: $a_{n+1} - a_{n} < 0$	$a_{n+1}/a_{n} < 1$	Strictly decreasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 76
+
+--------301---------
+J.cx, J.cy 60,0
+cline idx: 75
+cline len: 63
+cline contents: $a_{n+1} - a_{n} > 0$	$a_{n+1}/a_{n} > 1$	Strictly increasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 75
+
+--------302---------
+J.cx, J.cy 33,0
+cline idx: 74
+cline len: 33
+cline contents: \textbf{Monotone testing table}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 74
+
+--------303---------
+J.cx, J.cy 0,0
+cline idx: 73
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 73
+
+--------304---------
+J.cx, J.cy 0,0
+cline idx: 72
+cline len: 83
+cline contents: (b): No lower bound exists, in which case, $\lim_{n \to \infty} a_n = -\infty$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 72
+
+--------305---------
+J.cx, J.cy 0,0
+cline idx: 71
+cline len: 88
+cline contents: for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \geq  M$.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 71
+
+--------306---------
+J.cx, J.cy 0,0
+cline idx: 70
+cline len: 91
+cline contents: (a): There is a constant $M$, called a lower bound for the sequence, such that $a_n \geq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 70
+
+--------307---------
+J.cx, J.cy 36,0
+cline idx: 69
+cline len: 36
+cline contents: Likewise for decreasing sequences.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 69
+
+--------308---------
+J.cx, J.cy 0,0
+cline idx: 68
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 68
+
+--------309---------
+J.cx, J.cy 0,0
+cline idx: 67
+cline len: 83
+cline contents: (b): No upper bound exists, in which case, $\lim_{n \to \infty} a_n = +\infty$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 67
+
+--------310---------
+J.cx, J.cy 0,0
+cline idx: 66
+cline len: 86
+cline contents: for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \leq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 66
+
+--------311---------
+J.cx, J.cy 0,0
+cline idx: 65
+cline len: 92
+cline contents: (a): There is a constant $M$, called an upper bound for the sequence, such that $a_n \leq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 65
+
+--------312---------
+J.cx, J.cy 74,0
+cline idx: 64
+cline len: 74
+cline contents: if sequence ${a_n}$ is eventually increasing then either a or b is true.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 64
+
+--------313---------
+J.cx, J.cy 26,0
+cline idx: 63
+cline len: 26
+cline contents: \textbf{Theorem 9.2.3-4}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 63
+
+--------314---------
+J.cx, J.cy 26,0
+cline idx: 62
+cline len: 74
+cline contents: \paragraph{1.2}\textbf{Increasing and Decreasing (Monotone) Sequences}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 62
+
+--------315---------
+J.cx, J.cy 0,0
+cline idx: 61
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 61
+
+--------316---------
+J.cx, J.cy 0,0
+cline idx: 60
+cline len: 98
+cline contents: by rearranging a given equation into the linear format and calculating $\mu$ we can solve for $y$.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 60
+
+--------317---------
+J.cx, J.cy 39,0
+cline idx: 59
+cline len: 39
+cline contents: $$y = \frac{1}{\mu} * \int \mu*q(x)dx$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 59
+
+--------318---------
+J.cx, J.cy 26,0
+cline idx: 58
+cline len: 26
+cline contents: This gives us the result\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 58
+
+--------319---------
+J.cx, J.cy 26,0
+cline idx: 57
+cline len: 32
+cline contents: $$\frac{d}{dx}(\mu y)=\mu q(x)$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 57
+
+--------320---------
+J.cx, J.cy 25,0
+cline idx: 56
+cline len: 25
+cline contents: $$\mu = e^{\int p(x)dx}$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 56
+
+--------321---------
+J.cx, J.cy 0,0
+cline idx: 55
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 55
+
+--------322---------
+J.cx, J.cy 0,0
+cline idx: 54
+cline len: 208
+cline contents: a first order differential equation is said to linear if it is expresible in the form $\frac{dy}{dx} + p(x)y = q(x)$ if this is the case we can use the method of integrating factors to solve this problem.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 54
+
+--------323---------
+J.cx, J.cy 0,1
+cline idx: 55
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 54
+
+--------324---------
+J.cx, J.cy 0,2
+cline idx: 56
+cline len: 25
+cline contents: $$\mu = e^{\int p(x)dx}$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 54
+
+--------325---------
+J.cx, J.cy 0,1
+cline idx: 55
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 54
+
+--------326---------
+J.cx, J.cy 0,0
+cline idx: 54
+cline len: 208
+cline contents: a first order differential equation is said to linear if it is expresible in the form $\frac{dy}{dx} + p(x)y = q(x)$ if this is the case we can use the method of integrating factors to solve this problem.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 54
+
+--------327---------
+J.cx, J.cy 0,0
+cline idx: 53
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 53
+
+--------328---------
+J.cx, J.cy 0,0
+cline idx: 52
+cline len: 47
+cline contents: \paragraph{1.1}\textbf{Integrating factors}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 52
+
+--------329---------
+J.cx, J.cy 0,0
+cline idx: 51
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 51
+
+--------330---------
+J.cx, J.cy 0,0
+cline idx: 50
+cline len: 41
+cline contents: $$\frac{dT}{dt} = k(T_s - T), k > 0$$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 50
+
+--------331---------
+J.cx, J.cy 31,0
+cline idx: 49
+cline len: 31
+cline contents: \textbf{Integrated Formula}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 49
+
+--------332---------
+J.cx, J.cy 0,0
+cline idx: 48
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 48
+
+--------333---------
+J.cx, J.cy 0,0
+cline idx: 47
+cline len: 32
+cline contents: time $e$ to the $-kt$ power.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 47
+
+--------334---------
+J.cx, J.cy 0,0
+cline idx: 46
+cline len: 95
+cline contents: The temp at time $t$ is equal to temp of surroundings + the initial temp - temp of surroundings
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 46
+
+--------335---------
+J.cx, J.cy 34,0
+cline idx: 45
+cline len: 34
+cline contents: $$T(t) = T_s + (T_0 -T_s)e^{-kt}$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 45
+
+--------336---------
+J.cx, J.cy 34,0
+cline idx: 44
+cline len: 34
+cline contents: \textbf{Newton Law of Cooling}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 44
+
+--------337---------
+J.cx, J.cy 0,0
+cline idx: 43
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 43
+
+--------338---------
+J.cx, J.cy 0,0
+cline idx: 42
+cline len: 74
+cline contents: Integrated Population growth $= y = \frac{y_0*L}{y_0 +(L-y_0)e^{-kt}}$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 42
+
+--------339---------
+J.cx, J.cy 59,0
+cline idx: 41
+cline len: 59
+cline contents: Population growth $= \frac{dy}{dt} = k(1 - \frac{y}{L})y$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 41
+
+--------340---------
+J.cx, J.cy 0,0
+cline idx: 40
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 40
+
+--------341---------
+J.cx, J.cy 0,0
+cline idx: 39
+cline len: 101
+cline contents: For decay problems if given $t_{1/2}$ then set $y=y_0*\frac{1}{2}$ and $t=t_{1/2}$ to solve for $k$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 39
+
+--------342---------
+J.cx, J.cy 32,0
+cline idx: 38
+cline len: 32
+cline contents: decay  $= y = y_0 * e^{-kt}$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 38
+
+--------343---------
+J.cx, J.cy 29,0
+cline idx: 37
+cline len: 29
+cline contents: growth $= y = y_0 * e^{kt}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 37
+
+--------344---------
+J.cx, J.cy 29,0
+cline idx: 36
+cline len: 30
+cline contents: \textbf{Integrated Formulas}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 36
+
+--------345---------
+J.cx, J.cy 0,0
+cline idx: 35
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 35
+
+--------346---------
+J.cx, J.cy 0,0
+cline idx: 34
+cline len: 44
+cline contents: where $t$ is time and $p$ is population.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 34
+
+--------347---------
+J.cx, J.cy 32,0
+cline idx: 33
+cline len: 32
+cline contents: decay  $= \frac{dp}{dt} = -kp$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 33
+
+--------348---------
+J.cx, J.cy 31,0
+cline idx: 32
+cline len: 31
+cline contents: growth $= \frac{dp}{dt} = kp$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 32
+
+--------349---------
+J.cx, J.cy 31,0
+cline idx: 31
+cline len: 41
+cline contents: \textbf{Exponential Growth and Decay}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 31
+
+--------350---------
+J.cx, J.cy 0,0
+cline idx: 30
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 30
+
+--------351---------
+J.cx, J.cy 0,0
+cline idx: 29
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 29
+
+--------352---------
+J.cx, J.cy 0,0
+cline idx: 28
+cline len: 43
+cline contents: $y_{n+1} = y_n + \frac{dy}{dx}\Delta x$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 28
+
+--------353---------
+J.cx, J.cy 0,0
+cline idx: 27
+cline len: 79
+cline contents: This process repeats for n approximations and can be described by the formula\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 27
+
+--------354---------
+J.cx, J.cy 38,0
+cline idx: 26
+cline len: 38
+cline contents: $y_2 = y_1 + f(x_1, y_1)*\Delta x$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 26
+
+--------355---------
+J.cx, J.cy 36,0
+cline idx: 25
+cline len: 36
+cline contents: $y_1 = y_0 + f(x_0, y_0)*\Delta x$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 25
+
+--------356---------
+J.cx, J.cy 24,0
+cline idx: 24
+cline len: 24
+cline contents: \textbf{Eulars method}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 24
+
+--------357---------
+J.cx, J.cy 0,0
+cline idx: 23
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 23
+
+--------358---------
+J.cx, J.cy 0,0
+cline idx: 22
+cline len: 72
+cline contents: Order of differential equation: the order of its highest derivative.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 22
+
+--------359---------
+J.cx, J.cy 0,0
+cline idx: 21
+cline len: 72
+cline contents: Differential equation: an equation containing one or more derivatives.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 21
+
+--------360---------
+J.cx, J.cy 0,0
+cline idx: 20
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 20
+
+--------361---------
+J.cx, J.cy 0,0
+cline idx: 19
+cline len: 50
+cline contents: \paragraph{1.0}\textbf{Differential Equations}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 19
+
+--------362---------
+J.cx, J.cy 16,0
+cline idx: 18
+cline len: 16
+cline contents: \begin{document}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 18
+
+--------363---------
+J.cx, J.cy 0,0
+cline idx: 17
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 17
+
+--------364---------
+J.cx, J.cy 0,0
+cline idx: 16
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 16
+
+--------365---------
+J.cx, J.cy 0,0
+cline idx: 15
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 15
+
+--------366---------
+J.cx, J.cy 0,0
+cline idx: 14
+cline len: 25
+cline contents: \author{Jonathan Parlett}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 14
+
+--------367---------
+J.cx, J.cy 0,0
+cline idx: 13
+cline len: 26
+cline contents: \title{Calculus III Notes}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 13
+
+--------368---------
+J.cx, J.cy 0,0
+cline idx: 12
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 12
+
+--------369---------
+J.cx, J.cy 0,0
+cline idx: 11
+cline len: 71
+cline contents: % See the ``Article customise'' template for come common customisations
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 11
+
+--------370---------
+J.cx, J.cy 0,0
+cline idx: 10
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 10
+
+--------371---------
+J.cx, J.cy 0,0
+cline idx: 9
+cline len: 46
+cline contents: % \geometry{landscape} % rotated page geometry
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 9
+
+--------372---------
+J.cx, J.cy 0,0
+cline idx: 8
+cline len: 52
+cline contents: \geometry{a4paper} % or letter or a5paper or ... etc
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 8
+
+--------373---------
+J.cx, J.cy 26,0
+cline idx: 7
+cline len: 26
+cline contents: \pgfplotsset{compat=1.17} 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------374---------
+J.cx, J.cy 26,1
+cline idx: 8
+cline len: 52
+cline contents: \geometry{a4paper} % or letter or a5paper or ... etc
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------375---------
+J.cx, J.cy 46,2
+cline idx: 9
+cline len: 46
+cline contents: % \geometry{landscape} % rotated page geometry
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------376---------
+J.cx, J.cy 0,3
+cline idx: 10
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------377---------
+J.cx, J.cy 0,4
+cline idx: 11
+cline len: 71
+cline contents: % See the ``Article customise'' template for come common customisations
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------378---------
+J.cx, J.cy 0,5
+cline idx: 12
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------379---------
+J.cx, J.cy 0,6
+cline idx: 13
+cline len: 26
+cline contents: \title{Calculus III Notes}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------380---------
+J.cx, J.cy 25,7
+cline idx: 14
+cline len: 25
+cline contents: \author{Jonathan Parlett}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------381---------
+J.cx, J.cy 0,8
+cline idx: 15
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------382---------
+J.cx, J.cy 0,9
+cline idx: 16
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------383---------
+J.cx, J.cy 0,10
+cline idx: 17
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------384---------
+J.cx, J.cy 0,11
+cline idx: 18
+cline len: 16
+cline contents: \begin{document}
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------385---------
+J.cx, J.cy 0,12
+cline idx: 19
+cline len: 50
+cline contents: \paragraph{1.0}\textbf{Differential Equations}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------386---------
+J.cx, J.cy 0,13
+cline idx: 20
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------387---------
+J.cx, J.cy 0,14
+cline idx: 21
+cline len: 72
+cline contents: Differential equation: an equation containing one or more derivatives.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------388---------
+J.cx, J.cy 0,15
+cline idx: 22
+cline len: 72
+cline contents: Order of differential equation: the order of its highest derivative.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------389---------
+J.cx, J.cy 0,16
+cline idx: 23
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------390---------
+J.cx, J.cy 0,17
+cline idx: 24
+cline len: 24
+cline contents: \textbf{Eulars method}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------391---------
+J.cx, J.cy 0,18
+cline idx: 25
+cline len: 36
+cline contents: $y_1 = y_0 + f(x_0, y_0)*\Delta x$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------392---------
+J.cx, J.cy 0,19
+cline idx: 26
+cline len: 38
+cline contents: $y_2 = y_1 + f(x_1, y_1)*\Delta x$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------393---------
+J.cx, J.cy 0,20
+cline idx: 27
+cline len: 79
+cline contents: This process repeats for n approximations and can be described by the formula\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 7
+
+--------394---------
+J.cx, J.cy 43,20
+cline idx: 28
+cline len: 43
+cline contents: $y_{n+1} = y_n + \frac{dy}{dx}\Delta x$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 8
+
+--------395---------
+J.cx, J.cy 0,20
+cline idx: 29
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 9
+
+--------396---------
+J.cx, J.cy 0,20
+cline idx: 30
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 10
+
+--------397---------
+J.cx, J.cy 0,20
+cline idx: 31
+cline len: 41
+cline contents: \textbf{Exponential Growth and Decay}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 11
+
+--------398---------
+J.cx, J.cy 31,20
+cline idx: 32
+cline len: 31
+cline contents: growth $= \frac{dp}{dt} = kp$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 12
+
+--------399---------
+J.cx, J.cy 31,20
+cline idx: 33
+cline len: 32
+cline contents: decay  $= \frac{dp}{dt} = -kp$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 13
+
+--------400---------
+J.cx, J.cy 31,20
+cline idx: 34
+cline len: 44
+cline contents: where $t$ is time and $p$ is population.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 14
+
+--------401---------
+J.cx, J.cy 0,20
+cline idx: 35
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 15
+
+--------402---------
+J.cx, J.cy 0,20
+cline idx: 36
+cline len: 30
+cline contents: \textbf{Integrated Formulas}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 16
+
+--------403---------
+J.cx, J.cy 29,20
+cline idx: 37
+cline len: 29
+cline contents: growth $= y = y_0 * e^{kt}$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 17
+
+--------404---------
+J.cx, J.cy 29,20
+cline idx: 38
+cline len: 32
+cline contents: decay  $= y = y_0 * e^{-kt}$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 18
+
+--------405---------
+J.cx, J.cy 29,20
+cline idx: 39
+cline len: 101
+cline contents: For decay problems if given $t_{1/2}$ then set $y=y_0*\frac{1}{2}$ and $t=t_{1/2}$ to solve for $k$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 19
+
+--------406---------
+J.cx, J.cy 0,20
+cline idx: 40
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 20
+
+--------407---------
+J.cx, J.cy 0,20
+cline idx: 41
+cline len: 59
+cline contents: Population growth $= \frac{dy}{dt} = k(1 - \frac{y}{L})y$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 21
+
+--------408---------
+J.cx, J.cy 0,20
+cline idx: 42
+cline len: 74
+cline contents: Integrated Population growth $= y = \frac{y_0*L}{y_0 +(L-y_0)e^{-kt}}$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 22
+
+--------409---------
+J.cx, J.cy 0,20
+cline idx: 43
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 23
+
+--------410---------
+J.cx, J.cy 0,20
+cline idx: 44
+cline len: 34
+cline contents: \textbf{Newton Law of Cooling}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 24
+
+--------411---------
+J.cx, J.cy 0,20
+cline idx: 45
+cline len: 34
+cline contents: $$T(t) = T_s + (T_0 -T_s)e^{-kt}$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 25
+
+--------412---------
+J.cx, J.cy 0,20
+cline idx: 46
+cline len: 95
+cline contents: The temp at time $t$ is equal to temp of surroundings + the initial temp - temp of surroundings
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 26
+
+--------413---------
+J.cx, J.cy 32,20
+cline idx: 47
+cline len: 32
+cline contents: time $e$ to the $-kt$ power.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 27
+
+--------414---------
+J.cx, J.cy 0,20
+cline idx: 48
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 28
+
+--------415---------
+J.cx, J.cy 0,20
+cline idx: 49
+cline len: 31
+cline contents: \textbf{Integrated Formula}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 29
+
+--------416---------
+J.cx, J.cy 0,20
+cline idx: 50
+cline len: 41
+cline contents: $$\frac{dT}{dt} = k(T_s - T), k > 0$$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 30
+
+--------417---------
+J.cx, J.cy 0,20
+cline idx: 51
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 31
+
+--------418---------
+J.cx, J.cy 0,20
+cline idx: 52
+cline len: 47
+cline contents: \paragraph{1.1}\textbf{Integrating factors}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 32
+
+--------419---------
+J.cx, J.cy 0,20
+cline idx: 53
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 33
+
+--------420---------
+J.cx, J.cy 0,20
+cline idx: 54
+cline len: 208
+cline contents: a first order differential equation is said to linear if it is expresible in the form $\frac{dy}{dx} + p(x)y = q(x)$ if this is the case we can use the method of integrating factors to solve this problem.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 34
+
+--------421---------
+J.cx, J.cy 0,20
+cline idx: 55
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 35
+
+--------422---------
+J.cx, J.cy 0,20
+cline idx: 56
+cline len: 25
+cline contents: $$\mu = e^{\int p(x)dx}$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 36
+
+--------423---------
+J.cx, J.cy 0,20
+cline idx: 57
+cline len: 32
+cline contents: $$\frac{d}{dx}(\mu y)=\mu q(x)$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 37
+
+--------424---------
+J.cx, J.cy 26,20
+cline idx: 58
+cline len: 26
+cline contents: This gives us the result\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 38
+
+--------425---------
+J.cx, J.cy 26,20
+cline idx: 59
+cline len: 39
+cline contents: $$y = \frac{1}{\mu} * \int \mu*q(x)dx$$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 39
+
+--------426---------
+J.cx, J.cy 26,20
+cline idx: 60
+cline len: 98
+cline contents: by rearranging a given equation into the linear format and calculating $\mu$ we can solve for $y$.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 40
+
+--------427---------
+J.cx, J.cy 0,20
+cline idx: 61
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 41
+
+--------428---------
+J.cx, J.cy 0,20
+cline idx: 62
+cline len: 74
+cline contents: \paragraph{1.2}\textbf{Increasing and Decreasing (Monotone) Sequences}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 42
+
+--------429---------
+J.cx, J.cy 26,20
+cline idx: 63
+cline len: 26
+cline contents: \textbf{Theorem 9.2.3-4}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 43
+
+--------430---------
+J.cx, J.cy 26,20
+cline idx: 64
+cline len: 74
+cline contents: if sequence ${a_n}$ is eventually increasing then either a or b is true.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 44
+
+--------431---------
+J.cx, J.cy 26,20
+cline idx: 65
+cline len: 92
+cline contents: (a): There is a constant $M$, called an upper bound for the sequence, such that $a_n \leq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 45
+
+--------432---------
+J.cx, J.cy 86,20
+cline idx: 66
+cline len: 86
+cline contents: for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \leq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 46
+
+--------433---------
+J.cx, J.cy 83,20
+cline idx: 67
+cline len: 83
+cline contents: (b): No upper bound exists, in which case, $\lim_{n \to \infty} a_n = +\infty$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 47
+
+--------434---------
+J.cx, J.cy 0,20
+cline idx: 68
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 48
+
+--------435---------
+J.cx, J.cy 0,20
+cline idx: 69
+cline len: 36
+cline contents: Likewise for decreasing sequences.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 49
+
+--------436---------
+J.cx, J.cy 0,20
+cline idx: 70
+cline len: 91
+cline contents: (a): There is a constant $M$, called a lower bound for the sequence, such that $a_n \geq M$
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 50
+
+--------437---------
+J.cx, J.cy 88,20
+cline idx: 71
+cline len: 88
+cline contents: for all $n$, in which case the sequence converges to a limit $L$ satisfying $L \geq  M$.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 51
+
+--------438---------
+J.cx, J.cy 83,20
+cline idx: 72
+cline len: 83
+cline contents: (b): No lower bound exists, in which case, $\lim_{n \to \infty} a_n = -\infty$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 52
+
+--------439---------
+J.cx, J.cy 0,20
+cline idx: 73
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 53
+
+--------440---------
+J.cx, J.cy 0,20
+cline idx: 74
+cline len: 33
+cline contents: \textbf{Monotone testing table}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 54
+
+--------441---------
+J.cx, J.cy 0,20
+cline idx: 75
+cline len: 63
+cline contents: $a_{n+1} - a_{n} > 0$	$a_{n+1}/a_{n} > 1$	Strictly increasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 55
+
+--------442---------
+J.cx, J.cy 0,20
+cline idx: 76
+cline len: 63
+cline contents: $a_{n+1} - a_{n} < 0$	$a_{n+1}/a_{n} < 1$	Strictly decreasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 56
+
+--------443---------
+J.cx, J.cy 60,20
+cline idx: 77
+cline len: 60
+cline contents: $a_{n+1} - a_{n} \geq 0$	$a_{n+1}/a_{n} \geq 1$	increasing\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 57
+
+--------444---------
+J.cx, J.cy 60,20
+cline idx: 78
+cline len: 62
+cline contents: $a_{n+1} - a_{n} \leq 0$	$a_{n+1}/a_{n} \leq 1$	decreasing\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 58
+
+--------445---------
+J.cx, J.cy 0,20
+cline idx: 79
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 59
+
+--------446---------
+J.cx, J.cy 0,20
+cline idx: 80
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 60
+
+--------447---------
+J.cx, J.cy 0,20
+cline idx: 81
+cline len: 45
+cline contents: \paragraph{1.3}\textbf{Convergence Tests}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 61
+
+--------448---------
+J.cx, J.cy 0,20
+cline idx: 82
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 62
+
+--------449---------
+J.cx, J.cy 0,20
+cline idx: 83
+cline len: 145
+cline contents: $u_k$ is defined as the "general" term of a series. For example in the harmonic series. $\sum_{k=1}^{\infty} \frac{1}{k}$, $u_k=\frac{1}{k}$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 63
+
+--------450---------
+J.cx, J.cy 0,20
+cline idx: 84
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 64
+
+--------451---------
+J.cx, J.cy 0,20
+cline idx: 85
+cline len: 20
+cline contents: \textbf{Theorem 1}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 65
+
+--------452---------
+J.cx, J.cy 0,20
+cline idx: 86
+cline len: 141
+cline contents: if $u_k \ne 0$ as $k$ approaches infinity then the series diverges. Else the series may diverge or converge. $\lim_{k \to \infty} \ne 0$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 66
+
+--------453---------
+J.cx, J.cy 0,20
+cline idx: 87
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 67
+
+--------454---------
+J.cx, J.cy 0,20
+cline idx: 88
+cline len: 20
+cline contents: \textbf{Theorem 2}\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 68
+
+--------455---------
+J.cx, J.cy 0,20
+cline idx: 89
+cline len: 151
+cline contents: if $\sum u_k$ and $\sum v_k$ are convergent series then thier sum and difference are also convergent series. $\sum u_k - v_k$ and $\sum u_k + v_k$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 69
+
+--------456---------
+J.cx, J.cy 0,20
+cline idx: 90
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 70
+
+--------457---------
+J.cx, J.cy 0,20
+cline idx: 91
+cline len: 44
+cline contents: Thier sums and differences are also related.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 71
+
+--------458---------
+J.cx, J.cy 42,20
+cline idx: 92
+cline len: 42
+cline contents: $\sum u_k - v_k$ = $\sum u_k - \sum v_k$\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 72
+
+--------459---------
+J.cx, J.cy 0,20
+cline idx: 93
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 73
+
+--------460---------
+J.cx, J.cy 0,20
+cline idx: 94
+cline len: 44
+cline contents: $\sum u_k + v_k$ = $\sum u_k + \sum v_k$\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 74
+
+--------461---------
+J.cx, J.cy 0,20
+cline idx: 95
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 75
+
+--------462---------
+J.cx, J.cy 0,20
+cline idx: 96
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 76
+
+--------463---------
+J.cx, J.cy 0,20
+cline idx: 97
+cline len: 30
+cline contents: \textbf{The integral Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 77
+
+--------464---------
+J.cx, J.cy 0,20
+cline idx: 98
+cline len: 141
+cline contents: if $u_k$ is a decreasing function on $[a, +\infty]$ then. $\sum_{k=1}^{\infty} u_k$ and $\int_{a}^{\infty} u_k$ both converge or diverge.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 78
+
+--------465---------
+J.cx, J.cy 0,20
+cline idx: 99
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 79
+
+--------466---------
+J.cx, J.cy 0,20
+cline idx: 100
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 80
+
+--------467---------
+J.cx, J.cy 0,20
+cline idx: 101
+cline len: 21
+cline contents: \textbf{P-series}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 81
+
+--------468---------
+J.cx, J.cy 0,20
+cline idx: 102
+cline len: 112
+cline contents: A p-series is a series of the form $\sum \frac{1}{k^p}$. The harmonic series is one such series where $p=1$.\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 82
+
+--------469---------
+J.cx, J.cy 0,20
+cline idx: 103
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 83
+
+--------470---------
+J.cx, J.cy 0,20
+cline idx: 104
+cline len: 56
+cline contents: If $p > 1$ the series converges, otherwise it diverges. 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 84
+
+--------471---------
+J.cx, J.cy 0,20
+cline idx: 105
+cline len: 0
+cline contents: 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 85
+
+--------472---------
+J.cx, J.cy 0,20
+cline idx: 106
+cline len: 28
+cline contents: \textbf{Comparison Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 86
+
+--------473---------
+J.cx, J.cy 0,20
+cline idx: 107
+cline len: 295
+cline contents: given $\sum a_k$ and $\sum b_k$ all $a_k$ and $b_k$ positive. If all $b_k \ge a_k$ if $\sum b_k$ converges so does $\sum a_k$. Conversely if $\sum a_k$ diverges so does $\sum b_k$. in other words in the larger sum converges so does the smallerand if the smaller sum diverges so does the larger. 
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 87
+
+--------474---------
+J.cx, J.cy 4,20
+cline idx: 108
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 88
+
+--------475---------
+J.cx, J.cy 4,20
+cline idx: 109
+cline len: 34
+cline contents: \textbf{Limit Comparison Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 89
+
+--------476---------
+J.cx, J.cy 4,20
+cline idx: 110
+cline len: 74
+cline contents: given $p = \lim_{k \to \infty} \frac{a_k}{b_k}$ and $p > 0$ and finite. \\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 90
+
+--------477---------
+J.cx, J.cy 37,20
+cline idx: 111
+cline len: 37
+cline contents: Then both series converge or diverge.
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 91
+
+--------478---------
+J.cx, J.cy 4,20
+cline idx: 112
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 92
+
+--------479---------
+J.cx, J.cy 4,20
+cline idx: 113
+cline len: 23
+cline contents: \textbf{Ratio Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 93
+
+--------480---------
+J.cx, J.cy 4,20
+cline idx: 114
+cline len: 54
+cline contents: given $p = \lim_{k \to \infty} \frac{a_{k+1}}{a_k}$.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 94
+
+--------481---------
+J.cx, J.cy 26,20
+cline idx: 115
+cline len: 26
+cline contents: $p < 1$ Series converges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 95
+
+--------482---------
+J.cx, J.cy 26,20
+cline idx: 116
+cline len: 43
+cline contents: $p > 1$ or $p = +\infty$  Series diverges\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 96
+
+--------483---------
+J.cx, J.cy 28,20
+cline idx: 117
+cline len: 28
+cline contents: $p = 1$ Nothing is certain\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 97
+
+--------484---------
+J.cx, J.cy 4,20
+cline idx: 118
+cline len: 4
+cline contents: \\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 98
+
+--------485---------
+J.cx, J.cy 4,20
+cline idx: 119
+cline len: 22
+cline contents: \textbf{Root Test}\\\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 99
+
+--------486---------
+J.cx, J.cy 4,20
+cline idx: 120
+cline len: 54
+cline contents: given $p = \lim_{k \to \infty} (a_k)^{\frac{1}{k}}$.\\
+cline pr is null: 0
+cline nx is null: 0
+tsl is idx: 100

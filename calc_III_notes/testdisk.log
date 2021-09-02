@@ -1,0 +1,66 @@
+
+
+Fri Apr 30 14:23:31 2021
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.11.16-arch1-1 (#1 SMP PREEMPT Wed, 21 Apr 2021 17:22:13 +0000) x86_64
+Compiler: GCC 10.1
+ext2fs lib: 1.46.2, ntfs lib: libntfs-3g, reiserfs lib: 0.3.0.5, ewf lib: none, curses lib: ncurses 6.2
+User is not root!
+Hard disk list
+
+
+TestDisk exited normally.
+Using locale 'en_US.UTF-8'.
+
+
+Fri Apr 30 14:23:32 2021
+Command line: TestDisk /debug
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.11.16-arch1-1 (#1 SMP PREEMPT Wed, 21 Apr 2021 17:22:13 +0000) x86_64
+Compiler: GCC 10.1
+ext2fs lib: 1.46.2, ntfs lib: libntfs-3g, reiserfs lib: 0.3.0.5, ewf lib: none, curses lib: ncurses 6.2
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop13 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/loop0 - 170 MB / 162 MiB - 333552 sectors (RO), sector size=512
+Disk /dev/loop1 - 68 MB / 65 MiB - 133320 sectors (RO), sector size=512
+Disk /dev/loop10 - 103 MB / 99 MiB - 203056 sectors (RO), sector size=512
+Disk /dev/loop11 - 104 MB / 99 MiB - 203184 sectors (RO), sector size=512
+Disk /dev/loop12 - 58 MB / 55 MiB - 113592 sectors (RO), sector size=512
+Disk /dev/loop2 - 80 MB / 76 MiB - 157104 sectors (RO), sector size=512
+Disk /dev/loop3 - 58 MB / 55 MiB - 113560 sectors (RO), sector size=512
+Disk /dev/loop4 - 153 MB / 146 MiB - 299704 sectors (RO), sector size=512
+Disk /dev/loop5 - 33 MB / 32 MiB - 66096 sectors (RO), sector size=512
+Disk /dev/loop6 - 188 MB / 179 MiB - 367752 sectors (RO), sector size=512
+Disk /dev/loop7 - 153 MB / 146 MiB - 299016 sectors (RO), sector size=512
+Disk /dev/loop8 - 33 MB / 32 MiB - 66096 sectors (RO), sector size=512
+Disk /dev/loop9 - 67 MB / 64 MiB - 132648 sectors (RO), sector size=512
+Disk /dev/nvme0n1 - 500 GB / 465 GiB - CHS 476940 64 32, sector size=512
+
+Partition table type (auto): EFI GPT
+Disk /dev/nvme0n1 - 500 GB / 465 GiB
+Partition table type: EFI GPT
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=976773167 (expected 976773167)
+hdr_lba_start=2048
+hdr_lba_end=976773134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+ 1 P EFI System                  2048     587775     585728
+ 2 P Linux filesys. data       587776  976773134  976185359
+Incomplete image created.
+disk_image write() failed: No space left on device
+No space left for the file image.
+
+TestDisk exited normally.
