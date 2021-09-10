@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1630539069 "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.tex" "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.pdf" "numbertheorynotes" 1630539069
-  "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.aux" 1630539069 110 8cafab4f2fc45917fce2d9cca3353d45 ""
-  "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.tex" 1630539068 1472 bd86888fd9c173f8243da0294d99da5e ""
+["pdflatex"] 1630983425 "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.tex" "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.pdf" "numbertheorynotes" 1630983426
+  "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.aux" 1630983426 188 873561ace53d2d6e718002f0926b02ab ""
+  "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.tex" 1630983425 3205 42acfaa97cd5926c24bb5f1b6b715622 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1617738065 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1617738065 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -14,7 +14,10 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1617738065 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1617738065 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1617738065 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1617738065 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1617738065 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1617738065 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1617738065 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1617738065 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1617738065 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1617738065 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -153,11 +156,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1622342529 5045527 a0ef06d06af438d62994481e52c2af5f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1622342521 2812667 2acbcd4b67420af42309c8b65e2d7930 ""
-  "numbertheorynotes.aux" 1630539069 110 8cafab4f2fc45917fce2d9cca3353d45 "pdflatex"
-  "numbertheorynotes.tex" 1630539068 1472 bd86888fd9c173f8243da0294d99da5e ""
+  "numbertheorynotes.aux" 1630983426 188 873561ace53d2d6e718002f0926b02ab "pdflatex"
+  "numbertheorynotes.tex" 1630983425 3205 42acfaa97cd5926c24bb5f1b6b715622 ""
   (generated)
-  "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.log"
-  "numbertheorynotes.log"
-  "numbertheorynotes.pdf"
   "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.pdf"
+  "numbertheorynotes.pdf"
+  "numbertheorynotes.log"
+  "/home/jparlett/Documents/drexel_docs/MathDocs/elementary_number_theory/notes/numbertheorynotes.log"
   "numbertheorynotes.aux"
