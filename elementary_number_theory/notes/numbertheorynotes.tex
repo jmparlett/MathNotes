@@ -184,6 +184,48 @@ If $a|c$ and  $b|c$, and $gcd(a,b) = 1$, then $ab|c$.\\
 1. $d|a$ and $d|b$\\
 2. Whenever $c|a$ and $c|b$, then $c|d$\\
 
+\paragraph{2.4} \textbf{The Euclidian Algorithm}\\\\
+
+The Euclidian Algorithm is a process for finding the gcd of two numbers. The equations that describe it are as follows. \\
+
+Given intergers $a$ and $b$ where $a \ge b > 0$\\
+
+$a = q_1b + r_1\\
+b = q_2r_1 + r_2\\
+r_1 = q_3r_2 + r_3\\
+\vdots\\
+r_{n-2} = q_nr_{n-1} + r_n\\
+r_{n-1} = q_{n+1}r_n + 0\\$
+
+$r_n$ the last non-zero remainder that appears is equal to $gcd(a, b)$.\\\\
+
+\textbf{Theorem 2.7: } If $k > 0$, then $gcd(ka, kb) = k gcd(a,b)$.\\\\
+
+For all $k \ne 0$, $gcd(ka, kb) = |k|gcd(a,b)$.\\\\
+
+\textbf{Definition 2.4:} The least common multiple of two non-zero integers $a$ and $b$, denoted $lcm(a,b)$, is the positive integer $m$ satisfying\\
+
+1. $a|m$ and $b|m$\\
+2. If $a|c$ and $b|c$, with $c > 0$, then $m \le c$.\\
+
+$gcd(a,b) * lcm(a, b) = ab$.\\
+
+The ideas of the gcd() can be extended to more than two integers $a, b, c$. $gcd(a, b, c)$ is defined as the psoitive integer $d$ haveing the following properties\\
+
+1. $d$ is a divisor of each $a, b, c$.\\
+2. If $e$ divides the integers $a, b, c$, then $e \le d$.\\
+
+For any choice of positive integers $a$ and $b$, $lcm(a,b) = ab$ iff $gcd(a,b) = 1$.\\\\
+
+\paragraph{2.3} \textbf{Diophantine Equations}\\\\
+
+\textbf{Theorem 2.9:} The linear Diophantine equation $ax + by = c$ has a solution iff $d|c$, where $d = gcd(a, b)$. If $x_0, y_0$ is any particular solution of this equation then all other solutions 
+are given by $x = x_0 + \frac{b}{d} t$ and $y = y_0-\frac{a}{d} t$. Where $t$ is an arbitrary integer.\\
+
+Relatively prime form of theorem 2.9: $r(x^' - x_0) = s(y_0 - y^')$ where $a = dr$ and $b=ds$.\\\\
+
+Corallary: If $gcd(a,b) = 1$ and if $x_0, y_0$ is a particular solution of the linear Diophantine equation $ax + by = c$, then all solutions are given by\\
+$x = x_0 + bt$ and $y = y_0 - at$.\\
 
 
 \end{document}
