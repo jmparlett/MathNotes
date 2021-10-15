@@ -1,0 +1,207 @@
+\documentclass[14pt]{extreport}
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.17} 
+\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+
+\title{Discrete Mathematics Notes}
+\author{Jonathan Parlett}
+
+\begin{document}
+\paragraph{1.0} \textbf{Sets}\\\\
+
+Two sets are equal if they contain the same elements. $A = B$ means $\forall x[(x \in A \Rightarrow x \in B) \land (x \in B \Rightarrow x \in A)]$.\\
+
+There are a few ways to describe a set.\\
+1. List the elements $S = {2, 4 ,6}$.\\
+2. Describe the elements recursively. $1 \in S$. If $k \in S$ then $(k+1) \in S$. The set of all integers
+3. Describe a property $P$ of that characterizes the sets elements $S =$ {x | x is a positive even integer}
+
+The notation for a set $S$ whose elements are characterized as having a property $P$ is ${x | P(x)}$. Where $P$ is a unary predicate (an expression taking one argument).\\
+
+\textbf{Some special set notations}\\
+$\mathbb{N}$ = Natural Numbers.\\
+$\mathbb{Z}$ = Integers.\\
+$\mathbb{Q}$ = Rational Numbers.\\
+$\mathbb{R}$ = Real Numbers.\\
+$\mathbb{C}$ = Complex Numbers.\\
+$\varnothing = $ The empty/null set\\\\
+
+A set $A$ is said to be a subset of a set $B$ is every member of $A$ is also a member of $B$. This is stated as $ A \subseteq B$ when $A$ possibly equals $B$.
+$A$ is said to be a proper subset of $A$ if all elements of $A$ are in $B$ but not all elements of $B$ are in $A$ stated as $ A \subset B$.\\
+
+$A \subseteq B = \forall x(x \in A \Rightarrow x \in B)$ notice you do not have the reverse that would state $A=B$.\\\\
+
+Notice $x \in \varnothing$ is always false since nothing is in the empty set. Conversely $\varnothing \subset B \land \varnothing \subseteq B$ is always true. This just means the empty set is subset of everything.\\\\
+
+Remeber to prove equivalence you must prove implication both ways. To show that two sets $A$ and $B$ are equal you must show that ($A \subseteq B) \land (B \subseteq A)$.\\
+
+The powerset of a set $S$, denoted $\wp(S)$ is the set of all subsets of $S$. $S = {0,1}$, $\wp(S) = {\varnothing, {0}, {1}, {0, 1}}$.\\\\
+
+\textbf{Binary Operation Definition: }$\bullet$ is a binary operation on a set $S$ if for every ordered pair $(x, y)$ of elements of $S$, $x \bullet y$ exists is unique and is a member of $S$.\\
+In other words $S$ must be closed under the binary operation $\bullet$.\\\\
+
+\textbf{Union and Intersection: } Let $A,B \in \wp(S)$. The union of $A$ and $B$, denoted by $A \cup B$, is {$x | x \in A \lor x \in B$}. The intersection of $A$ and $B$, denoted $A \cap B$, is {$x | (x \in A) \land (x \in B)$}.\\
+Union of two sets is the set of all elements in either, and intersection is set of just the common elements of the two.\\\\
+
+\textbf{Complement of a Set: }For set $A \in \wp(S)$, the complement of $A$, denoted $A'$, is {$x | (x \in S) \land (x \notin A)$}.\\
+In other words the inverse of $A$ is the set of everything except the elements of $A$.\\\\
+
+\textbf{Set Difference:} $A-B = ${$x | (x \in A) \land (x \notin B)$}. This is equivalent to $A-B = {x | (x \in A) \land (x \in B')}$.\\
+In english $A-B$ is the set of all elements in $A$ except those in $B$.\\\\
+
+$A$ and $B$ are said to be disjoint if $A \cap B = \varnothing$ (if they have no common elements). Thus $A - B$ and $B - A$ are disjoint sets.\\\\
+
+\textbf{The Cartesian Product: }Let $A$ and $B$ be subsets of $S$. The Cartesian product (cross product) of $A$ and $B$, denoted $A \times B$, is defined by\\
+$A \times B = { (x,y) | (x \in A) \land (y \in B)}$.\\
+The cross product is not a binary operation because its result is generally not a subset of $S$.\\\\
+
+\textbf{Basic Set Identities}\\
+1a. Commutative $A \cup B = B \cup A$ \\
+1b. $A \cap B = B \cap A$.\\
+2a. Associative $(A \cup B) \cup C = A \cup (B \cup C)$ \\
+2b. $(A \cap B) \cap C = A \cap (B \cap C)$.\\
+3a. Distributive $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$ \\
+3b. $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$.\\
+4a. Identity $A \cup \varnothing = A$ \\
+4b.$ A \cap S = A$.\\
+5a. Complement $ A \cup A' = S$ \\
+5b. $A \cap A' = \varnothing$.\\\\
+
+The \textbf{dual} for a set identity is obtained by interchanging $\cup$ and $\cap$ and intechanging $\varnothing$ and $S$. Anytime we have proved a set identity we have also proved
+its dual.\\\\
+
+The number of elements in a finite set is the cardinality of the set. For a set $S = {s_1, s_2, \cdots, s_k}$ then the cardinality $|S|$ is $k$. $|S| = k$.\\
+If the set is infinite we may still be able to select the first second and third elements so that $s_1, s_2, \cdots$ represents all elements of the set.\\
+This kind of infinite set is said to be denumerable or countable.
+
+\paragraph{2.0} \textbf{Counting}\\\\
+
+\textbf{Multiplication Principle}: If there are $n_1$ possible outcomes for a first even and $n_2$ possible outcomes for a second event, there are $n_1 \times n_2$ possible outcomes for the sequence of the two events.\\
+This principle can be extended to an arbitrary number of elements. Take the $4$ digits of a phone number example. How many ways are there to construct the last $4$ digits of a phone if each must be unique.
+Given that there are $10$ digits this means $10$ ways to choose the first, $9$ ways to choose the second, $8$ for the $3$rd, $7$ for the $4$th = $10 * 9 * 8 * 7 = 5040$. If repitions are allowed then there are ten
+ways to choose each digit. $10*10*10*10 = 10000$.\\
+This leads us the cross product of two sets. $ |A \times B| = |A| * |B|$.\\\\
+
+\textbf{Addition Principle}: If $A$ and $B$ are disjoint events with $n_1$ and $n_2$ possible outcomes, respectively, then the total number of possible outcomes for event $A$ or $B$ is $n_1 + n_2$.\\
+This principle can also be extended to the case of any finite number of disjoint sets.\\
+This principle speaks about when two events are unrelated/exclusive to each other. If you want to buy a car or a truck and there are 20 cars and 3 trucks availble then obviously you only have 23 possible outcomes because you are not buying a car and a truck.\\
+$A \cup B| = |A| + |B|$. This describes the addition principle. Recall that $A$ and $B$ must be disjoint sets.\\\\
+
+If $A$ and $B$ are finite sets\\
+$|A - B| = |A| - |A \cap B|$ and $|A - B| = |A| - |B|$ if $B \subseteq A$.\\\\
+\textbf{What is a identity:} An equation that is true no matter what values are chosen $a * 0 = 0$ for all $a$.\\\\
+
+\paragraph{2.1} \textbf{Principle of Inclusion and Exclusion}\\\\
+$|A \cup B| = |A| + |B| - |A \cap B|$.\\\\
+
+\textbf{Inclusion Exclusion Example}\\
+A pollster queries 35 voters all of whom support refereendum 1, referendum 1, referendum 2m or both, and finds that 14 voters support referendum 1  and 26 support referendum 2.
+How many voters support both?\\
+Let $A$ be the set of voters supporting referendum $1$ and $B$ be the set of voters referendum 2, then we know that\\
+$|A \cup B| = 35$  $|A| = 14$  $|B| = 26$\\
+From equation 2,\\
+$|A \cup B| = |A| + |B| - |A \cap B|$\\
+$35 = 14 + 26 -|A \cap B|$\\
+$|A \cap B| = 14 + 26 - 35 = 5$\\
+so 5 voters support both.\\\\
+
+The exclusion principle can be extended to 3 sets easily. $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| -|B \cap C| + |A \cap B \cap C|$.\\\\
+
+So the principle of  inclusion and exclusion can be stated formally as\\
+Given the finite sets $A_1, \cdots, A_n$ $n \ge 2$, then\\
+$|A_1 \cup \cdots \cup A_n| = \sum_{1 \le i \le n} |A_i| - \sum_{1 \le i < j \le n} |A_i \cap A_j| + \sum_{1 \le i < j < k \le n} | A_i \cap A_jj \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$\\\\
+
+\textbf{Pigeonhole Principle}: If more than $k$ items are placed into $k$ bins, then at least 1 bin contains more than 1 item.\\\\
+
+\paragraph{2.2} \textbf{Graph Theory}\\
+\\
+A tree is a visual representation of data items and the connections between some of them (implies not necessairlily all). It is a special case of a more general structure called
+a graph.\\
+\\
+\textbf{Graph Definition Informal:} A graph is a set of nodes (vertices) and a set of arcs (edges) such that each arc connects two nodes.\\
+\\
+\textbf{Graph Definition Formal:} A graph is an ordered triple $(N, A, g)$ where\\
+$N = $a nonempty set of nodes\\
+$A$ = a set of arcs (edges)\\
+$g$ = a function associating with each arc $a$ an unordered pair $x-y$ of nodes called the endpoints of $a$.\\
+
+
+\textbf{Directed Graph Definition:} A directed graph (digraph) is an ordered triple $(N,A,g)$ where\\
+$N = $a nonempty set of nodes\\
+$A$ = a set of arcs (edges)\\
+$g$ = a function associating with each arc $a$ an ordered pair $(x,y)$ of where $x$ is the initial point and $y$ is the terminal point of $a$.\\
+
+\textbf{Labled Graph:} Graph where nodes carry identifing information.\\
+\textbf{Weighted Graph:} Graph each edge/arc has a numerical weight.\\
+\\
+\textbf{Parallel Arcs:} Two arcs with the same endpoints are parallel arcs. \\
+\textbf{Isolated NOde:} an isolated node is adjacent to no other node.\\
+\textbf{Simple Graph:} one with no loops or parallel arcs.\\
+\textbf{Degree:} the degree of a node is the number of arcs that end at that node.\\
+\\
+Each arc has a unique pair of endpoints if $g$ is a one to one function.\\
+\textbf{Complete Graph:} One in which any two distinct nodes are adjacent.\\
+\textbf{subgraph:} a graph that is a set of nodes and a set of arcs that are subsets of the original node set and arc set.\\
+\textbf{path:} a sequence of nodes starting at one node and ending at another (possibly the same) node. $n_0,a_0,n_1,a_1, \cdots, n_{k-1},n_k$\\
+\textbf{path length:} number of arcs in the path.\\
+\textbf{connected graph:} a graph in which there is a path from any node to anyother node.\\
+\textbf{cycle:} a cycle is path from a node $n_0$ to a node $n_0$. Basically a circular path.\\
+\textbf{adjacent:} two nodes are adjacent if their endpoints are associated with an arc.\\
+\textbf{bipartite complete graph:} A graph such that its nodes can be partitioned into two disjoint nonempty sets $N_1$ and $N_2$ such that two nodes $x$ and $y$
+are adjacent iff $x \in N_1 \land y \in N_2$. If $|N_1| = m$ and $|N_2| = n$, such a graph is denoted $K_{m,n}$.\\
+\textbf{directed graph path:} a sequence $n0,a_0, \cdots, a_{k-1},n_k$ where each $i,n$ is the initial point and $n_{i+1}$ is the terminal point of $a_i$. If a path
+exists between node that a either node is said to be reachable by the other.\\
+\textbf{isomorphic structures/graphs:} structures that are the same except for relabling are called isomorphic structures. If two structures are isomorphic then there because
+a one-to-one and onto mapping between the elements of the two structures. Basically if graph $G$ has a an arc with endpoints $x-y$ and $G'$ also has an arc with the same endpoints
+for all endpoints and arcs then the graphs $G$ and $G'$ can be called isomorphic.\\
+
+\textbf{isomorphic graph formal def:} Two graphs $(N_1,A_1,G_1)$ and $(N_2,A_2,G_2)$ are isomorphic if there are bijections $f_1: N_1 \to N_2$ and $f_2: A_1 \to A_2$
+such that for each arc $a \in A_1, g_1(a)=x-y$ if and only if $g_2[f_2(a)]=f_1(x)-f(y)$.\\
+\\
+\textbf{simple graph isomorphism:} Two simple graphs $(N_1,A_1,G_1)$ and $(N_2,A_2,G_2)$ are isomorphic if there is a bijection $f:N_1 \to N_2$ such that for any
+nodes $n_i$ and $n_j$ of $N_1$, $n_i$ and $n_j$ are adjacent if and only if $f(n_i)$ and $f(n_j)$ are adjacent. The function $f$ is called an isomorphism from graph 1 to graph 2.\\
+\\
+\textbf{Reasons Graphs are not isomorphic}
+1. One graph has more nodes than the other.
+2. One graph has more arcs than the other.
+3. One graph has parallel arcs and the other does not.
+4. One graph has a loop and the other does not.
+5. One graph has a node of degree k and the other does not.
+6. One graph is connected and the other is not.
+7. One graph has a cycle and the other does not.
+
+\textbf{planar graph:} one that can be represented so that its arcs intersect only at node (when drawn on a piece of paper).\\
+
+\textbf{Euler's formula for planar graphs:} $n-a+r=2$ where $n$= number of nodes, $a$=number of arcs, and $r$=regions in the graph.\\
+If $n \ge 3$, then $a \le 3n -$\\
+If $n \ge 3$ and there are no cycles of length $3$, then $a \le 2n -4$.\\
+\section{2.3} \textbf{Combinatorics}\\
+\\
+\textbf{Permutation}: ordered arragement of objects.\\
+The number of $r$ distince Objects chosen from $n$ distinct objects is denoted $P(n,r)$.\\
+$P(n,r) = \frac{n!}{(n-r)!}$\\
+\\
+By definition $P(n,0)=1 \land P(n,1)=n$.\\
+\\
+Example: Permutations of 3 objects $a,b,c$ = $P(3,3)=6$.\\
+\\
+\subsection{Combinations}
+When we want to select $r$ objects from a set of $n$, but we don't care how they are arranged then we are counting combinations.\\
+$C(n,r)$ = combinations = $\frac{P(n,r)}{r!} = \frac{n!}{r!(n-r)!} = \binom{n}{r}$\\
+
+The number of distinct permutations of $n$ objects in which $n_1 ,\cdots, n_k$ are indistinguable from one another is $\frac{n!}{(n_1!) \cdots (n_k!)}$\\
+
+The number of permutations of $r$ objects out of $n$ distinct objects with repetition allowed is $n^r$. Because repeition is allowed there
+are $n$ ways to choose the first object and also $n$ ways to choose the second and third and fourth, etc.\\
+
+Ways to select $r$ our $n$ distinct objects with repetitions: $C(r+n-1,r)$.\\
+
+
+\end{document}

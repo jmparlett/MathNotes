@@ -222,7 +222,7 @@ For any choice of positive integers $a$ and $b$, $lcm(a,b) = ab$ iff $gcd(a,b) =
 \textbf{Theorem 2.9:} The linear Diophantine equation $ax + by = c$ has a solution iff $d|c$, where $d = gcd(a, b)$. If $x_0, y_0$ is any particular solution of this equation then all other solutions 
 are given by $x = x_0 + \frac{b}{d} t$ and $y = y_0-\frac{a}{d} t$. Where $t$ is an arbitrary integer.\\
 
-Relatively prime form of theorem 2.9: $r(x' - x_0) = s(y_0 - y')$ where $a = dr$ and $b=ds$.\\\\
+Relatively prime form of theorem 2.9: $r(x^' - x_0) = s(y_0 - y^')$ where $a = dr$ and $b=ds$.\\\\
 
 Corallary: If $gcd(a,b) = 1$ and if $x_0, y_0$ is a particular solution of the linear Diophantine equation $ax + by = c$, then all solutions are given by\\
 $x = x_0 + bt$ and $y = y_0 - at$.\\\\
@@ -249,7 +249,7 @@ this theorem just states that primes can be repeated in a numbers representation
 \paragraph{3.1} \textbf{Sieve of Eratosthenes}\\\\
 
 If $a$ is a composite and $a > 1$ then $ a = bc$, where $ 1 < b < a$ and $1 < c < a$. In other words it has two non-zero factors. Assuming $b \le c$ implies $b^2 \le bc = a$ and $b \le \sqrt{a}$;
-and becuase theorem 3.2 ensures will will have at least one prime factor $p$, it follows that $p|b \land b|a$, therefor $p|a$. Thus a composite number $a$ will always possess a prime divisor $p$ satisfiying $p \le \sqrt{a}$.\\
+and becuase theorem 3.2 ensures will will have at least one prime factor $p$, it follows that $p|b & b|a$, therefor $p|a$. Thus a composite number $a$ will always possess a prime divisor $p$ satisfiying $p \le \sqrt{a}$.\\
 
 This result means that in testing the primality of $a$ you need only test disvision by all primes $p < \sqrt{a}$. Similarly to find the prime factorization of $a$ you need only test divisability of by all primes less than $\sqrt{a}$.
 A simple algorithm to determine prime factorization then would be.\\
