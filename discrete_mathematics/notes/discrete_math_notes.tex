@@ -5,6 +5,7 @@
 \usepackage{fancyhdr}
 \usepackage{pgfplots}
 \usepackage{setspace}
+\usepackage{listings}
 \pgfplotsset{compat=1.17} 
 \geometry{a4paper} % or letter or a5paper or ... etc
 % \geometry{landscape} % rotated page geometry
@@ -180,8 +181,29 @@ nodes $n_i$ and $n_j$ of $N_1$, $n_i$ and $n_j$ are adjacent if and only if $f(n
 \textbf{planar graph:} one that can be represented so that its arcs intersect only at node (when drawn on a piece of paper).\\
 
 \textbf{Euler's formula for planar graphs:} $n-a+r=2$ where $n$= number of nodes, $a$=number of arcs, and $r$=regions in the graph.\\
-If $n \ge 3$, then $a \le 3n -$\\
+If $n \ge 3$, then $a \le 3n -6$\\
 If $n \ge 3$ and there are no cycles of length $3$, then $a \le 2n -4$.\\
+
+{\bf Number of Nodes and Arcs}\\
+For a simple, connected, planar graph with $n$ nodes and $a$ arcs:\\
+\begin{enumerate}
+    \item if the planar representation divides the plane into $r$ regions, then $n - a + r = 2$.
+    \item if $n \ge 3$, then $a \le 3n -6$.
+    \item if $n \ge 3$, and there are no cycles of len $3$, then $a \le 2n - 4$
+\end{enumerate}
+
+{\bf Homeomorphic Graphs}\\
+Two graphs are {\bf homeomorphic} if both can be obtained from the same graph by a sequence of elementary subdivisions, in which a single arc $x-y$ is
+replaced by two new arcs $x-v$ and $v-y$ connecting to a new node $v$.
+
+A planar graph cannot be turned into a nonplanar graph by elementary subdivisions, and a nonplanar graph cannot graph cannot be made plana by elementary subdivisions.
+
+{\bf Kuratowski Theorem}: A graph is nonplanar iff it contains a subgraph that is homeomorphic to $K_5$ or $K_{3,3}$.
+
+The largest degree in a simple graph of $n$ nodes is $n-1$. If you have a 4 node graph then you have only 3 other nodes
+you can connect to any one node.\\
+
+{\bf Globabl Clustering Coefficient:} $C = \frac{3T}{t}$, where T is the number of triangles in the graph and t is the number of connected node triples.
 \section{2.3} \textbf{Combinatorics}\\
 \\
 \textbf{Permutation}: ordered arragement of objects.\\
@@ -215,4 +237,46 @@ if $p|ab$ either $p|a \lor p|b$ or both.\\
 less than or equal to $n$ and relatively prime to $n$.\\
 $\phi (n) = p_1^{m_1 -1}\phi _2^{m_2-1}p_3^{m_3-1} \cdots p_k^{m_k-1}\phi (p_1)\phi (p_2)\phi (p_3) \cdots \phi (p_k)$.\\
 
+\section{Trees}
+
+{\bf Tree:} A an acyclic connected graph with one node designated as the root of the tree.
+
+{\bf Free Tree/Nonrooted Tree:} Acyclic graph with no designated root.
+
+{\bf Recursive Definition:}
+\begin{enumerate}
+    \item A single node is a tree
+    \item If $T_1, T_2, \cdots , T_t$ are disjoint trees with roots $r_1, r_2, ..., r_t$ then we can attach a new node $r$ to each root
+          to obtain a new tree with root $r$. The nodes $r_1, ..., r_t$ are children of $r$ and $r$ is the parent of these nodes.
+\end{enumerate}
+
+Because the tree is connected there is a path from the root to anyother node and this path is unique since a tree is acyclic.
+
+\subsection{Definitions}
+\begin{enumerate}
+  \item {\bf Depth of a Node:} Length of the path from the root to the node (the root has depth 0)
+  \item {\bf Depth/Height of Tree:} The max depth of any node in the tree or the length of the longest path from the root to a leaf.
+        Notice it is not based on number of nodes in the path it is based on number of arcs.
+  \item {\bf Leaf:} Node with no children.
+  \item {\bf Internal Nodes:} A nonleaf node.
+  \item {\bf Forest:} Acyclic graph, not necessarily connected, thus a forest is a collection of disjoint trees.
+  \item {\bf Binary Tree:} A tree where each node has at most two children, either left or right.
+  \item {\bf Full Binary Tree:} When all internal nodes have two children, and all leaves have the same depth (implies exactly $2^{h+1}-1$ nodes).
+  \item {\bf Complete Binary Tree:} Almost full, but last layer may not be saturated, that is the internal nodes at the $(h-1)$ layer may not all
+    have 2 children.
+\end{enumerate}
+
+\subsection{Tree Traversals}
+Preorder prints the root then its children
+\begin{lstlisting}
+preorder(T)
+  write(r)
+  for i = 1 to t do
+    preorder(T_i)
+  end for
+end preorder
+\end{lstlisting}
+Inorder prints the left children then the root then right children.\\
+Postorder prints all children then root.\\
+{\bf Theorem:} A tree with $n$ nodes has $n-1$ arcs.\\
 \end{document}
